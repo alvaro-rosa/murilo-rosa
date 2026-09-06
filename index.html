@@ -12,9 +12,9 @@
 <title>Como eu aprendo</title>
 <style>
 :root{
-  --bg:#f6f7f9; --surface:#ffffff; --ink:#1b2430; --ink-soft:#525f70; --line:#e2e6ec;
-  --accent:#2f6f6b; --accent-soft:#e6f1f0; --accent-ink:#1f4d4a; --chip:#ffffff;
-  --shadow:0 1px 2px rgba(20,30,45,.06),0 6px 18px rgba(20,30,45,.05);
+  --bg:#ffffff; --surface:#ffffff; --ink:#1b2430; --ink-soft:#5a6675; --line:#e0e5ea;
+  --accent:#2f6f6b; --accent-soft:#eef5f4; --accent-ink:#1f4d4a; --chip:#ffffff;
+  --shadow:0 1px 2px rgba(20,30,45,.04);
   --radius:14px; --max:820px;
   --sans:"Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --serif:"Fraunces",Georgia,"Times New Roman",serif;
@@ -35,12 +35,14 @@ body{background:var(--bg);color:var(--ink);
 .wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
 
 /* ---------- capa ---------- */
-header.hero{background:linear-gradient(160deg,var(--accent) 0%,var(--accent-ink) 100%);color:#fff;padding:34px 0 30px}
+header.hero{background:var(--bg);color:var(--ink);padding:30px 0 24px;border-bottom:1px solid var(--line)}
 header.hero .wrap{max-width:var(--max)}
-.kicker{font-size:13px;letter-spacing:.14em;text-transform:uppercase;opacity:.82;margin:0 0 8px}
+.kicker{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink);
+  font-weight:600;margin:0 0 9px}
+:root[data-theme="dark"] .kicker{color:var(--accent)}
 h1{font-family:var(--serif);font-size:clamp(29px,7vw,42px);line-height:1.1;margin:0 0 13px;
   font-weight:600;letter-spacing:-.015em;text-wrap:balance}
-.hero p{margin:0;font-size:16.5px;line-height:1.6;opacity:.94;max-width:56ch}
+.hero p{margin:0;font-size:17px;line-height:1.6;color:var(--ink-soft);max-width:56ch}
 
 /* ---------- navegação nível 1 ---------- */
 nav.blocos{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line);
@@ -162,7 +164,6 @@ a{color:var(--accent-ink)}
 <main class="wrap">
 <section class="bloco" id="sala">
 <h2><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.2 4.8h17.6v10.4H3.2z"/><path d="M8 20.2l4-5 4 5"/><path d="M7 8.6h7M7 11.6h4"/></svg>Na sala de aula</h2>
-<p class="bloco-sub">9 momentos · 304 sugestões. Toque em cada momento para abrir.</p>
 <details class="grupo">
 <summary><span>Quando eu chego na sala</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
@@ -506,7 +507,6 @@ a{color:var(--accent-ink)}
 </section>
 <section class="bloco" id="refeitorio">
 <h2><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.4 3.2v4.6a2.1 2.1 0 0 0 4.2 0V3.2"/><path d="M9.5 9.9v10.9"/><path d="M16.6 3.2c1.9 1.9 1.9 6 0 7.9v9.7"/></svg>No refeitório</h2>
-<p class="bloco-sub">3 momentos · 70 sugestões. Toque em cada momento para abrir.</p>
 <details class="grupo">
 <summary><span>Quando eu preciso esperar na fila</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
@@ -592,7 +592,6 @@ a{color:var(--accent-ink)}
 </section>
 <section class="bloco" id="educacao-fisica">
 <h2><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.4"/><path d="M6.1 6.6c3.9 2.2 7.9 2.2 11.8 0M6.1 17.4c3.9-2.2 7.9-2.2 11.8 0"/></svg>Na educação física</h2>
-<p class="bloco-sub">4 momentos · 84 sugestões. Toque em cada momento para abrir.</p>
 <details class="grupo">
 <summary><span>Antes de começar</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
@@ -696,7 +695,6 @@ a{color:var(--accent-ink)}
 </section>
 <section class="bloco" id="biblioteca">
 <h2><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.2h4v13.6H4zM9.6 5.2h4v13.6h-4z"/><path d="M15.6 6l3.7 1-2.9 12.7-3.7-1z"/></svg>Na biblioteca</h2>
-<p class="bloco-sub">29 sugestões.</p>
 <details class="grupo" open>
 <summary><span>Na biblioteca</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
@@ -733,7 +731,6 @@ a{color:var(--accent-ink)}
 </section>
 <section class="bloco" id="musica">
 <h2><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.4 17.6V5.9l9.4-1.9v11.7"/><circle cx="6.9" cy="17.9" r="2.5"/><circle cx="16.3" cy="15.9" r="2.5"/></svg>Na aula de música</h2>
-<p class="bloco-sub">41 sugestões.</p>
 <details class="grupo" open>
 <summary><span>Na aula de música</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
@@ -782,7 +779,6 @@ a{color:var(--accent-ink)}
 </section>
 <section class="bloco" id="artes">
 <h2><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.4c-4.8 0-8.6 3.9-8.6 8.6s3.9 8.6 8.6 8.6c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1.1.9-2 2-2h1.4c2.6 0 4.7-2.1 4.7-4.7 0-3.7-3.8-5.9-9.1-5.9z"/><circle cx="7.6" cy="11" r="1.1"/><circle cx="10.4" cy="7.4" r="1.1"/><circle cx="15" cy="8" r="1.1"/></svg>Na aula de artes</h2>
-<p class="bloco-sub">34 sugestões.</p>
 <details class="grupo" open>
 <summary><span>Na aula de artes</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
@@ -824,7 +820,6 @@ a{color:var(--accent-ink)}
 </section>
 <section class="bloco" id="sobre">
 <h2><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.3s-7.3-4.6-7.3-9.5c0-2.3 1.9-4.1 4.2-4.1 1.4 0 2.6.7 3.1 1.7.5-1 1.7-1.7 3.1-1.7 2.3 0 4.2 1.8 4.2 4.1 0 4.9-7.3 9.5-7.3 9.5z"/></svg>Outras coisas sobre mim</h2>
-<p class="bloco-sub">23 sugestões.</p>
 <details class="grupo" open>
 <summary><span>Outras coisas sobre mim</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
