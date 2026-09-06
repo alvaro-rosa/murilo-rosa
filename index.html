@@ -12,21 +12,27 @@
 <title>Como eu aprendo</title>
 <style>
 :root{
-  --bg:#ffffff; --surface:#ffffff; --ink:#1b2430; --ink-soft:#5a6675; --line:#e0e5ea;
-  --accent:#2f6f6b; --accent-soft:#eef5f4; --accent-ink:#1f4d4a; --chip:#ffffff;
-  --shadow:0 1px 2px rgba(20,30,45,.04);
+  --bg:#ffffff; --surface:#ffffff; --ink:#16202e; --ink-soft:#55637a; --line:#dde3ec;
+  --accent:#1d5fa8; --accent-soft:#eaf1fa; --accent-ink:#123f77; --chip:#ffffff;
+  --mark:#e9a800; --mark-soft:#fdf5e0; --mark-line:rgba(233,168,0,.35);
+  --flag:#c0392b;
+  --shadow:0 1px 2px rgba(18,40,75,.05);
   --radius:14px; --max:820px;
   --sans:"Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --serif:"Fraunces",Georgia,"Times New Roman",serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#141a20; --surface:#1c242c; --ink:#eaf0f5; --ink-soft:#a4b2c0; --line:#2c3742;
-  --accent:#7fc6bf; --accent-soft:#223434; --accent-ink:#bfe6e1; --chip:#222b34;
+  --bg:#131a24; --surface:#1b2430; --ink:#e9eef6; --ink-soft:#9fb0c6; --line:#2a3646;
+  --accent:#7fb2ea; --accent-soft:#1c2b40; --accent-ink:#a9cdf5; --chip:#212c3a;
+  --mark:#e8b23a; --mark-soft:#2c2617; --mark-line:rgba(232,178,58,.3);
+  --flag:#f08a80;
   --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 18px rgba(0,0,0,.25);
 }}
 :root[data-theme="dark"]{
-  --bg:#141a20; --surface:#1c242c; --ink:#eaf0f5; --ink-soft:#a4b2c0; --line:#2c3742;
-  --accent:#7fc6bf; --accent-soft:#223434; --accent-ink:#bfe6e1; --chip:#222b34;
+  --bg:#131a24; --surface:#1b2430; --ink:#e9eef6; --ink-soft:#9fb0c6; --line:#2a3646;
+  --accent:#7fb2ea; --accent-soft:#1c2b40; --accent-ink:#a9cdf5; --chip:#212c3a;
+  --mark:#e8b23a; --mark-soft:#2c2617; --mark-line:rgba(232,178,58,.3);
+  --flag:#f08a80;
   --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 18px rgba(0,0,0,.25);
 }
 *{box-sizing:border-box}
@@ -37,11 +43,12 @@ body{background:var(--bg);color:var(--ink);
 /* ---------- capa ---------- */
 header.hero{background:var(--bg);color:var(--ink);padding:30px 0 24px;border-bottom:1px solid var(--line)}
 header.hero .wrap{max-width:var(--max)}
-.kicker{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink);
-  font-weight:600;margin:0 0 9px}
-:root[data-theme="dark"] .kicker{color:var(--accent)}
-h1{font-family:var(--serif);font-size:clamp(29px,7vw,42px);line-height:1.1;margin:0 0 13px;
-  font-weight:600;letter-spacing:-.015em;text-wrap:balance}
+.kicker{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--flag);
+  font-weight:700;margin:0 0 9px}
+h1{font-family:var(--serif);font-size:clamp(29px,7vw,42px);line-height:1.1;margin:0 0 16px;
+  font-weight:600;letter-spacing:-.015em;text-wrap:balance;color:var(--ink)}
+h1::after{content:"";display:block;width:52px;height:3px;border-radius:2px;
+  background:var(--flag);margin-top:15px}
 .hero p{margin:0;font-size:17px;line-height:1.6;color:var(--ink-soft);max-width:56ch}
 
 /* ---------- navegação nível 1 ---------- */
@@ -96,11 +103,10 @@ ul.itens input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 ul.itens span{font-size:16.5px;line-height:1.5}
 ul.itens input:checked + span{font-weight:600}
 ul.itens strong{font-size:16.5px;line-height:1.5;font-weight:700}
-li.destaque{background:var(--accent-soft);border-top:0;margin:0 -17px;padding:0 17px 0 13px;
-  border-left:4px solid var(--accent)}
+li.destaque{background:var(--mark-soft);border-top:0;margin:0 -17px;padding:0 17px 0 13px;
+  border-left:4px solid var(--mark)}
 li.destaque + li:not(.destaque){border-top:1px solid var(--line)}
-li.destaque + li.destaque{border-top:1px solid rgba(47,111,107,.22)}
-:root[data-theme="dark"] li.destaque + li.destaque{border-top-color:rgba(127,198,191,.25)}
+li.destaque + li.destaque{border-top:1px solid var(--mark-line)}
 @media (max-width:520px){li.destaque{margin:0 -15px;padding:0 15px 0 11px}}
 
 /* como usar */
