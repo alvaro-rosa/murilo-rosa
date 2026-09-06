@@ -148,10 +148,9 @@ a{color:var(--accent-ink)}
 <header class="hero"><div class="wrap">
 <p class="kicker">Um guia meu para os meus professores</p>
 <h1>Como eu aprendo</h1>
-<p>Eu sou o Murilo e eu sou autista. Eu aprendo muito bem quando sei o que vem pela frente, quando recebo uma instrução de cada vez e quando tenho um jeito combinado de pedir uma pausa. Aqui eu reúno, em linguagem prática, o que funciona comigo em cada momento do dia na escola.</p>
+<p>Oi! Eu sou o Murilo. Fiz este guia para a gente começar bem: aqui está o que funciona comigo em cada momento do dia na escola.</p>
 </div></header>
 <nav class="blocos" aria-label="Blocos do guia"><div class="blocos-scroll">
-<a href="#inicio" data-nav="inicio"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.6C10.2 5.2 8 4.6 5.5 4.6H3v12.8h2.5c2.5 0 4.7.6 6.5 2m0-14.8c1.8-1.4 4-2 6.5-2H21v12.8h-2.5c-2.5 0-4.7.6-6.5 2m0-14.8v14.8"/></svg>Como usar este guia</a>
 <a href="#sala" data-nav="sala"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.2 4.8h17.6v10.4H3.2z"/><path d="M8 20.2l4-5 4 5"/><path d="M7 8.6h7M7 11.6h4"/></svg>Na sala de aula</a>
 <a href="#refeitorio" data-nav="refeitorio"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.4 3.2v4.6a2.1 2.1 0 0 0 4.2 0V3.2"/><path d="M9.5 9.9v10.9"/><path d="M16.6 3.2c1.9 1.9 1.9 6 0 7.9v9.7"/></svg>No refeitório</a>
 <a href="#educacao-fisica" data-nav="educacao-fisica"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.4"/><path d="M6.1 6.6c3.9 2.2 7.9 2.2 11.8 0M6.1 17.4c3.9-2.2 7.9-2.2 11.8 0"/></svg>Na educação física</a>
@@ -160,21 +159,7 @@ a{color:var(--accent-ink)}
 <a href="#artes" data-nav="artes"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.4c-4.8 0-8.6 3.9-8.6 8.6s3.9 8.6 8.6 8.6c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1.1.9-2 2-2h1.4c2.6 0 4.7-2.1 4.7-4.7 0-3.7-3.8-5.9-9.1-5.9z"/><circle cx="7.6" cy="11" r="1.1"/><circle cx="10.4" cy="7.4" r="1.1"/><circle cx="15" cy="8" r="1.1"/></svg>Na aula de artes</a>
 <a href="#sobre" data-nav="sobre"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.3s-7.3-4.6-7.3-9.5c0-2.3 1.9-4.1 4.2-4.1 1.4 0 2.6.7 3.1 1.7.5-1 1.7-1.7 3.1-1.7 2.3 0 4.2 1.8 4.2 4.1 0 4.9-7.3 9.5-7.3 9.5z"/></svg>Outras coisas sobre mim</a>
 </div></nav>
-<div class="wrap"><div class="tools"><button class="btn" id="so-marcados" aria-pressed="false"><span aria-hidden="true">✓</span><span>Mostrar só os marcados</span></button><button class="btn" id="expandir"><span aria-hidden="true">⌄</span><span>Abrir tudo</span></button><button class="btn" id="imprimir"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 9V3.6h10V9"/><path d="M5.4 9h13.2a2 2 0 0 1 2 2v5.2h-3.6M6.2 16.2H2.6v-5.2a2 2 0 0 1 2-2"/><path d="M6.6 14.4h10.8v6H6.6z"/></svg><span>Imprimir</span></button><span class="counter" id="total"></span></div></div>
 <main class="wrap">
-<section class="bloco" id="inicio">
-<h2><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.6C10.2 5.2 8 4.6 5.5 4.6H3v12.8h2.5c2.5 0 4.7.6 6.5 2m0-14.8c1.8-1.4 4-2 6.5-2H21v12.8h-2.5c-2.5 0-4.7.6-6.5 2m0-14.8v14.8"/></svg>Como usar este guia</h2>
-<div class="card"><ol>
-<li>Leia o bloco da sua disciplina ou do momento do dia (sala, refeitório, educação física, biblioteca, música, artes).</li>
-<li>Cada item é uma sugestão prática, escrita do jeito que eu pediria se conseguisse explicar sozinho.</li>
-<li>Os itens marcados com ✓ são os que mais funcionam comigo hoje. Os outros ficam aqui como possibilidades.</li>
-<li>Você pode marcar e desmarcar itens nesta página: as marcações ficam salvas no seu aparelho.</li>
-<li>Use o botão “Mostrar só os marcados” para imprimir uma versão curta e levar para a sala.</li>
-<li>Nada aqui é regra rígida. Se algo não estiver funcionando, fale com a minha família — a gente ajusta junto.</li>
-</ol></div>
-<div class="nota"><strong>O nosso sinal combinado:</strong> eu e cada professor podemos combinar um gesto discreto (um toque na mesa, uma mão levantada) que serve para duas coisas: você me lembra de voltar ao foco, e eu aviso que preciso de uma pausa — sem que ninguém mais perceba. Vários itens deste guia citam esse sinal.</div>
-<div class="nota tela"><strong>Os itens em destaque, no topo de cada seção, são os meus.</strong> Eles vêm dos meus relatórios descritivos, do meu PEI e das anotações das minhas terapias — são as coisas que já se sabe que funcionam comigo. O resto da lista são possibilidades. Se algo não estiver funcionando, fale com a minha família: a gente ajusta junto ao longo do ano.</div>
-</section>
 <section class="bloco" id="sala">
 <h2><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.2 4.8h17.6v10.4H3.2z"/><path d="M8 20.2l4-5 4 5"/><path d="M7 8.6h7M7 11.6h4"/></svg>Na sala de aula</h2>
 <p class="bloco-sub">9 momentos · 304 sugestões. Toque em cada momento para abrir.</p>
@@ -906,18 +891,20 @@ a{color:var(--accent-ink)}
   }
 
   var btn=document.getElementById('so-marcados');
-  btn.addEventListener('click',function(){
+  if(btn) btn.addEventListener('click',function(){
     var on=document.body.classList.toggle('so-marcados');
     btn.setAttribute('aria-pressed',on?'true':'false');
     btn.querySelector('span:last-child').textContent=on?'Mostrar tudo':'Mostrar só os marcados';
     if(on){ [].forEach.call(document.querySelectorAll('.grupo'),function(g){ g.open=true; }); }
   });
-  document.getElementById('expandir').addEventListener('click',function(){
+  var exp=document.getElementById('expandir');
+  if(exp) exp.addEventListener('click',function(){
     var abrir=[].some.call(document.querySelectorAll('.grupo'),function(g){ return !g.open; });
     [].forEach.call(document.querySelectorAll('.grupo'),function(g){ g.open=abrir; });
     this.querySelector('span:last-child').textContent=abrir?'Fechar tudo':'Abrir tudo';
   });
-  document.getElementById('imprimir').addEventListener('click',function(){ window.print(); });
+  var imp=document.getElementById('imprimir');
+  if(imp) imp.addEventListener('click',function(){ window.print(); });
 
   var links=[].slice.call(document.querySelectorAll('[data-nav]'));
   var secs=links.map(function(a){ return document.getElementById(a.dataset.nav); });
