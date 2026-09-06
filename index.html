@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Guia para professores: como o Murilo aprende e como se comunicar com ele.">
+<meta name="description" content="Guia do Murilo para os professores: como eu aprendo e como falar comigo.">
 <meta name="color-scheme" content="light dark">
 <meta name="robots" content="noindex, nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600;700&display=swap">
-<title>Como ajudar o Murilo</title>
+<title>Como eu aprendo</title>
 <style>
 :root{
   --bg:#f6f7f9; --surface:#ffffff; --ink:#1b2430; --ink-soft:#525f70; --line:#e2e6ec;
@@ -95,6 +95,13 @@ ul.itens input:checked::after{content:"";position:absolute;left:7px;top:2.5px;wi
 ul.itens input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 ul.itens span{font-size:16.5px;line-height:1.5}
 ul.itens input:checked + span{font-weight:600}
+ul.itens strong{font-size:16.5px;line-height:1.5;font-weight:700}
+li.destaque{background:var(--accent-soft);border-top:0;margin:0 -17px;padding:0 17px 0 13px;
+  border-left:4px solid var(--accent)}
+li.destaque + li:not(.destaque){border-top:1px solid var(--line)}
+li.destaque + li.destaque{border-top:1px solid rgba(47,111,107,.22)}
+:root[data-theme="dark"] li.destaque + li.destaque{border-top-color:rgba(127,198,191,.25)}
+@media (max-width:520px){li.destaque{margin:0 -15px;padding:0 15px 0 11px}}
 
 /* como usar */
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
@@ -139,9 +146,9 @@ a{color:var(--accent-ink)}
 </head>
 <body>
 <header class="hero"><div class="wrap">
-<p class="kicker">Guia para professores e equipe da escola</p>
-<h1>Como vocês podem ajudar o Murilo</h1>
-<p>O Murilo é autista. Ele aprende muito bem quando sabe o que vem pela frente, quando recebe uma instrução de cada vez e quando tem um jeito combinado de pedir uma pausa. Este guia reúne, em linguagem prática, o que costuma funcionar com ele em cada momento do dia na escola.</p>
+<p class="kicker">Um guia meu para os meus professores</p>
+<h1>Como eu aprendo</h1>
+<p>Eu sou o Murilo e eu sou autista. Eu aprendo muito bem quando sei o que vem pela frente, quando recebo uma instrução de cada vez e quando tenho um jeito combinado de pedir uma pausa. Aqui eu reúno, em linguagem prática, o que funciona comigo em cada momento do dia na escola.</p>
 </div></header>
 <nav class="blocos" aria-label="Blocos do guia"><div class="blocos-scroll">
 <a href="#inicio" data-nav="inicio"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.6C10.2 5.2 8 4.6 5.5 4.6H3v12.8h2.5c2.5 0 4.7.6 6.5 2m0-14.8c1.8-1.4 4-2 6.5-2H21v12.8h-2.5c-2.5 0-4.7.6-6.5 2m0-14.8v14.8"/></svg>Como usar este guia</a>
@@ -151,7 +158,7 @@ a{color:var(--accent-ink)}
 <a href="#biblioteca" data-nav="biblioteca"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.2h4v13.6H4zM9.6 5.2h4v13.6h-4z"/><path d="M15.6 6l3.7 1-2.9 12.7-3.7-1z"/></svg>Na biblioteca</a>
 <a href="#musica" data-nav="musica"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.4 17.6V5.9l9.4-1.9v11.7"/><circle cx="6.9" cy="17.9" r="2.5"/><circle cx="16.3" cy="15.9" r="2.5"/></svg>Na aula de música</a>
 <a href="#artes" data-nav="artes"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.4c-4.8 0-8.6 3.9-8.6 8.6s3.9 8.6 8.6 8.6c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1.1.9-2 2-2h1.4c2.6 0 4.7-2.1 4.7-4.7 0-3.7-3.8-5.9-9.1-5.9z"/><circle cx="7.6" cy="11" r="1.1"/><circle cx="10.4" cy="7.4" r="1.1"/><circle cx="15" cy="8" r="1.1"/></svg>Na aula de artes</a>
-<a href="#sobre" data-nav="sobre"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.3s-7.3-4.6-7.3-9.5c0-2.3 1.9-4.1 4.2-4.1 1.4 0 2.6.7 3.1 1.7.5-1 1.7-1.7 3.1-1.7 2.3 0 4.2 1.8 4.2 4.1 0 4.9-7.3 9.5-7.3 9.5z"/></svg>Outras coisas sobre o Murilo</a>
+<a href="#sobre" data-nav="sobre"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.3s-7.3-4.6-7.3-9.5c0-2.3 1.9-4.1 4.2-4.1 1.4 0 2.6.7 3.1 1.7.5-1 1.7-1.7 3.1-1.7 2.3 0 4.2 1.8 4.2 4.1 0 4.9-7.3 9.5-7.3 9.5z"/></svg>Outras coisas sobre mim</a>
 </div></nav>
 <div class="wrap"><div class="tools"><button class="btn" id="so-marcados" aria-pressed="false"><span aria-hidden="true">✓</span><span>Mostrar só os marcados</span></button><button class="btn" id="expandir"><span aria-hidden="true">⌄</span><span>Abrir tudo</span></button><button class="btn" id="imprimir"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 9V3.6h10V9"/><path d="M5.4 9h13.2a2 2 0 0 1 2 2v5.2h-3.6M6.2 16.2H2.6v-5.2a2 2 0 0 1 2-2"/><path d="M6.6 14.4h10.8v6H6.6z"/></svg><span>Imprimir</span></button><span class="counter" id="total"></span></div></div>
 <main class="wrap">
@@ -159,672 +166,710 @@ a{color:var(--accent-ink)}
 <h2><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.6C10.2 5.2 8 4.6 5.5 4.6H3v12.8h2.5c2.5 0 4.7.6 6.5 2m0-14.8c1.8-1.4 4-2 6.5-2H21v12.8h-2.5c-2.5 0-4.7.6-6.5 2m0-14.8v14.8"/></svg>Como usar este guia</h2>
 <div class="card"><ol>
 <li>Leia o bloco da sua disciplina ou do momento do dia (sala, refeitório, educação física, biblioteca, música, artes).</li>
-<li>Cada item é uma sugestão prática, escrita do jeito que o Murilo pediria se conseguisse explicar sozinho.</li>
-<li>Os itens marcados com ✓ são os que mais funcionam com ele hoje. Os outros ficam aqui como possibilidades.</li>
+<li>Cada item é uma sugestão prática, escrita do jeito que eu pediria se conseguisse explicar sozinho.</li>
+<li>Os itens marcados com ✓ são os que mais funcionam comigo hoje. Os outros ficam aqui como possibilidades.</li>
 <li>Você pode marcar e desmarcar itens nesta página: as marcações ficam salvas no seu aparelho.</li>
 <li>Use o botão “Mostrar só os marcados” para imprimir uma versão curta e levar para a sala.</li>
-<li>Nada aqui é regra rígida. Se algo não estiver funcionando, fale com a família — a gente ajusta junto.</li>
+<li>Nada aqui é regra rígida. Se algo não estiver funcionando, fale com a minha família — a gente ajusta junto.</li>
 </ol></div>
-<div class="nota"><strong>Nosso sinal combinado:</strong> o Murilo e cada professor podem combinar um gesto discreto (um toque na mesa, uma mão levantada) que serve para duas coisas: você lembra o Murilo de voltar ao foco, e ele avisa que precisa de uma pausa — sem que ninguém mais perceba. Vários itens deste guia citam esse sinal.</div>
-<div class="nota tela"><strong>Dúvidas ou algo não está funcionando?</strong> Fale com a família do Murilo. Este guia é um ponto de partida e a gente ajusta junto ao longo do ano.</div>
+<div class="nota"><strong>O nosso sinal combinado:</strong> eu e cada professor podemos combinar um gesto discreto (um toque na mesa, uma mão levantada) que serve para duas coisas: você me lembra de voltar ao foco, e eu aviso que preciso de uma pausa — sem que ninguém mais perceba. Vários itens deste guia citam esse sinal.</div>
+<div class="nota tela"><strong>Os itens em destaque, no topo de cada seção, são os meus.</strong> Eles vêm dos meus relatórios descritivos, do meu PEI e das anotações das minhas terapias — são as coisas que já se sabe que funcionam comigo. O resto da lista são possibilidades. Se algo não estiver funcionando, fale com a minha família: a gente ajusta junto ao longo do ano.</div>
 </section>
 <section class="bloco" id="sala">
 <h2><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.2 4.8h17.6v10.4H3.2z"/><path d="M8 20.2l4-5 4 5"/><path d="M7 8.6h7M7 11.6h4"/></svg>Na sala de aula</h2>
-<p class="bloco-sub">9 momentos · 284 sugestões. Toque em cada momento para abrir.</p>
+<p class="bloco-sub">9 momentos · 304 sugestões. Toque em cada momento para abrir.</p>
 <details class="grupo">
-<summary><span>Quando o Murilo chega na sala</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
+<summary><span>Quando eu chego na sala</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
-<li><label><input type="checkbox" data-k="i4b2cee08cf"><span>O Murilo pode precisar de mais tempo para começar a atividade.</span></label></li>
-<li><label><input type="checkbox" data-k="i964da30159"><span>Ajude o Murilo a entrar nas atividades que parecem não interessar a ele.</span></label></li>
-<li><label><input type="checkbox" data-k="i892026c8c9"><span>Pergunte como foi a manhã dele e deixe que procure a orientação se precisar.</span></label></li>
-<li><label><input type="checkbox" data-k="iff65b6ac6e"><span>Deixe o Murilo sentado perto da frente da sala, para ajudar na atenção.</span></label></li>
-<li><label><input type="checkbox" data-k="i96071e0993"><span>Confira se o Murilo está preparado: ele está com o material necessário?</span></label></li>
-<li><label><input type="checkbox" data-k="i73b30c9434"><span>Cumprimente o Murilo com simpatia. Isso ajuda o dia dele a começar bem.</span></label></li>
-<li><label><input type="checkbox" data-k="i9ffd94d047"><span>Despedidas são difíceis para o Murilo — é uma das partes mais duras do dia dele.</span></label></li>
-<li><label><input type="checkbox" data-k="i48c42e3246"><span>Não apresse o Murilo na hora de se despedir.</span></label></li>
-<li><label><input type="checkbox" data-k="ia6748af7ae"><span>Entenda que o Murilo pode tentar segurar a família para não ir embora. Tranquilize dizendo que ele vai reencontrar todo mundo em breve.</span></label></li>
-<li><label><input type="checkbox" data-k="i197bcb133f"><span>Incentive o Murilo a ter interações positivas com os colegas.</span></label></li>
-<li><label><input type="checkbox" data-k="i0c2f103bab"><span>Cumprimente o Murilo e diga qual é a primeira coisa que ele deve fazer.</span></label></li>
-<li><label><input type="checkbox" data-k="id7d8c5ccad"><span>Deixe o Murilo guardar na mesa algo que o acalme (uma foto da família, um bichinho pequeno).</span></label></li>
-<li><label><input type="checkbox" data-k="ifc6bbbc4ac"><span>Relembre o que vocês fizeram na última aula.</span></label></li>
-<li><label><input type="checkbox" data-k="i1ce32cb8c5"><span>Diga o que o Murilo vai aprender hoje.</span></label></li>
-<li><label><input type="checkbox" data-k="i1ffbc84f6d"><span>Relembre as regras e as consequências que vocês combinaram.</span></label></li>
-<li><label><input type="checkbox" data-k="id02ddedf7b"><span>Dê poucas instruções de cada vez.</span></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="id484ef3230"><strong>Eu uso abafador de ruídos todos os dias. Confira se ele está comigo logo na chegada: é ele que preserva a minha concentração e a minha convivência com os colegas.</strong></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i0d7c4d74cd"><strong>Me mostre a rotina visual do dia e o quadro de regras assim que eu chego. Saber o que vem pela frente diminui muito a minha ansiedade diante de mudanças.</strong></label></li>
+<li><label><input type="checkbox" data-k="i62a9e745b0"><span>Eu posso precisar de mais tempo para começar a atividade.</span></label></li>
+<li><label><input type="checkbox" data-k="i615e8e0a21"><span>Me ajude a entrar nas atividades que parecem não me interessar.</span></label></li>
+<li><label><input type="checkbox" data-k="i8e8a25330c"><span>Pergunte como foi a minha manhã e me deixe procurar a orientação se eu precisar.</span></label></li>
+<li><label><input type="checkbox" data-k="id74d44696e"><span>Me deixe sentado perto da frente da sala, para ajudar na minha atenção.</span></label></li>
+<li><label><input type="checkbox" data-k="ie8672c05c5"><span>Confira se eu estou preparado: eu estou com o material necessário?</span></label></li>
+<li><label><input type="checkbox" data-k="i203d786acf"><span>Me cumprimente com simpatia. Isso ajuda o meu dia a começar bem.</span></label></li>
+<li><label><input type="checkbox" data-k="i22a4649b28"><span>Despedidas são difíceis para mim — é uma das partes mais duras do meu dia.</span></label></li>
+<li><label><input type="checkbox" data-k="ia90e284ae9"><span>Não me apresse na hora de me despedir.</span></label></li>
+<li><label><input type="checkbox" data-k="i1570bf33b9"><span>Entenda que eu posso tentar segurar a minha família para ela não ir embora. Me tranquilize dizendo que eu vou reencontrar todo mundo em breve.</span></label></li>
+<li><label><input type="checkbox" data-k="i0fa309033c"><span>Me incentive a ter interações positivas com os colegas.</span></label></li>
+<li><label><input type="checkbox" data-k="i34f394e039"><span>Me cumprimente e diga qual é a primeira coisa que eu devo fazer.</span></label></li>
+<li><label><input type="checkbox" data-k="i5d0d9b6a03"><span>Me deixe guardar na mesa algo que me acalme (uma foto da minha família, um bichinho pequeno).</span></label></li>
+<li><label><input type="checkbox" data-k="i5362fedbfd"><span>Relembre o que a gente fez na última aula.</span></label></li>
+<li><label><input type="checkbox" data-k="ie2753584c0"><span>Diga o que eu vou aprender hoje.</span></label></li>
+<li><label><input type="checkbox" data-k="i677fe6bd6a"><span>Relembre as regras e as consequências que a gente combinou.</span></label></li>
+<li><label><input type="checkbox" data-k="i487f68097a"><span>Me dê poucas instruções de cada vez.</span></label></li>
 <li><label><input type="checkbox" data-k="i33a995f42e"><span>Deixe visível o que vai acontecer hoje.</span></label></li>
-<li><label><input type="checkbox" data-k="i44299d0095"><span>Deixe o Murilo sentar perto de um colega que o ajude a começar.</span></label></li>
-<li><label><input type="checkbox" data-k="if44e2c9720"><span>Dê um sinal para o Murilo quando ele estiver indo bem no começo da aula.</span></label></li>
-<li><label><input type="checkbox" data-k="i6b413bba4f"><span>Deixe um bilhete na mesa dele dizendo o que ele precisa fazer nesta manhã.</span></label></li>
+<li><label><input type="checkbox" data-k="ibb3e287fc4"><span>Me deixe sentar perto de um colega que me ajude a começar.</span></label></li>
+<li><label><input type="checkbox" data-k="ied25597c59"><span>Me dê um sinal quando eu estiver indo bem no começo da aula.</span></label></li>
+<li><label><input type="checkbox" data-k="i01e7320976"><span>Deixe um bilhete na minha mesa dizendo o que eu preciso fazer nesta manhã.</span></label></li>
 <li><label><input type="checkbox" data-k="if6b6fe4bf8"><span>Deixe claras as regras da sala e da escola (ex.: não brigar, respeitar os outros).</span></label></li>
-<li><label><input type="checkbox" data-k="ie0dc25fd07"><span>Deixe as regras na parede ou em um lugar fácil de enxergar.</span></label></li>
-<li><label><input type="checkbox" data-k="i2e11d035f2"><span>Dê ao Murilo uma tarefa simples e rotineira para ajudar a turma (ex.: regar as plantas todo dia).</span></label></li>
-<li><label><input type="checkbox" data-k="i11bbb1427a"><span>Mantenha as mesmas regras todos os dias, para o Murilo saber o que esperar.</span></label></li>
-<li><label><input type="checkbox" data-k="ib0f54706e3"><span>Dê tempo para o Murilo se ajustar aos poucos.</span></label></li>
-<li><label><input type="checkbox" data-k="i51b03bd7dc"><span>Comece por uma atividade que você sabe que ele gosta e que prende a atenção dele.</span></label></li>
+<li><label><input type="checkbox" data-k="i1e0f25e793"><span>Deixe as regras na parede ou em um lugar fácil de eu enxergar.</span></label></li>
+<li><label><input type="checkbox" data-k="i191dffbefc"><span>Me dê uma tarefa simples e rotineira para ajudar a turma (ex.: regar as plantas todo dia).</span></label></li>
+<li><label><input type="checkbox" data-k="i4bb40f0cc9"><span>Mantenha as mesmas regras todos os dias, para eu saber o que esperar.</span></label></li>
+<li><label><input type="checkbox" data-k="ib1a510ef11"><span>Me dê tempo para eu me ajustar aos poucos.</span></label></li>
+<li><label><input type="checkbox" data-k="i7d4c576d71"><span>Comece por uma atividade que você sabe que eu gosto e que prende a minha atenção.</span></label></li>
 <li><label><input type="checkbox" data-k="id1b305c7d3"><span>Escreva a agenda do dia no quadro ou faça uma lista de “o que fazer”.</span></label></li>
-<li><label><input type="checkbox" data-k="i6dc62cfd39"><span>Dê tempo para o Murilo entrar na sala e se aquecer com você.</span></label></li>
-<li><label><input type="checkbox" data-k="ib2d692b5bb"><span>Deixe o Murilo seguir a rotina de sempre.</span></label></li>
-<li><label><input type="checkbox" data-k="i3bb89f02d9"><span>Tenha paciência: o Murilo pode demorar um pouco mais para se organizar.</span></label></li>
-<li><label><input type="checkbox" data-k="i06e3cf836c"><span>Se perceber o Murilo repetindo um movimento ou uma ação, mostre o nosso sinal combinado, que lembra ele de parar.</span></label></li>
-<li><label><input type="checkbox" data-k="i0c0c670560"><span>Relembre o que se espera dele na aula.</span></label></li>
-<li><label><input type="checkbox" data-k="i5513bfbad9"><span>Ajude o Murilo a organizar a mesa e o espaço dele.</span></label></li>
+<li><label><input type="checkbox" data-k="i0573aef8af"><span>Me dê tempo para entrar na sala e me aquecer com você.</span></label></li>
+<li><label><input type="checkbox" data-k="i3d401d144f"><span>Me deixe seguir a rotina de sempre.</span></label></li>
+<li><label><input type="checkbox" data-k="ib8030d07ba"><span>Tenha paciência: eu posso demorar um pouco mais para me organizar.</span></label></li>
+<li><label><input type="checkbox" data-k="id78062fa1f"><span>Se perceber que eu estou repetindo um movimento ou uma ação, me mostre o nosso sinal combinado, que me lembra de parar.</span></label></li>
+<li><label><input type="checkbox" data-k="ia69e7b8821"><span>Relembre o que se espera de mim na aula.</span></label></li>
+<li><label><input type="checkbox" data-k="i098f996394"><span>Me ajude a organizar a minha mesa e o meu espaço.</span></label></li>
 </ul></details>
 <details class="grupo">
-<summary><span>Quando o Murilo precisa lembrar das coisas</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
+<summary><span>Quando eu preciso lembrar das coisas</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
+<li class="destaque"><label><input type="checkbox" data-k="ic48e5f20db"><strong>Escreva na agenda escolar todos os dias. É por ela que a escola, a minha família e as minhas terapias se falam.</strong></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="ic59f861dd9"><strong>Me dê listas visuais para eu organizar sozinho o meu material. Eu estou aprendendo a fazer isso com autonomia.</strong></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="ic258e5e523"><strong>Desmembre tarefas de vários passos em etapas menores, com uma lista de checagem para eu ir marcando.</strong></label></li>
 <li><label><input type="checkbox" data-k="ifb9aa21f1a"><span>Deixe no quadro um lembrete das tarefas, testes e provas.</span></label></li>
-<li><label><input type="checkbox" data-k="i89a0eeb049"><span>Combine um colega-parceiro de tarefas e provas, que possa lembrar o Murilo depois da aula.</span></label></li>
-<li><label><input type="checkbox" data-k="i93d09f37e0"><span>Escreva na agenda do Murilo.</span></label></li>
-<li><label><input type="checkbox" data-k="ib97fff59fc"><span>Peça para o Murilo repetir as instruções, para conferir se ele entendeu.</span></label></li>
-<li><label><input type="checkbox" data-k="i53079b0729"><span>Dê ao Murilo uma cópia das instruções só para ele.</span></label></li>
-<li><label><input type="checkbox" data-k="i0f1c50485a"><span>Seja objetivo. É difícil para o Murilo absorver muita informação de uma vez.</span></label></li>
-<li><label><input type="checkbox" data-k="icbe9635dcd"><span>Avise o que o Murilo precisa trazer para a aula.</span></label></li>
-<li><label><input type="checkbox" data-k="i60d4e6e7ce"><span>Ajude o Murilo a anotar as tarefas na agenda.</span></label></li>
-<li><label><input type="checkbox" data-k="i2eda1b470b"><span>Ajude o Murilo a separar as tarefas em pastas com cores diferentes.</span></label></li>
-<li><label><input type="checkbox" data-k="i8445556b4a"><span>Use figuras para lembrar o Murilo das coisas.</span></label></li>
-<li><label><input type="checkbox" data-k="i461f479614"><span>Avise a turma inteira uma vez antes da aula acabar, para o Murilo não ficar em evidência.</span></label></li>
-<li><label><input type="checkbox" data-k="i9e5744b3d4"><span>Quando o Murilo lembrar do material, diga a ele que fez algo bem feito.</span></label></li>
-<li><label><input type="checkbox" data-k="ice70e9c526"><span>Escreva no quadro e peça para o Murilo copiar no caderno.</span></label></li>
-<li><label><input type="checkbox" data-k="i0d168d2abc"><span>Lembre de novo no fim do dia, antes de ele ir para casa.</span></label></li>
-<li><label><input type="checkbox" data-k="iac3ae220e0"><span>Peça para a família conferir e assinar a agenda todo dia.</span></label></li>
-<li><label><input type="checkbox" data-k="i9bf1e93266"><span>Deixe o Murilo ler em voz alta, repetidas vezes, aquilo que precisa lembrar.</span></label></li>
-<li><label><input type="checkbox" data-k="i118e238aa0"><span>Dê ao Murilo uma lista de checagem.</span></label></li>
-<li><label><input type="checkbox" data-k="i73ce8269aa"><span>Dê lembretes.</span></label></li>
+<li><label><input type="checkbox" data-k="i683360b5b1"><span>Combine um colega-parceiro de tarefas e provas, que possa me lembrar depois da aula.</span></label></li>
+<li><label><input type="checkbox" data-k="i68fbb3f6ab"><span>Escreva na minha agenda.</span></label></li>
+<li><label><input type="checkbox" data-k="if1fc68b037"><span>Me peça para repetir as instruções, para conferir se eu entendi.</span></label></li>
+<li><label><input type="checkbox" data-k="i6a9e625b59"><span>Me dê uma cópia das instruções só para mim.</span></label></li>
+<li><label><input type="checkbox" data-k="i01a91f017d"><span>Seja objetivo. É difícil para mim absorver muita informação de uma vez.</span></label></li>
+<li><label><input type="checkbox" data-k="icdf6255707"><span>Me avise o que eu preciso trazer para a aula.</span></label></li>
+<li><label><input type="checkbox" data-k="i5e70b2ddc4"><span>Me ajude a anotar as tarefas na agenda.</span></label></li>
+<li><label><input type="checkbox" data-k="ia7a582eb6b"><span>Me ajude a separar as tarefas em pastas com cores diferentes.</span></label></li>
+<li><label><input type="checkbox" data-k="i4cb4f01b50"><span>Use figuras para me lembrar das coisas.</span></label></li>
+<li><label><input type="checkbox" data-k="i8b2bd78f80"><span>Avise a turma inteira uma vez antes da aula acabar, para eu não ficar em evidência.</span></label></li>
+<li><label><input type="checkbox" data-k="ibfe94ddedb"><span>Quando eu lembrar do material, me diga que eu fiz algo bem feito.</span></label></li>
+<li><label><input type="checkbox" data-k="i501293f425"><span>Escreva no quadro e me peça para copiar no caderno.</span></label></li>
+<li><label><input type="checkbox" data-k="ia4fed4870a"><span>Me lembre de novo no fim do dia, antes de eu ir para casa.</span></label></li>
+<li><label><input type="checkbox" data-k="i002a163f4b"><span>Peça para a minha família conferir e assinar a agenda todo dia.</span></label></li>
+<li><label><input type="checkbox" data-k="i9e22204c7d"><span>Me deixe ler em voz alta, repetidas vezes, aquilo que eu preciso lembrar.</span></label></li>
+<li><label><input type="checkbox" data-k="i1a64d667a3"><span>Me dê uma lista de checagem.</span></label></li>
+<li><label><input type="checkbox" data-k="i948ecb6d27"><span>Me dê lembretes.</span></label></li>
 <li><label><input type="checkbox" data-k="i6ef3edb090"><span>Fale devagar e com clareza.</span></label></li>
-<li><label><input type="checkbox" data-k="i2923eae76e"><span>Confira se o Murilo está prestando atenção antes de falar com ele.</span></label></li>
+<li><label><input type="checkbox" data-k="i9eaf3c3e36"><span>Confira se eu estou prestando atenção antes de falar comigo.</span></label></li>
 <li><label><input type="checkbox" data-k="i249fc26b14"><span>Divida as tarefas em passos, sempre que possível.</span></label></li>
-<li><label><input type="checkbox" data-k="i5553618fc2"><span>Se o Murilo começar a ficar sobrecarregado, deixe que ele faça uma pausa.</span></label></li>
-<li><label><input type="checkbox" data-k="i1ef773471d"><span>Faça com o Murilo, antes de ele sair da aula, uma lista do material que vai precisar amanhã.</span></label></li>
-<li><label><input type="checkbox" data-k="iac1fb3419e"><span>Lembre em voz alta, antes de ele sair, o que vai precisar na próxima aula.</span></label></li>
-<li><label><input type="checkbox" data-k="i23dc3bf3a4"><span>Quando o Murilo esquece as coisas, ele fica muito chateado. Dê tempo para ele se recompor.</span></label></li>
-<li><label><input type="checkbox" data-k="i6077a28cc8"><span>Ofereça papel e lápis para o Murilo anotar.</span></label></li>
-<li><label><input type="checkbox" data-k="i13c5e3aabd"><span>Faça perguntas ao longo do dia sobre o que ele precisa lembrar.</span></label></li>
-<li><label><input type="checkbox" data-k="ib6c7336472"><span>Proponha uma meta (lembrar de uma ou duas coisas) e incentive com algo que ele goste.</span></label></li>
-<li><label><input type="checkbox" data-k="ie6e3b15331"><span>Se o Murilo precisar de um tempo fora da sala, aproveite para focar a atenção dele no que precisa lembrar.</span></label></li>
-<li><label><input type="checkbox" data-k="i6491a9bd21"><span>Se o Murilo esquecer o material da aula, empreste o que ele precisa para evitar conflito.</span></label></li>
-<li><label><input type="checkbox" data-k="i22778f4c08"><span>Talvez seja preciso lembrar o Murilo de anotar as tarefas.</span></label></li>
-<li><label><input type="checkbox" data-k="i45f2fe62fe"><span>Ensine o Murilo a montar uma lista de tarefas para a lição de casa.</span></label></li>
-<li><label><input type="checkbox" data-k="ie44affd84b"><span>Dê ao Murilo uma pasta para guardar o que ele precisa lembrar.</span></label></li>
-<li><label><input type="checkbox" data-k="id2559a3ed5"><span>Na hora de estudar, deixe o Murilo trabalhar com um colega para memorizar as coisas.</span></label></li>
-<li><label><input type="checkbox" data-k="i4362b92c51"><span>Lembre o Murilo de colocar as responsabilidades de estudante em ordem de prioridade.</span></label></li>
-<li><label><input type="checkbox" data-k="i69f44339fb"><span>Ajude o Murilo a perceber o que é urgente e o que pode esperar alguns dias.</span></label></li>
+<li><label><input type="checkbox" data-k="i0b2d3f52cb"><span>Se eu começar a ficar sobrecarregado, me deixe fazer uma pausa.</span></label></li>
+<li><label><input type="checkbox" data-k="icc68420876"><span>Faça comigo, antes de eu sair da aula, uma lista do material que eu vou precisar amanhã.</span></label></li>
+<li><label><input type="checkbox" data-k="id25763a98a"><span>Me lembre em voz alta, antes de eu sair, o que eu vou precisar na próxima aula.</span></label></li>
+<li><label><input type="checkbox" data-k="i64d2d14f55"><span>Quando eu esqueço as coisas, eu fico muito chateado. Me dê tempo para me recompor.</span></label></li>
+<li><label><input type="checkbox" data-k="ie4889ea478"><span>Me ofereça papel e lápis para eu anotar.</span></label></li>
+<li><label><input type="checkbox" data-k="i6c0bfc6b2c"><span>Me faça perguntas ao longo do dia sobre o que eu preciso lembrar.</span></label></li>
+<li><label><input type="checkbox" data-k="ib34be7fcb6"><span>Proponha uma meta (lembrar de uma ou duas coisas) e me incentive com algo que eu goste.</span></label></li>
+<li><label><input type="checkbox" data-k="i74cdc6b2cc"><span>Se eu precisar de um tempo fora da sala, aproveite para focar a minha atenção no que eu preciso lembrar.</span></label></li>
+<li><label><input type="checkbox" data-k="if2f5a9c3da"><span>Se eu esquecer o material da aula, me empreste o que eu preciso para evitar conflito.</span></label></li>
+<li><label><input type="checkbox" data-k="idab251dd55"><span>Talvez você precise me lembrar de anotar as tarefas.</span></label></li>
+<li><label><input type="checkbox" data-k="i017dc2949e"><span>Me ensine a montar uma lista de tarefas para a lição de casa.</span></label></li>
+<li><label><input type="checkbox" data-k="i5100578dcb"><span>Me dê uma pasta para guardar o que eu preciso lembrar.</span></label></li>
+<li><label><input type="checkbox" data-k="ib8ac6681d9"><span>Na hora de estudar, me deixe trabalhar com um colega para memorizar as coisas.</span></label></li>
+<li><label><input type="checkbox" data-k="ibd8942facc"><span>Me lembre de colocar as minhas responsabilidades de estudante em ordem de prioridade.</span></label></li>
+<li><label><input type="checkbox" data-k="i4b800a14e2"><span>Me ajude a perceber o que é urgente e o que pode esperar alguns dias.</span></label></li>
 </ul></details>
 <details class="grupo">
 <summary><span>Quando a turma tem uma roda de conversa</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
-<li><label><input type="checkbox" data-k="i562c8b36b5"><span>Elogie o Murilo quando ele contribuir com ideias.</span></label></li>
-<li><label><input type="checkbox" data-k="i213f190999"><span>Pergunte a opinião do Murilo se ele estiver quieto e sem participar.</span></label></li>
-<li><label><input type="checkbox" data-k="i774a5b0718"><span>Se for conversa em grupos pequenos, deixe o Murilo escolher o grupo dele.</span></label></li>
-<li><label><input type="checkbox" data-k="id21891815c"><span>Lembre o Murilo de deixar cada um dar a própria opinião.</span></label></li>
-<li><label><input type="checkbox" data-k="i05a6e24b0b"><span>Lembre o Murilo de deixar as outras pessoas falarem.</span></label></li>
-<li><label><input type="checkbox" data-k="i89289b58d7"><span>Lembre o Murilo de levantar a mão antes de falar.</span></label></li>
-<li><label><input type="checkbox" data-k="id175092629"><span>Garanta um momento para o Murilo falar.</span></label></li>
-<li><label><input type="checkbox" data-k="i895ce30160"><span>Entenda que é difícil para o Murilo ler as emoções das outras pessoas.</span></label></li>
-<li><label><input type="checkbox" data-k="icf484ae4e8"><span>Deixe o Murilo levantar a mão quando estiver pronto; evite chamá-lo quando ele não levantou a mão.</span></label></li>
-<li><label><input type="checkbox" data-k="ibbbe44ee80"><span>Deixe o Murilo escrever o que pensa e o que quer perguntar, se ainda não estiver pronto para falar na frente da turma.</span></label></li>
-<li><label><input type="checkbox" data-k="i6ca97b49b1"><span>Ofereça oportunidades de trabalho em grupos pequenos, onde ele se sente mais à vontade para falar.</span></label></li>
-<li><label><input type="checkbox" data-k="iaa651b2ba8"><span>Avise com antecedência quando vai ter roda de conversa e qual será o assunto.</span></label></li>
-<li><label><input type="checkbox" data-k="i6d8f75d7c3"><span>Avise que a vez dele de falar está chegando — pode ser tocando na mesa dele.</span></label></li>
-<li><label><input type="checkbox" data-k="i508d8a1ace"><span>Não apresse o Murilo: dê tempo para pensar e responder (20 segundos parecem muito tempo numa aula!).</span></label></li>
-<li><label><input type="checkbox" data-k="i90defccc0a"><span>Não descarte as ideias do Murilo.</span></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i0bd582d7b6"><strong>Fale comigo com comandos curtos, diretos e objetivos. Enunciados subjetivos ou muito longos dificultam a minha compreensão.</strong></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i787e606b91"><strong>Tem momentos em que eu recuso contato visual ou toque físico. Não é falta de educação: me diga com palavras claras o que você precisa e me dê um tempo.</strong></label></li>
+<li><label><input type="checkbox" data-k="id5ceb092c0"><span>Me elogie quando eu contribuir com ideias.</span></label></li>
+<li><label><input type="checkbox" data-k="i752bb0a764"><span>Pergunte a minha opinião se eu estiver quieto e sem participar.</span></label></li>
+<li><label><input type="checkbox" data-k="id456fe27d9"><span>Se for conversa em grupos pequenos, me deixe escolher o meu grupo.</span></label></li>
+<li><label><input type="checkbox" data-k="i75c012e150"><span>Me lembre de deixar cada um dar a própria opinião.</span></label></li>
+<li><label><input type="checkbox" data-k="i321cc53a84"><span>Me lembre de deixar as outras pessoas falarem.</span></label></li>
+<li><label><input type="checkbox" data-k="i65ae6f5c50"><span>Me lembre de levantar a mão antes de falar.</span></label></li>
+<li><label><input type="checkbox" data-k="i90a3441753"><span>Garanta um momento para eu falar.</span></label></li>
+<li><label><input type="checkbox" data-k="ifb0c28925d"><span>Entenda que é difícil para mim ler as emoções das outras pessoas.</span></label></li>
+<li><label><input type="checkbox" data-k="i276e96e709"><span>Me deixe levantar a mão quando eu estiver pronto; evite me chamar quando eu não levantei a mão.</span></label></li>
+<li><label><input type="checkbox" data-k="ica215ac5e9"><span>Me deixe escrever o que eu penso e o que eu quero perguntar, se eu ainda não estiver pronto para falar na frente da turma.</span></label></li>
+<li><label><input type="checkbox" data-k="i3054e01df1"><span>Me ofereça oportunidades de trabalho em grupos pequenos, onde eu me sinto mais à vontade para falar.</span></label></li>
+<li><label><input type="checkbox" data-k="i5e05c25377"><span>Me avise com antecedência quando vai ter roda de conversa e qual será o assunto.</span></label></li>
+<li><label><input type="checkbox" data-k="ic9868c8c40"><span>Me avise que a minha vez de falar está chegando — pode ser tocando na minha mesa.</span></label></li>
+<li><label><input type="checkbox" data-k="i0dbe81f69e"><span>Não me apresse: me dê tempo para pensar e responder (20 segundos parecem muito tempo numa aula!).</span></label></li>
+<li><label><input type="checkbox" data-k="i0270e5b521"><span>Não descarte as minhas ideias.</span></label></li>
 <li><label><input type="checkbox" data-k="i811c192f1f"><span>Relembre as regras da conversa antes de começar.</span></label></li>
 <li><label><input type="checkbox" data-k="i0399358151"><span>Relembre as regras da conversa para a turma inteira.</span></label></li>
-<li><label><input type="checkbox" data-k="i94936a6c8c"><span>Dê um sinal ao Murilo se ele começar a perder o controle.</span></label></li>
-<li><label><input type="checkbox" data-k="i346c533ec3"><span>Ajude o Murilo a completar ou explicar melhor o que ele está dizendo.</span></label></li>
-<li><label><input type="checkbox" data-k="i2ea33009c3"><span>Dê retorno positivo quando o Murilo entrar na conversa.</span></label></li>
-<li><label><input type="checkbox" data-k="ie171f01496"><span>Faça ao Murilo perguntas que você tem certeza de que ele sabe responder.</span></label></li>
+<li><label><input type="checkbox" data-k="ie16de2f0d9"><span>Me dê um sinal se eu começar a perder o controle.</span></label></li>
+<li><label><input type="checkbox" data-k="i5c77de03d1"><span>Me ajude a completar ou explicar melhor o que eu estou dizendo.</span></label></li>
+<li><label><input type="checkbox" data-k="idd16e3a7ca"><span>Me dê retorno positivo quando eu entrar na conversa.</span></label></li>
+<li><label><input type="checkbox" data-k="i9eb3c55efc"><span>Me faça perguntas que você tem certeza de que eu sei responder.</span></label></li>
 <li><label><input type="checkbox" data-k="ib26e899e3c"><span>Anuncie as regras antes de começar a conversa (ex.: levantar a mão para falar).</span></label></li>
-<li><label><input type="checkbox" data-k="i1641436e72"><span>Lembre o Murilo de levantar a mão quando quiser compartilhar algo.</span></label></li>
-<li><label><input type="checkbox" data-k="i5aa636ef68"><span>Faça uma pergunta ao Murilo de vez em quando, para confirmar que ele está acompanhando.</span></label></li>
-<li><label><input type="checkbox" data-k="if81a3f61f8"><span>Se o Murilo se empolgar com o assunto, lembre ele de ficar no lugar e esperar a vez.</span></label></li>
-<li><label><input type="checkbox" data-k="ieeb336094a"><span>Se ele começar a ficar sobrecarregado, deixe fazer uma pausa.</span></label></li>
-<li><label><input type="checkbox" data-k="i7726580de4"><span>O Murilo pode repetir frases várias vezes; mostre o nosso sinal combinado para lembrá-lo de parar.</span></label></li>
-<li><label><input type="checkbox" data-k="i74aee80658"><span>Se for fazer uma pergunta ao Murilo, fique perto da mesa dele, para ele entender que a pergunta é para ele.</span></label></li>
-<li><label><input type="checkbox" data-k="i9df9698d8d"><span>Há momentos em que é difícil para o Murilo se concentrar (ele se distrai com os próprios pensamentos). Se puder, entregue um roteiro da conversa.</span></label></li>
+<li><label><input type="checkbox" data-k="ic1239627a5"><span>Me lembre de levantar a mão quando eu quiser compartilhar algo.</span></label></li>
+<li><label><input type="checkbox" data-k="ied6b2ffcca"><span>Me faça uma pergunta de vez em quando, para confirmar que eu estou acompanhando.</span></label></li>
+<li><label><input type="checkbox" data-k="iede1af425b"><span>Se eu me empolgar com o assunto, me lembre de ficar no lugar e esperar a minha vez.</span></label></li>
+<li><label><input type="checkbox" data-k="i0b2d3f52cb"><span>Se eu começar a ficar sobrecarregado, me deixe fazer uma pausa.</span></label></li>
+<li><label><input type="checkbox" data-k="i8ed01390a5"><span>Eu posso repetir frases várias vezes; me mostre o nosso sinal combinado para me lembrar de parar.</span></label></li>
+<li><label><input type="checkbox" data-k="id6557ca6bf"><span>Se for me fazer uma pergunta, fique perto da minha mesa, para eu entender que a pergunta é para mim.</span></label></li>
+<li><label><input type="checkbox" data-k="ia1b923d0ee"><span>Há momentos em que é difícil para mim me concentrar (eu me distraio com os meus próprios pensamentos). Se puder, me entregue um roteiro da conversa.</span></label></li>
 <li><label><input type="checkbox" data-k="i6ff02144eb"><span>Relembre o que se espera (levantar a mão, não gritar).</span></label></li>
-<li><label><input type="checkbox" data-k="ia209755cf6"><span>Se o Murilo ficar sobrecarregado de estímulos, peça que ele tire um tempo.</span></label></li>
-<li><label><input type="checkbox" data-k="i902b53ee6d"><span>Ofereça algo para ocupar as mãos dele (colorir, desenhar).</span></label></li>
-<li><label><input type="checkbox" data-k="if905a4bbf0"><span>Peça ao Murilo para escrever no quadro as respostas dos colegas.</span></label></li>
+<li><label><input type="checkbox" data-k="i07f64e0fb1"><span>Se eu ficar sobrecarregado de estímulos, me peça para tirar um tempo.</span></label></li>
+<li><label><input type="checkbox" data-k="i3bad633afd"><span>Me ofereça algo para ocupar as minhas mãos (colorir, desenhar).</span></label></li>
+<li><label><input type="checkbox" data-k="i9700138e15"><span>Me peça para escrever no quadro as respostas dos colegas.</span></label></li>
 <li><label><input type="checkbox" data-k="ia03b358d68"><span>Use um objeto para marcar quem tem a vez de falar: só fala quem está com o objeto.</span></label></li>
-<li><label><input type="checkbox" data-k="ia609817e01"><span>Tenha paciência: às vezes o Murilo não encontra as palavras certas para explicar algo.</span></label></li>
-<li><label><input type="checkbox" data-k="if33da36062"><span>Incentive o Murilo a participar da conversa e a fazer perguntas.</span></label></li>
+<li><label><input type="checkbox" data-k="i81ba3a6656"><span>Tenha paciência: às vezes eu não encontro as palavras certas para explicar algo.</span></label></li>
+<li><label><input type="checkbox" data-k="i85036ebf9b"><span>Me incentive a participar da conversa e a fazer perguntas.</span></label></li>
 <li><label><input type="checkbox" data-k="i14ec982ab7"><span>Incentive toda a turma a respeitar o que cada colega diz.</span></label></li>
 </ul></details>
 <details class="grupo">
-<summary><span>Quando o Murilo precisa escutar por muito tempo</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
+<summary><span>Quando eu preciso escutar por muito tempo</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
-<li><label><input type="checkbox" data-k="ib108a7fbcd"><span>Faça perguntas ao Murilo, para ajudar ele a se concentrar e manter o foco.</span></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="if5bb5c3273"><strong>Me deixe usar o abafador de ruídos sempre que o ambiente ficar barulhento demais.</strong></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i9758f6f2b2"><strong>Eu tenho bastante agitação motora. Planeje pausas regulares e combinadas para eu me movimentar: eu volto muito mais focado depois.</strong></label></li>
+<li><label><input type="checkbox" data-k="if214de7477"><span>Me faça perguntas, para me ajudar a me concentrar e manter o foco.</span></label></li>
 <li><label><input type="checkbox" data-k="i0a8b80b56b"><span>Dê tempo para pausas durante os períodos longos.</span></label></li>
 <li><label><input type="checkbox" data-k="i3f2e599a48"><span>Imprima uma cópia das suas anotações ou dos slides, se você estiver apresentando.</span></label></li>
-<li><label><input type="checkbox" data-k="i7a5e08c1cb"><span>Ajude o Murilo a se manter no assunto.</span></label></li>
-<li><label><input type="checkbox" data-k="i93d57650c8"><span>Ajude o Murilo a olhar para quem está falando.</span></label></li>
-<li><label><input type="checkbox" data-k="i89289b58d7"><span>Lembre o Murilo de levantar a mão antes de falar.</span></label></li>
-<li><label><input type="checkbox" data-k="i5441fe7f62"><span>Entenda que o Murilo fica ansioso; aprenda os sinais não verbais dele e veja se ele precisa beber água ou dar uma saída.</span></label></li>
+<li><label><input type="checkbox" data-k="i91d715211b"><span>Me ajude a me manter no assunto.</span></label></li>
+<li><label><input type="checkbox" data-k="i0879809604"><span>Me ajude a olhar para quem está falando.</span></label></li>
+<li><label><input type="checkbox" data-k="i65ae6f5c50"><span>Me lembre de levantar a mão antes de falar.</span></label></li>
+<li><label><input type="checkbox" data-k="if0ade0c08d"><span>Entenda que eu fico ansioso; aprenda os meus sinais não verbais e veja se eu preciso beber água ou dar uma saída.</span></label></li>
 <li><label><input type="checkbox" data-k="id4be054f23"><span>Diga o que vai acontecer depois.</span></label></li>
-<li><label><input type="checkbox" data-k="i1de6bd3bb7"><span>As pausas são importantes para o Murilo. Ele vai usar o nosso sinal quando precisar de uma.</span></label></li>
-<li><label><input type="checkbox" data-k="i696f2f060c"><span>Dê algo para o Murilo olhar enquanto você fala, que combine com o assunto.</span></label></li>
-<li><label><input type="checkbox" data-k="i45622c37c1"><span>Deixe o Murilo escrever ou desenhar sobre o que você está falando.</span></label></li>
-<li><label><input type="checkbox" data-k="i344a059366"><span>Avise quando estiver quase acabando a atividade.</span></label></li>
-<li><label><input type="checkbox" data-k="ib097e6f52a"><span>Deixe o Murilo levantar e se movimentar quando precisar.</span></label></li>
-<li><label><input type="checkbox" data-k="i03c90a5e87"><span>Dê uma pequena pausa para a turma inteira, para o Murilo não ficar em evidência.</span></label></li>
-<li><label><input type="checkbox" data-k="iea5c0c87d3"><span>Combine um sinal discreto que o Murilo possa usar quando começar a ficar bravo.</span></label></li>
+<li><label><input type="checkbox" data-k="i00814d5b9e"><span>As pausas são importantes para mim. Eu vou usar o nosso sinal quando precisar de uma.</span></label></li>
+<li><label><input type="checkbox" data-k="i7923907656"><span>Me dê algo para olhar enquanto você fala, que combine com o assunto.</span></label></li>
+<li><label><input type="checkbox" data-k="i2b592fbf59"><span>Me deixe escrever ou desenhar sobre o que você está falando.</span></label></li>
+<li><label><input type="checkbox" data-k="if4bd4a4423"><span>Me avise quando estiver quase acabando a atividade.</span></label></li>
+<li><label><input type="checkbox" data-k="i757ae11f16"><span>Me deixe levantar e me movimentar quando eu precisar.</span></label></li>
+<li><label><input type="checkbox" data-k="i8b2c41c1d4"><span>Dê uma pequena pausa para a turma inteira, para eu não ficar em evidência.</span></label></li>
+<li><label><input type="checkbox" data-k="i835cdc2233"><span>Combine um sinal discreto que eu possa usar quando começar a ficar bravo.</span></label></li>
 <li><label><input type="checkbox" data-k="i89bff02606"><span>Varie a forma de explicar, não só falando (ex.: usar gestos, mudar o tom de voz).</span></label></li>
 <li><label><input type="checkbox" data-k="ia6288b40d2"><span>Divida uma explicação longa em partes curtas.</span></label></li>
-<li><label><input type="checkbox" data-k="i30f5a9ea7a"><span>Diga por quanto tempo ele vai precisar escutar.</span></label></li>
-<li><label><input type="checkbox" data-k="i300321b7fd"><span>Diga o que vem depois, para o Murilo ter algo a que se apegar.</span></label></li>
-<li><label><input type="checkbox" data-k="ie4704e4aea"><span>Toque na mesa dele ou passe por perto se parecer que ele não está acompanhando.</span></label></li>
-<li><label><input type="checkbox" data-k="ib4dc9f01c1"><span>Dê algo para o Murilo focar (uma figura, um objeto).</span></label></li>
-<li><label><input type="checkbox" data-k="i9da633e6ce"><span>Avise antes quando ele vai precisar ficar sentado por muito tempo.</span></label></li>
-<li><label><input type="checkbox" data-k="idb6d43c9ba"><span>Se perceber o Murilo levantando e sentando, tente ignorar ou apenas coloque a mão no ombro dele, lembrando do combinado.</span></label></li>
-<li><label><input type="checkbox" data-k="ib846e47842"><span>Ofereça outra coisa para ele fazer enquanto escuta (desenhar, colorir).</span></label></li>
-<li><label><input type="checkbox" data-k="if17a4755fd"><span>Proponha uma meta com um incentivo para alcançar.</span></label></li>
-<li><label><input type="checkbox" data-k="i2d94582e30"><span>Sente o Murilo longe dos colegas que o distraem.</span></label></li>
-<li><label><input type="checkbox" data-k="i89e782392b"><span>O Murilo pode tentar chamar sua atenção fazendo coisas que não deveria. Se possível, ignore esse comportamento.</span></label></li>
-<li><label><input type="checkbox" data-k="i30319f73df"><span>O Murilo pode precisar de incentivo para ficar sentado e prestando atenção por muito tempo.</span></label></li>
-<li><label><input type="checkbox" data-k="i0d5f28e6d0"><span>Fique por perto dele, isso ajuda o Murilo a manter o foco.</span></label></li>
-<li><label><input type="checkbox" data-k="i87cb15c3e5"><span>Dê ao Murilo um resumo escrito do que está sendo falado, para ele acompanhar.</span></label></li>
-<li><label><input type="checkbox" data-k="i30d7b5d8fc"><span>Vamos combinar um sinal para o Murilo avisar quando estiver sobrecarregado e precisar de uma pausa.</span></label></li>
+<li><label><input type="checkbox" data-k="id0dc9233f0"><span>Diga por quanto tempo eu vou precisar escutar.</span></label></li>
+<li><label><input type="checkbox" data-k="i6b308c23c5"><span>Diga o que vem depois, para eu ter algo a que me apegar.</span></label></li>
+<li><label><input type="checkbox" data-k="ida99520361"><span>Toque na minha mesa ou passe por perto se parecer que eu não estou acompanhando.</span></label></li>
+<li><label><input type="checkbox" data-k="i0e832bb761"><span>Me dê algo para focar (uma figura, um objeto).</span></label></li>
+<li><label><input type="checkbox" data-k="i175e98ccfe"><span>Me avise antes quando eu vou precisar ficar sentado por muito tempo.</span></label></li>
+<li><label><input type="checkbox" data-k="i23cf80857a"><span>Se perceber que eu estou levantando e sentando, tente ignorar ou apenas coloque a mão no meu ombro, me lembrando do combinado.</span></label></li>
+<li><label><input type="checkbox" data-k="i72b0ee66bd"><span>Me ofereça outra coisa para fazer enquanto eu escuto (desenhar, colorir).</span></label></li>
+<li><label><input type="checkbox" data-k="ib45ce47876"><span>Me proponha uma meta com um incentivo para alcançar.</span></label></li>
+<li><label><input type="checkbox" data-k="ie3a6506d3f"><span>Me sente longe dos colegas que me distraem.</span></label></li>
+<li><label><input type="checkbox" data-k="ia7a4caa891"><span>Eu posso tentar chamar a sua atenção fazendo coisas que não deveria. Se possível, ignore esse comportamento.</span></label></li>
+<li><label><input type="checkbox" data-k="i208cd0cdd0"><span>Eu posso precisar de incentivo para ficar sentado e prestando atenção por muito tempo.</span></label></li>
+<li><label><input type="checkbox" data-k="ic139017d43"><span>Fique por perto de mim, isso me ajuda a manter o foco.</span></label></li>
+<li><label><input type="checkbox" data-k="i6f35f3654f"><span>Me dê um resumo escrito do que está sendo falado, para eu acompanhar.</span></label></li>
+<li><label><input type="checkbox" data-k="i2d2f7fc106"><span>Vamos combinar um sinal para eu avisar quando estiver sobrecarregado e precisar de uma pausa.</span></label></li>
 </ul></details>
 <details class="grupo">
 <summary><span>Quando é hora de ficar em silêncio (leitura)</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
-<li><label><input type="checkbox" data-k="i4a2821f76e"><span>Reserve um tempo para conversar sobre a leitura com o Murilo.</span></label></li>
-<li><label><input type="checkbox" data-k="ia6bb511424"><span>Confira se o Murilo está na atividade.</span></label></li>
-<li><label><input type="checkbox" data-k="i4b6ed6efd0"><span>Ajude o Murilo a achar um lugar tranquilo para ler em silêncio, sem distrações.</span></label></li>
-<li><label><input type="checkbox" data-k="i385638f296"><span>Deixe o Murilo trabalhar sozinho em um canto que seja só dele.</span></label></li>
-<li><label><input type="checkbox" data-k="ia4c9a635b3"><span>O silêncio pode fazer o Murilo ter pensamentos assustadores. Tudo bem passar perto e perguntar se ele está bem de vez em quando.</span></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="idf1a95323f"><strong>Letras e números são o meu hiperfoco. Puxe a leitura por aí — jogos de letras, cartões e materiais concretos me prendem de verdade.</strong></label></li>
+<li><label><input type="checkbox" data-k="icc0efb1b51"><span>Reserve um tempo para conversar sobre a leitura comigo.</span></label></li>
+<li><label><input type="checkbox" data-k="i60ede24594"><span>Confira se eu estou na atividade.</span></label></li>
+<li><label><input type="checkbox" data-k="i6b755f9e9a"><span>Me ajude a achar um lugar tranquilo para ler em silêncio, sem distrações.</span></label></li>
+<li><label><input type="checkbox" data-k="i54918da9ab"><span>Me deixe trabalhar sozinho em um canto que seja só meu.</span></label></li>
+<li><label><input type="checkbox" data-k="ia4c755c77b"><span>O silêncio pode me fazer ter pensamentos assustadores. Tudo bem passar perto e me perguntar se eu estou bem de vez em quando.</span></label></li>
 <li><label><input type="checkbox" data-k="i654ecf9f13"><span>Diga por quanto tempo vai durar a leitura.</span></label></li>
-<li><label><input type="checkbox" data-k="i59b14a526c"><span>Diga o que vem depois da leitura, para o Murilo se preparar.</span></label></li>
+<li><label><input type="checkbox" data-k="if74c4e2119"><span>Diga o que vem depois da leitura, para eu me preparar.</span></label></li>
 <li><label><input type="checkbox" data-k="i5cbb64fc6a"><span>Deixe a leitura silenciosa sempre no mesmo horário do dia.</span></label></li>
 <li><label><input type="checkbox" data-k="iff0bb9bfd2"><span>Mantenha dicionários e materiais de apoio por perto.</span></label></li>
-<li><label><input type="checkbox" data-k="i60b6af5047"><span>Podemos combinar quantas vezes o Murilo pode falar durante a leitura.</span></label></li>
-<li><label><input type="checkbox" data-k="i856bc129e0"><span>Deixe o Murilo escolher o que quer ler.</span></label></li>
-<li><label><input type="checkbox" data-k="i1f8e9ac9a0"><span>Ofereça opções de leitura.</span></label></li>
-<li><label><input type="checkbox" data-k="i1c075c87db"><span>Ajude o Murilo a encontrar algo que o interesse.</span></label></li>
-<li><label><input type="checkbox" data-k="i676d275382"><span>Combine um sinal discreto para o Murilo avisar quando sentir que vai perder o controle.</span></label></li>
-<li><label><input type="checkbox" data-k="i22765c7416"><span>Coloque o Murilo com um colega que lê bem e pode ajudá-lo.</span></label></li>
-<li><label><input type="checkbox" data-k="i48ff39a9a7"><span>Ensine dicas de leitura ao Murilo (ex.: acompanhar com o dedo a palavra ou a frase).</span></label></li>
+<li><label><input type="checkbox" data-k="i1b4fa9311a"><span>A gente pode combinar quantas vezes eu posso falar durante a leitura.</span></label></li>
+<li><label><input type="checkbox" data-k="i3117ecebe7"><span>Me deixe escolher o que eu quero ler.</span></label></li>
+<li><label><input type="checkbox" data-k="ia011771472"><span>Me ofereça opções de leitura.</span></label></li>
+<li><label><input type="checkbox" data-k="ife8c7b162b"><span>Me ajude a encontrar algo que me interesse.</span></label></li>
+<li><label><input type="checkbox" data-k="id30d6e4ba5"><span>Combine um sinal discreto para eu avisar quando sentir que vou perder o controle.</span></label></li>
+<li><label><input type="checkbox" data-k="if7af1abad4"><span>Me coloque com um colega que lê bem e pode me ajudar.</span></label></li>
+<li><label><input type="checkbox" data-k="ibe846484f4"><span>Me ensine dicas de leitura (ex.: acompanhar com o dedo a palavra ou a frase).</span></label></li>
 <li><label><input type="checkbox" data-k="i89f2e6d91f"><span>Mantenha a sala silenciosa, sem outras distrações.</span></label></li>
-<li><label><input type="checkbox" data-k="i198b457978"><span>Fique atento para confirmar que o Murilo está lendo mesmo.</span></label></li>
-<li><label><input type="checkbox" data-k="ie6a8471f4a"><span>Dê ao Murilo uma bolinha antiestresse ou algo silencioso, para ele não bater os dedos nem se mexer tanto.</span></label></li>
-<li><label><input type="checkbox" data-k="ib141dbf5be"><span>Ajude o Murilo a escolher um livro que ele goste.</span></label></li>
-<li><label><input type="checkbox" data-k="ie0a683bcf0"><span>Diga por quanto tempo ele precisa ficar em silêncio e deixe que ele acompanhe no relógio.</span></label></li>
-<li><label><input type="checkbox" data-k="i29cfeb2dbb"><span>Se o Murilo começar a falar, avise uma vez.</span></label></li>
-<li><label><input type="checkbox" data-k="if36b38cbb3"><span>O Murilo vai tentar ficar quieto, mas às vezes precisa repetir coisas ou fazer algo várias vezes. Mostre o nosso sinal combinado para lembrá-lo.</span></label></li>
-<li><label><input type="checkbox" data-k="idfbea2941d"><span>Avise sempre quando ele vai precisar ficar em silêncio por muito tempo, para ele se preparar.</span></label></li>
-<li><label><input type="checkbox" data-k="i14e5ebee60"><span>Deixe o Murilo usar o timer do relógio dele: ele marca o tempo combinado e sabe quando acaba.</span></label></li>
+<li><label><input type="checkbox" data-k="i29723b4d16"><span>Fique atento para confirmar que eu estou lendo mesmo.</span></label></li>
+<li><label><input type="checkbox" data-k="i888d01055a"><span>Me dê uma bolinha antiestresse ou algo silencioso, para eu não bater os dedos nem me mexer tanto.</span></label></li>
+<li><label><input type="checkbox" data-k="i135b960601"><span>Me ajude a escolher um livro que eu goste.</span></label></li>
+<li><label><input type="checkbox" data-k="ie4f01ad4fb"><span>Diga por quanto tempo eu preciso ficar em silêncio e me deixe acompanhar no relógio.</span></label></li>
+<li><label><input type="checkbox" data-k="ib5312552bb"><span>Se eu começar a falar, me avise uma vez.</span></label></li>
+<li><label><input type="checkbox" data-k="iaa47f4ed1d"><span>Eu vou tentar ficar quieto, mas às vezes eu preciso repetir coisas ou fazer algo várias vezes. Me mostre o nosso sinal combinado para me lembrar.</span></label></li>
+<li><label><input type="checkbox" data-k="ia55bc69d5c"><span>Me avise sempre quando eu vou precisar ficar em silêncio por muito tempo, para eu me preparar.</span></label></li>
+<li><label><input type="checkbox" data-k="ic9694302e1"><span>Me deixe usar o timer do meu relógio: eu marco o tempo combinado e sei quando acaba.</span></label></li>
 <li><label><input type="checkbox" data-k="i02b5c36d90"><span>Explique o que se espera e como fazer a atividade.</span></label></li>
-<li><label><input type="checkbox" data-k="ibaa2b5afdc"><span>Ofereça pausas curtas e frequentes.</span></label></li>
-<li><label><input type="checkbox" data-k="ib974ca01e6"><span>Ofereça algo para manter as mãos ocupadas (massinha, bolinha antiestresse).</span></label></li>
-<li><label><input type="checkbox" data-k="ief892f002e"><span>Dê uma meta para o Murilo se manter mais focado.</span></label></li>
-<li><label><input type="checkbox" data-k="i80c61a95bd"><span>Saiba que o Murilo pode precisar de ajuda com a leitura.</span></label></li>
-<li><label><input type="checkbox" data-k="i32c29bbb2a"><span>Se a ansiedade dele estiver alta, ele pode precisar de uma pausa ou de ir até a sala da saúde.</span></label></li>
+<li><label><input type="checkbox" data-k="id0bcfef099"><span>Me ofereça pausas curtas e frequentes.</span></label></li>
+<li><label><input type="checkbox" data-k="if04e692214"><span>Me ofereça algo para manter as minhas mãos ocupadas (massinha, bolinha antiestresse).</span></label></li>
+<li><label><input type="checkbox" data-k="i9eddcd086c"><span>Me dê uma meta para eu me manter mais focado.</span></label></li>
+<li><label><input type="checkbox" data-k="i4da5888315"><span>Saiba que eu posso precisar de ajuda com a leitura.</span></label></li>
+<li><label><input type="checkbox" data-k="i68dff1d802"><span>Se a minha ansiedade estiver alta, eu posso precisar de uma pausa ou de ir até a sala da saúde.</span></label></li>
 </ul></details>
 <details class="grupo">
-<summary><span>Quando o Murilo faz uma prova</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
+<summary><span>Quando eu faço uma prova</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
-<li><label><input type="checkbox" data-k="ifca6302e92"><span>Dê tempo extra para o Murilo terminar a prova.</span></label></li>
-<li><label><input type="checkbox" data-k="i5406962057"><span>Leia as perguntas para o Murilo e anote as respostas dele.</span></label></li>
-<li><label><input type="checkbox" data-k="i7fd1720458"><span>Sempre que possível, ofereça as questões dissertativas em formato de múltipla escolha, para ele conseguir se concentrar.</span></label></li>
-<li><label><input type="checkbox" data-k="i8158b4fd9e"><span>Ajude o Murilo a achar um lugar confortável e silencioso.</span></label></li>
-<li><label><input type="checkbox" data-k="if6d8154eec"><span>Leia todas as instruções com ele antes de começar.</span></label></li>
-<li><label><input type="checkbox" data-k="i19c376c517"><span>Cuidado com as conversas na sala: ajuda muito avisar o Murilo quando você precisar falar baixo com alguém e garantir que não é sobre ele.</span></label></li>
-<li><label><input type="checkbox" data-k="i4874d23d46"><span>Ajude o Murilo a montar um guia de estudos, ou entregue um pronto.</span></label></li>
-<li><label><input type="checkbox" data-k="ic3f9d412d9"><span>Faça as questões da prova parecidas com as que vocês treinaram.</span></label></li>
-<li><label><input type="checkbox" data-k="ia056ed8f73"><span>Deixe o Murilo fazer a prova em outra sala se ele estiver com dificuldade de controlar as emoções.</span></label></li>
-<li><label><input type="checkbox" data-k="i9f55e69a67"><span>Diga ao Murilo quando ele estiver indo bem.</span></label></li>
-<li><label><input type="checkbox" data-k="iabef28bdca"><span>Lembre quanto tempo ainda falta durante a prova.</span></label></li>
-<li><label><input type="checkbox" data-k="iee292a6eca"><span>Explique a pergunta quando ele tiver dificuldade de entender o enunciado.</span></label></li>
-<li><label><input type="checkbox" data-k="i0e67d8bfd0"><span>Se for preciso, disponibilize uma sala só para o Murilo fazer a prova.</span></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i2d8ffa80e4"><strong>Use enunciados curtos e objetivos. Em matemática, o que me trava costuma ser interpretar o problema, não fazer a conta.</strong></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="icedb0db6ce"><strong>Na matemática, principalmente na divisão, eu preciso de material concreto e apoio visual.</strong></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="ib15809df2b"><strong>Divida as questões de vários passos em etapas menores, com uma lista de checagem.</strong></label></li>
+<li><label><input type="checkbox" data-k="i106dbf7713"><span>Me dê tempo extra para terminar a prova.</span></label></li>
+<li><label><input type="checkbox" data-k="ie38b3f32ce"><span>Leia as perguntas para mim e anote as minhas respostas.</span></label></li>
+<li><label><input type="checkbox" data-k="if29b01f5d7"><span>Sempre que possível, me ofereça as questões dissertativas em formato de múltipla escolha, para eu conseguir me concentrar.</span></label></li>
+<li><label><input type="checkbox" data-k="ia5cd501ec6"><span>Me ajude a achar um lugar confortável e silencioso.</span></label></li>
+<li><label><input type="checkbox" data-k="i4297d2c0b3"><span>Leia todas as instruções comigo antes de começar.</span></label></li>
+<li><label><input type="checkbox" data-k="i8ea157dd9b"><span>Cuidado com as conversas na sala: me ajuda muito quando você avisa que precisa falar baixo com alguém e garante que não é sobre mim.</span></label></li>
+<li><label><input type="checkbox" data-k="ide9797f07e"><span>Me ajude a montar um guia de estudos, ou me entregue um pronto.</span></label></li>
+<li><label><input type="checkbox" data-k="ia1ed412328"><span>Faça as questões da prova parecidas com as que a gente treinou.</span></label></li>
+<li><label><input type="checkbox" data-k="if9bdcf4336"><span>Me deixe fazer a prova em outra sala se eu estiver com dificuldade de controlar as minhas emoções.</span></label></li>
+<li><label><input type="checkbox" data-k="idd7e3fc3b4"><span>Me diga quando eu estiver indo bem.</span></label></li>
+<li><label><input type="checkbox" data-k="i75374b1085"><span>Me lembre quanto tempo ainda falta durante a prova.</span></label></li>
+<li><label><input type="checkbox" data-k="i5d5e519d9d"><span>Explique a pergunta quando eu tiver dificuldade de entender o enunciado.</span></label></li>
+<li><label><input type="checkbox" data-k="i9cfe9f5e74"><span>Se for preciso, disponibilize uma sala só para eu fazer a prova.</span></label></li>
 <li><label><input type="checkbox" data-k="i76887174a0"><span>Anuncie a duração e as regras da prova antes de começar.</span></label></li>
-<li><label><input type="checkbox" data-k="i1d42773c8f"><span>Peça ao Murilo para revisar as respostas antes de entregar.</span></label></li>
-<li><label><input type="checkbox" data-k="i7e1038ebd8"><span>Avise se o Murilo deixou alguma questão em branco.</span></label></li>
-<li><label><input type="checkbox" data-k="i8a7dcde0d6"><span>Divida a prova em partes, para o Murilo não ficar sobrecarregado.</span></label></li>
-<li><label><input type="checkbox" data-k="i309e03f3c7"><span>Ofereça pausas de dois minutos a cada parte concluída.</span></label></li>
-<li><label><input type="checkbox" data-k="ib1f322a0aa"><span>Sente o Murilo longe dos colegas para ele não se distrair.</span></label></li>
-<li><label><input type="checkbox" data-k="i3988dfff77"><span>Elogie o Murilo por ficar quieto e concluir a prova.</span></label></li>
-<li><label><input type="checkbox" data-k="iafe219c3af"><span>Se possível, deixe o Murilo fazer as provas mais tarde no dia, quando ele está mais desperto e atento.</span></label></li>
+<li><label><input type="checkbox" data-k="i9f056a6adc"><span>Me peça para revisar as respostas antes de entregar.</span></label></li>
+<li><label><input type="checkbox" data-k="i1724f460f1"><span>Me avise se eu deixei alguma questão em branco.</span></label></li>
+<li><label><input type="checkbox" data-k="i5718d72b69"><span>Divida a prova em partes, para eu não ficar sobrecarregado.</span></label></li>
+<li><label><input type="checkbox" data-k="i8f01f11e21"><span>Me ofereça pausas de dois minutos a cada parte concluída.</span></label></li>
+<li><label><input type="checkbox" data-k="i6ed3919ed3"><span>Me sente longe dos colegas para eu não me distrair.</span></label></li>
+<li><label><input type="checkbox" data-k="i9361a9fafa"><span>Me elogie por ficar quieto e concluir a prova.</span></label></li>
+<li><label><input type="checkbox" data-k="i306c578f84"><span>Se possível, me deixe fazer as provas mais tarde no dia, quando eu estou mais desperto e atento.</span></label></li>
 <li><label><input type="checkbox" data-k="i418a133808"><span>Diga que tipo de questão vai ter na prova (dissertativa, verdadeiro ou falso, múltipla escolha).</span></label></li>
 </ul></details>
 <details class="grupo">
-<summary><span>Quando o Murilo sai da sala</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
+<summary><span>Quando eu saio da sala</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
-<li><label><input type="checkbox" data-k="ib1798f316d"><span>Relembre o que vocês vão fazer no dia seguinte.</span></label></li>
-<li><label><input type="checkbox" data-k="i3b55aa342a"><span>Lembre o Murilo do material que ele precisa levar para casa.</span></label></li>
-<li><label><input type="checkbox" data-k="i97f568d39c"><span>Confira se o Murilo pegou todos os pertences dele.</span></label></li>
-<li><label><input type="checkbox" data-k="ib4d67f0801"><span>Confira se o Murilo anotou todas as tarefas.</span></label></li>
-<li><label><input type="checkbox" data-k="i18ae0f3ef2"><span>Confira se o Murilo organizou o espaço de trabalho dele.</span></label></li>
-<li><label><input type="checkbox" data-k="iab0ff2f0da"><span>Confira se o Murilo está com o material da próxima aula.</span></label></li>
-<li><label><input type="checkbox" data-k="i265278590c"><span>Avise com antecedência quando ele precisar começar a se preparar para uma transição.</span></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i9dc176c577"><strong>Confira comigo a agenda escolar antes de eu sair: ela é o combinado diário entre a escola, a minha família e as minhas terapias.</strong></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i2e206d1c96"><strong>Me deixe usar a minha lista visual de materiais. Eu estou aprendendo a organizar as minhas coisas sozinho.</strong></label></li>
+<li><label><input type="checkbox" data-k="i4888ec7424"><span>Relembre o que a gente vai fazer no dia seguinte.</span></label></li>
+<li><label><input type="checkbox" data-k="i19c67f3d02"><span>Me lembre do material que eu preciso levar para casa.</span></label></li>
+<li><label><input type="checkbox" data-k="i9fca6c4de0"><span>Confira se eu peguei todos os meus pertences.</span></label></li>
+<li><label><input type="checkbox" data-k="i308132304e"><span>Confira se eu anotei todas as tarefas.</span></label></li>
+<li><label><input type="checkbox" data-k="i439ccc0b80"><span>Confira se eu organizei o meu espaço de trabalho.</span></label></li>
+<li><label><input type="checkbox" data-k="id23b308ab3"><span>Confira se eu estou com o material da próxima aula.</span></label></li>
+<li><label><input type="checkbox" data-k="i5a790e44b9"><span>Me avise com antecedência quando eu precisar começar a me preparar para uma transição.</span></label></li>
 <li><label><input type="checkbox" data-k="i298956970b"><span>Diga o que vai acontecer em seguida.</span></label></li>
-<li><label><input type="checkbox" data-k="i2b125d8159"><span>Deixe um colega ir junto com o Murilo, se ele estiver desconfortável.</span></label></li>
-<li><label><input type="checkbox" data-k="ic414052e32"><span>Diga para onde o Murilo precisa ir e com quem precisa falar.</span></label></li>
-<li><label><input type="checkbox" data-k="i521b6a2721"><span>Não chame a atenção da turma quando o Murilo sair sozinho da sala.</span></label></li>
-<li><label><input type="checkbox" data-k="ic17ee60469"><span>Diga o que vai estar acontecendo quando ele voltar.</span></label></li>
-<li><label><input type="checkbox" data-k="i6c41bcd25a"><span>Quando o Murilo voltar, ajude ele a se atualizar, sem deixar os colegas perceberem que ele ficou para trás.</span></label></li>
-<li><label><input type="checkbox" data-k="idcc7f115a1"><span>Diga que você vai vê-lo amanhã.</span></label></li>
-<li><label><input type="checkbox" data-k="i78361765d4"><span>Se o Murilo foi bem, diga isso a ele.</span></label></li>
-<li><label><input type="checkbox" data-k="ic036416a48"><span>Fique atento a qualquer comportamento ou emoção diferente na hora de sair (tristeza, raiva, esconder algo).</span></label></li>
-<li><label><input type="checkbox" data-k="i748048ac48"><span>Lembre o Murilo de guardar os papéis nas pastas certas.</span></label></li>
-<li><label><input type="checkbox" data-k="i37c0663c7a"><span>Confirme que o Murilo chegou onde deveria chegar.</span></label></li>
-<li><label><input type="checkbox" data-k="i86c306c794"><span>Relembre o que ele precisa trazer amanhã (material, tarefas e trabalhos).</span></label></li>
-<li><label><input type="checkbox" data-k="ia66ba66d23"><span>Dê alguns minutos a mais para o Murilo sair da sala; se perceber que ele está conferindo ou repetindo ações, lembre com calma que é hora de ir.</span></label></li>
-<li><label><input type="checkbox" data-k="ie9a74059bb"><span>Relembre o que se espera dele no caminho de volta para casa.</span></label></li>
+<li><label><input type="checkbox" data-k="ie27b77ac60"><span>Deixe um colega ir junto comigo, se eu estiver desconfortável.</span></label></li>
+<li><label><input type="checkbox" data-k="ib33fb7be8c"><span>Diga para onde eu preciso ir e com quem eu preciso falar.</span></label></li>
+<li><label><input type="checkbox" data-k="ic24512a47c"><span>Não chame a atenção da turma quando eu sair sozinho da sala.</span></label></li>
+<li><label><input type="checkbox" data-k="ie22adce165"><span>Diga o que vai estar acontecendo quando eu voltar.</span></label></li>
+<li><label><input type="checkbox" data-k="i5ba08e0674"><span>Quando eu voltar, me ajude a me atualizar, sem deixar os colegas perceberem que eu fiquei para trás.</span></label></li>
+<li><label><input type="checkbox" data-k="i09089f5d2d"><span>Diga que você vai me ver amanhã.</span></label></li>
+<li><label><input type="checkbox" data-k="i1f5c3c5dfa"><span>Se eu fui bem, me diga isso.</span></label></li>
+<li><label><input type="checkbox" data-k="i161f95d722"><span>Fique atento a qualquer comportamento ou emoção diferente na minha hora de sair (tristeza, raiva, esconder algo).</span></label></li>
+<li><label><input type="checkbox" data-k="i2b4b543594"><span>Me lembre de guardar os papéis nas pastas certas.</span></label></li>
+<li><label><input type="checkbox" data-k="i8e90749703"><span>Confirme que eu cheguei onde eu deveria chegar.</span></label></li>
+<li><label><input type="checkbox" data-k="i1e28f74bb9"><span>Relembre o que eu preciso trazer amanhã (material, tarefas e trabalhos).</span></label></li>
+<li><label><input type="checkbox" data-k="i94420aa650"><span>Me dê alguns minutos a mais para sair da sala; se perceber que eu estou conferindo ou repetindo ações, me lembre com calma que é hora de ir.</span></label></li>
+<li><label><input type="checkbox" data-k="id65558e6ac"><span>Relembre o que se espera de mim no caminho de volta para casa.</span></label></li>
 <li><label><input type="checkbox" data-k="i7845868952"><span>Incentive comportamentos positivos na hora da lição de casa.</span></label></li>
-<li><label><input type="checkbox" data-k="ida70f432ab"><span>Dê uma lista curta com a programação do dia seguinte.</span></label></li>
-<li><label><input type="checkbox" data-k="i28b9023815"><span>Elogie os comportamentos adequados do Murilo ao longo do dia.</span></label></li>
-<li><label><input type="checkbox" data-k="ifb95775389"><span>Avise que a aula está perto de acabar.</span></label></li>
-<li><label><input type="checkbox" data-k="i7da3334713"><span>Se o Murilo estiver rendendo bem em algo, deixe terminar ou chegar a um bom ponto de parada antes de sair.</span></label></li>
-<li><label><input type="checkbox" data-k="i8c571b7fb4"><span>Revise o que vocês fizeram hoje e diga o que esperar amanhã.</span></label></li>
-<li><label><input type="checkbox" data-k="id3c5abbcaa"><span>Confira mais uma vez se o Murilo tem alguma dúvida.</span></label></li>
+<li><label><input type="checkbox" data-k="i96da467be3"><span>Me dê uma lista curta com a programação do dia seguinte.</span></label></li>
+<li><label><input type="checkbox" data-k="ib31d0ad514"><span>Elogie os meus comportamentos adequados ao longo do dia.</span></label></li>
+<li><label><input type="checkbox" data-k="ie397e0d3fb"><span>Me avise que a aula está perto de acabar.</span></label></li>
+<li><label><input type="checkbox" data-k="i93b5433099"><span>Se eu estiver rendendo bem em algo, me deixe terminar ou chegar a um bom ponto de parada antes de sair.</span></label></li>
+<li><label><input type="checkbox" data-k="ib7330be588"><span>Revise o que a gente fez hoje e me diga o que esperar amanhã.</span></label></li>
+<li><label><input type="checkbox" data-k="i50a48675f4"><span>Confira mais uma vez se eu tenho alguma dúvida.</span></label></li>
 </ul></details>
 <details class="grupo">
-<summary><span>Quando o Murilo trabalha sozinho</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
+<summary><span>Quando eu trabalho sozinho</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
-<li><label><input type="checkbox" data-k="i47e6d7406a"><span>Dê reforço positivo pelo trabalho que ele está fazendo.</span></label></li>
-<li><label><input type="checkbox" data-k="i92cb59e56c"><span>O Murilo precisa de bastante espaço pessoal.</span></label></li>
-<li><label><input type="checkbox" data-k="ibceda74082"><span>O Murilo precisa de um lugar silencioso, onde ninguém o incomode.</span></label></li>
-<li><label><input type="checkbox" data-k="i55a5632568"><span>Às vezes o Murilo entra em pânico. Tudo bem passar perto de vez em quando: isso conforta ele.</span></label></li>
-<li><label><input type="checkbox" data-k="i0a61473c99"><span>É difícil para o Murilo ficar sozinho. Se possível, deixe a mesa dele perto da sua quando ele precisar trabalhar sozinho.</span></label></li>
-<li><label><input type="checkbox" data-k="i66c2f24eee"><span>Pergunte se o Murilo tem dúvidas ou precisa de ajuda.</span></label></li>
-<li><label><input type="checkbox" data-k="ia341006fff"><span>Deixe o Murilo fazer as perguntas que ele tiver.</span></label></li>
-<li><label><input type="checkbox" data-k="i1ccf61c637"><span>Dê instruções claras, uma de cada vez.</span></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i6320839ee4"><strong>Mantenha o sistema das Estrelas Feliz e Triste. É com ele que eu me engajo e percebo que estou indo bem.</strong></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i70561da424"><strong>Desmembre atividades de vários passos em etapas menores, com uma lista de checagem para eu acompanhar sozinho.</strong></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="ib1d79230ba"><strong>Com eletrônicos eu me frustro rápido. Se a atividade for na tela, fique por perto e me direcione com cuidado.</strong></label></li>
+<li><label><input type="checkbox" data-k="i97c866a97e"><span>Me dê reforço positivo pelo trabalho que eu estou fazendo.</span></label></li>
+<li><label><input type="checkbox" data-k="i2c1b274da8"><span>Eu preciso de bastante espaço pessoal.</span></label></li>
+<li><label><input type="checkbox" data-k="ie0acb99f64"><span>Eu preciso de um lugar silencioso, onde ninguém me incomode.</span></label></li>
+<li><label><input type="checkbox" data-k="i9db4d644b2"><span>Às vezes eu entro em pânico. Tudo bem passar perto de vez em quando: isso me conforta.</span></label></li>
+<li><label><input type="checkbox" data-k="i65b8b60cb9"><span>É difícil para mim ficar sozinho. Se possível, deixe a minha mesa perto da sua quando eu precisar trabalhar sozinho.</span></label></li>
+<li><label><input type="checkbox" data-k="icd043788a8"><span>Me pergunte se eu tenho dúvidas ou preciso de ajuda.</span></label></li>
+<li><label><input type="checkbox" data-k="i41d8f34c25"><span>Me deixe fazer as perguntas que eu tiver.</span></label></li>
+<li><label><input type="checkbox" data-k="i199466364c"><span>Me dê instruções claras, uma de cada vez.</span></label></li>
 <li><label><input type="checkbox" data-k="if54bf805a5"><span>Deixe as instruções visíveis quando não estiverem na folha da atividade.</span></label></li>
-<li><label><input type="checkbox" data-k="i86f3367f4d"><span>Lembre quanto tempo falta, para o Murilo não ficar irritado achando que é tempo demais ou de menos.</span></label></li>
-<li><label><input type="checkbox" data-k="ifdd003baf7"><span>Deixe o Murilo usar algo antiestresse (uma bolinha, por exemplo) se sentir que vai perder o controle.</span></label></li>
-<li><label><input type="checkbox" data-k="i1c867f7249"><span>Deixe o Murilo fazer uma pausa se precisar.</span></label></li>
+<li><label><input type="checkbox" data-k="i74a7310b73"><span>Me lembre quanto tempo falta, para eu não ficar irritado achando que é tempo demais ou de menos.</span></label></li>
+<li><label><input type="checkbox" data-k="i0f73482148"><span>Me deixe usar algo antiestresse (uma bolinha, por exemplo) se eu sentir que vou perder o controle.</span></label></li>
+<li><label><input type="checkbox" data-k="i2e0d8f37fb"><span>Me deixe fazer uma pausa se eu precisar.</span></label></li>
 <li><label><input type="checkbox" data-k="i4bbb986ee4"><span>Dê as instruções para a turma inteira, explicando o que se espera.</span></label></li>
-<li><label><input type="checkbox" data-k="i1d7d41f1b2"><span>Oriente o Murilo a resolver o problema quando ele travar numa tarefa.</span></label></li>
-<li><label><input type="checkbox" data-k="i7319754d4b"><span>Dê retorno positivo quando ele terminar um trabalho.</span></label></li>
-<li><label><input type="checkbox" data-k="icc51d85813"><span>Não comente na frente dos colegas quando o trabalho dele não sair bem.</span></label></li>
-<li><label><input type="checkbox" data-k="i494295ddb8"><span>Sempre que possível, dê ao Murilo tarefas ligadas ao que ele gosta.</span></label></li>
-<li><label><input type="checkbox" data-k="i7836bc1fe6"><span>Confira se o Murilo começou a tarefa.</span></label></li>
-<li><label><input type="checkbox" data-k="i60d23e347c"><span>Lembre o Murilo de revisar o trabalho quando terminar.</span></label></li>
-<li><label><input type="checkbox" data-k="i6e12b1b476"><span>Confira se ele está fazendo o que deveria estar fazendo.</span></label></li>
+<li><label><input type="checkbox" data-k="icce30e5c4f"><span>Me oriente a resolver o problema quando eu travar numa tarefa.</span></label></li>
+<li><label><input type="checkbox" data-k="i872e31897c"><span>Me dê retorno positivo quando eu terminar um trabalho.</span></label></li>
+<li><label><input type="checkbox" data-k="ifed18cb743"><span>Não comente na frente dos colegas quando o meu trabalho não sair bem.</span></label></li>
+<li><label><input type="checkbox" data-k="i7e4b88b074"><span>Sempre que possível, me dê tarefas ligadas ao que eu gosto.</span></label></li>
+<li><label><input type="checkbox" data-k="i625f61724c"><span>Confira se eu comecei a tarefa.</span></label></li>
+<li><label><input type="checkbox" data-k="i286ac881dd"><span>Me lembre de revisar o trabalho quando eu terminar.</span></label></li>
+<li><label><input type="checkbox" data-k="i128a742524"><span>Confira se eu estou fazendo o que eu deveria estar fazendo.</span></label></li>
 <li><label><input type="checkbox" data-k="i66d220fbba"><span>Divida as tarefas em partes menores.</span></label></li>
-<li><label><input type="checkbox" data-k="ie9427d31f9"><span>Se o Murilo ficar sobrecarregado, deixe que ele pare.</span></label></li>
-<li><label><input type="checkbox" data-k="i74be74bf33"><span>Se perceber que a cabeça dele viajou, passe perto da mesa: isso lembra ele de voltar ao foco.</span></label></li>
-<li><label><input type="checkbox" data-k="ie70e8180e3"><span>Seja bem específico sobre o que ele precisa fazer e concluir enquanto trabalha sozinho.</span></label></li>
-<li><label><input type="checkbox" data-k="ia6aa64d491"><span>Dê uma coisa de cada vez, para ele não se distrair.</span></label></li>
-<li><label><input type="checkbox" data-k="i5c762fa597"><span>Ofereça momentos para perguntas e atendimento individual.</span></label></li>
-<li><label><input type="checkbox" data-k="i6e1515663a"><span>Elogie quando ele estiver indo bem.</span></label></li>
-<li><label><input type="checkbox" data-k="i11c7bc7a66"><span>Combine uma meta para o tempo de trabalho e ofereça um incentivo se ele alcançar.</span></label></li>
-<li><label><input type="checkbox" data-k="i1b37a90e46"><span>Ofereça ajuda com frequência, para ele não ficar muito tempo sozinho (ele se entedia fácil).</span></label></li>
-<li><label><input type="checkbox" data-k="i69ceeddc5e"><span>Não fique parado em pé atrás dele para conferir se está trabalhando.</span></label></li>
-<li><label><input type="checkbox" data-k="iac677406cb"><span>Passe perto com frequência para conferir se ele está concentrado.</span></label></li>
-<li><label><input type="checkbox" data-k="if003470028"><span>Dê tempo extra para o Murilo concluir o trabalho.</span></label></li>
-<li><label><input type="checkbox" data-k="i9f024ea71d"><span>Deixe o Murilo fazer algumas pausas.</span></label></li>
+<li><label><input type="checkbox" data-k="ic5e7228f24"><span>Se eu ficar sobrecarregado, me deixe parar.</span></label></li>
+<li><label><input type="checkbox" data-k="i089576d0d1"><span>Se perceber que a minha cabeça viajou, passe perto da minha mesa: isso me lembra de voltar ao foco.</span></label></li>
+<li><label><input type="checkbox" data-k="i76ac7f7351"><span>Seja bem específico sobre o que eu preciso fazer e concluir enquanto trabalho sozinho.</span></label></li>
+<li><label><input type="checkbox" data-k="i399fe81bd2"><span>Me dê uma coisa de cada vez, para eu não me distrair.</span></label></li>
+<li><label><input type="checkbox" data-k="i2757a1e043"><span>Me ofereça momentos para perguntas e atendimento individual.</span></label></li>
+<li><label><input type="checkbox" data-k="i6bdddc355f"><span>Me elogie quando eu estiver indo bem.</span></label></li>
+<li><label><input type="checkbox" data-k="i64c93a4379"><span>Combine uma meta para o tempo de trabalho e me ofereça um incentivo se eu alcançar.</span></label></li>
+<li><label><input type="checkbox" data-k="ic78c808eb5"><span>Me ofereça ajuda com frequência, para eu não ficar muito tempo sozinho (eu me entedio fácil).</span></label></li>
+<li><label><input type="checkbox" data-k="ie816a592ee"><span>Não fique parado em pé atrás de mim para conferir se eu estou trabalhando.</span></label></li>
+<li><label><input type="checkbox" data-k="iae7db04017"><span>Passe perto com frequência para conferir se eu estou concentrado.</span></label></li>
+<li><label><input type="checkbox" data-k="i289ceb91dd"><span>Me dê tempo extra para concluir o trabalho.</span></label></li>
+<li><label><input type="checkbox" data-k="ic5ce9e79b4"><span>Me deixe fazer algumas pausas.</span></label></li>
 </ul></details>
 <details class="grupo">
-<summary><span>Quando o Murilo trabalha em grupo</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
+<summary><span>Quando eu trabalho em grupo</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
-<li><label><input type="checkbox" data-k="ide38d3b1db"><span>Elogie a participação e as ideias do Murilo.</span></label></li>
-<li><label><input type="checkbox" data-k="ib12718ac66"><span>Se o Murilo não estiver falando ou estiver afastado, convide ele para o grupo.</span></label></li>
-<li><label><input type="checkbox" data-k="ib9827bda8a"><span>Deixe o Murilo escolher o grupo dos trabalhos.</span></label></li>
-<li><label><input type="checkbox" data-k="i92fb4fdbcf"><span>O Murilo precisa lembrar de dividir as responsabilidades por igual.</span></label></li>
-<li><label><input type="checkbox" data-k="if4e850604b"><span>Lembre o Murilo de não discutir com os colegas.</span></label></li>
-<li><label><input type="checkbox" data-k="i2680d1dc9c"><span>Lembre o Murilo de usar boas habilidades de cooperação.</span></label></li>
-<li><label><input type="checkbox" data-k="i8ede0faf5c"><span>O Murilo precisa saber exatamente qual é o papel dele no grupo.</span></label></li>
-<li><label><input type="checkbox" data-k="i30a5a05beb"><span>Nem sempre o Murilo está no mesmo ritmo dos colegas. Grupos muito grandes são difíceis: ele às vezes sente que não é compreendido ou que estão rindo dele.</span></label></li>
-<li><label><input type="checkbox" data-k="i570ec19631"><span>Dê ao Murilo uma função que não exija falar muito na frente do grupo.</span></label></li>
-<li><label><input type="checkbox" data-k="i782f668560"><span>Coloque no grupo dele pelo menos um colega com quem ele se sinta seguro e à vontade para conversar.</span></label></li>
-<li><label><input type="checkbox" data-k="i117eaf1d87"><span>Avise o Murilo que vai ter trabalho em grupo e quem estará com ele, antes de anunciar para a turma.</span></label></li>
-<li><label><input type="checkbox" data-k="ic0b4de8e02"><span>Se tiver algum colega com quem ele conversa demais, coloque os dois em grupos diferentes.</span></label></li>
-<li><label><input type="checkbox" data-k="i935694b706"><span>Passe no grupo dele para conferir se estão no caminho certo.</span></label></li>
-<li><label><input type="checkbox" data-k="i0cdab0abdf"><span>Escolha um colega do grupo para ser o parceiro dele.</span></label></li>
-<li><label><input type="checkbox" data-k="i9dc9e2cbd7"><span>Não espere que o Murilo faça o trabalho todo: dê a cada um uma função específica, para ele saber exatamente o que fazer.</span></label></li>
-<li><label><input type="checkbox" data-k="i941d3c910f"><span>Coloque alguns amigos no grupo dele.</span></label></li>
-<li><label><input type="checkbox" data-k="i60c4e48d91"><span>Coloque no grupo colegas gentis e pacientes, porque o Murilo pode ter dificuldade em ser paciente.</span></label></li>
-<li><label><input type="checkbox" data-k="ie87a3df32f"><span>Dê a cada integrante uma função específica, para o Murilo não assumir o comando de tudo.</span></label></li>
-<li><label><input type="checkbox" data-k="i83dbd4414d"><span>Combine um sinal para o Murilo avisar quando precisar se afastar do grupo por sentir que vai perder o controle.</span></label></li>
-<li><label><input type="checkbox" data-k="i1d73b9fba3"><span>Coloque o Murilo em um grupo adequado (com colegas amigáveis ou que sejam bons exemplos).</span></label></li>
-<li><label><input type="checkbox" data-k="i5294298b7a"><span>Oriente o Murilo sobre como se comunicar e interagir com os parceiros.</span></label></li>
-<li><label><input type="checkbox" data-k="i8076304a91"><span>Ajude o Murilo se houver algum conflito no grupo.</span></label></li>
-<li><label><input type="checkbox" data-k="idd9aa79acb"><span>Ensine o Murilo a compartilhar e a esperar a vez.</span></label></li>
-<li><label><input type="checkbox" data-k="i35f9a6017c"><span>Garanta espaço para o Murilo contribuir com o grupo.</span></label></li>
-<li><label><input type="checkbox" data-k="i5d1112045c"><span>Lembre o Murilo de revezar a fala.</span></label></li>
-<li><label><input type="checkbox" data-k="id2c88da858"><span>Se o Murilo ficar chateado, deixe que ele trabalhe sozinho.</span></label></li>
-<li><label><input type="checkbox" data-k="ibf84af93c8"><span>Explique para o Murilo, especificamente, o que o grupo dele vai fazer.</span></label></li>
-<li><label><input type="checkbox" data-k="i31a4e2d805"><span>Se o Murilo ficar sobrecarregado de estímulos, peça que ele fique 2 minutos afastado do grupo.</span></label></li>
-<li><label><input type="checkbox" data-k="i25a253b002"><span>Ofereça incentivos por trabalhar bem e cooperar com os colegas.</span></label></li>
-<li><label><input type="checkbox" data-k="i7aee8f30f5"><span>Confira se o Murilo está acompanhando o grupo.</span></label></li>
-<li><label><input type="checkbox" data-k="i2192ac8d6e"><span>Fique de olho para ver se ele está bem e não está sobrecarregado ou frustrado.</span></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i8a02d2a482"><strong>Me coloque em dupla ou em grupo pequeno: eu aprendo muito me espelhando nos colegas.</strong></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i58211c8615"><strong>Sempre que der, me coloque junto com o Marcus. A gente tem um vínculo muito bom e eu rendo mais perto dele.</strong></label></li>
+<li><label><input type="checkbox" data-k="ibafee185f8"><span>Elogie a minha participação e as minhas ideias.</span></label></li>
+<li><label><input type="checkbox" data-k="ie51e1f0762"><span>Se eu não estiver falando ou estiver afastado, me convide para o grupo.</span></label></li>
+<li><label><input type="checkbox" data-k="i7e9cecd04e"><span>Me deixe escolher o grupo dos trabalhos.</span></label></li>
+<li><label><input type="checkbox" data-k="if602c39bdf"><span>Eu preciso lembrar de dividir as responsabilidades por igual.</span></label></li>
+<li><label><input type="checkbox" data-k="i772471e48f"><span>Me lembre de não discutir com os colegas.</span></label></li>
+<li><label><input type="checkbox" data-k="ib3473d3241"><span>Me lembre de usar boas habilidades de cooperação.</span></label></li>
+<li><label><input type="checkbox" data-k="if8144f74c9"><span>Eu preciso saber exatamente qual é o meu papel no grupo.</span></label></li>
+<li><label><input type="checkbox" data-k="ie8a160f88a"><span>Nem sempre eu estou no mesmo ritmo dos colegas. Grupos muito grandes são difíceis: às vezes eu sinto que não sou compreendido ou que estão rindo de mim.</span></label></li>
+<li><label><input type="checkbox" data-k="ia4d10042b6"><span>Me dê uma função que não exija falar muito na frente do grupo.</span></label></li>
+<li><label><input type="checkbox" data-k="iabdd4ae755"><span>Coloque no meu grupo pelo menos um colega com quem eu me sinta seguro e à vontade para conversar.</span></label></li>
+<li><label><input type="checkbox" data-k="i028a9affbf"><span>Me avise que vai ter trabalho em grupo e quem vai estar comigo, antes de anunciar para a turma.</span></label></li>
+<li><label><input type="checkbox" data-k="ife1759c1a9"><span>Se tiver algum colega com quem eu converso demais, coloque a gente em grupos diferentes.</span></label></li>
+<li><label><input type="checkbox" data-k="i72ad3ce33f"><span>Passe no meu grupo para conferir se a gente está no caminho certo.</span></label></li>
+<li><label><input type="checkbox" data-k="i3bea94a358"><span>Escolha um colega do grupo para ser o meu parceiro.</span></label></li>
+<li><label><input type="checkbox" data-k="i10b7bb5b5d"><span>Não espere que eu faça o trabalho todo: dê a cada um uma função específica, para eu saber exatamente o que fazer.</span></label></li>
+<li><label><input type="checkbox" data-k="ibec41afe9d"><span>Coloque alguns amigos no meu grupo.</span></label></li>
+<li><label><input type="checkbox" data-k="i07b6d3f224"><span>Coloque no meu grupo colegas gentis e pacientes, porque eu posso ter dificuldade em ser paciente.</span></label></li>
+<li><label><input type="checkbox" data-k="ib44c47b764"><span>Dê a cada integrante uma função específica, para eu não assumir o comando de tudo.</span></label></li>
+<li><label><input type="checkbox" data-k="i41a71d223b"><span>Combine um sinal para eu avisar quando precisar me afastar do grupo por sentir que vou perder o controle.</span></label></li>
+<li><label><input type="checkbox" data-k="ib37f03db82"><span>Me coloque em um grupo adequado (com colegas amigáveis ou que sejam bons exemplos).</span></label></li>
+<li><label><input type="checkbox" data-k="ic0be0b378d"><span>Me oriente sobre como me comunicar e interagir com os meus parceiros.</span></label></li>
+<li><label><input type="checkbox" data-k="i7f3e7651ba"><span>Me ajude se houver algum conflito no grupo.</span></label></li>
+<li><label><input type="checkbox" data-k="i9ba966af0f"><span>Me ensine a compartilhar e a esperar a minha vez.</span></label></li>
+<li><label><input type="checkbox" data-k="i252d7cb0ef"><span>Garanta espaço para eu contribuir com o grupo.</span></label></li>
+<li><label><input type="checkbox" data-k="i08e3ec21db"><span>Me lembre de revezar a fala.</span></label></li>
+<li><label><input type="checkbox" data-k="ia107368277"><span>Se eu ficar chateado, me deixe trabalhar sozinho.</span></label></li>
+<li><label><input type="checkbox" data-k="ib8fa08404c"><span>Me explique, especificamente, o que o meu grupo vai fazer.</span></label></li>
+<li><label><input type="checkbox" data-k="i26a3e9083e"><span>Se eu ficar sobrecarregado de estímulos, me peça para ficar 2 minutos afastado do grupo.</span></label></li>
+<li><label><input type="checkbox" data-k="ic000fd6928"><span>Me ofereça incentivos por trabalhar bem e cooperar com os colegas.</span></label></li>
+<li><label><input type="checkbox" data-k="i457f4f5389"><span>Confira se eu estou acompanhando o grupo.</span></label></li>
+<li><label><input type="checkbox" data-k="ifd89fe2682"><span>Fique de olho para ver se eu estou bem e não estou sobrecarregado ou frustrado.</span></label></li>
 <li><label><input type="checkbox" data-k="i4b14eaa37f"><span>Não faça grupos grandes demais.</span></label></li>
-<li><label><input type="checkbox" data-k="i564bf26a06"><span>Dê ao Murilo alguma escolha sobre com quem trabalhar.</span></label></li>
+<li><label><input type="checkbox" data-k="i2db64a1b78"><span>Me dê alguma escolha sobre com quem trabalhar.</span></label></li>
 </ul></details>
 </section>
 <section class="bloco" id="refeitorio">
 <h2><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.4 3.2v4.6a2.1 2.1 0 0 0 4.2 0V3.2"/><path d="M9.5 9.9v10.9"/><path d="M16.6 3.2c1.9 1.9 1.9 6 0 7.9v9.7"/></svg>No refeitório</h2>
-<p class="bloco-sub">3 momentos · 67 sugestões. Toque em cada momento para abrir.</p>
+<p class="bloco-sub">3 momentos · 70 sugestões. Toque em cada momento para abrir.</p>
 <details class="grupo">
-<summary><span>Quando o Murilo precisa esperar na fila</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
+<summary><span>Quando eu preciso esperar na fila</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
-<li><label><input type="checkbox" data-k="id0aa53c1f6"><span>Converse com o Murilo enquanto ele espera.</span></label></li>
-<li><label><input type="checkbox" data-k="i00beeb664e"><span>Confira se o Murilo conseguiu comer alguma coisa.</span></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i923f659cd3"><strong>Fila cheia e barulhenta me desregula. Me deixe usar o abafador de ruídos enquanto eu espero.</strong></label></li>
+<li><label><input type="checkbox" data-k="ib38b3c2eed"><span>Converse comigo enquanto eu espero.</span></label></li>
+<li><label><input type="checkbox" data-k="iad871256ba"><span>Confira se eu consegui comer alguma coisa.</span></label></li>
 <li><label><input type="checkbox" data-k="i2bad51a4f6"><span>Tenha paciência. Ficar bravo não faz a fila andar mais rápido.</span></label></li>
-<li><label><input type="checkbox" data-k="i4c5d6e8711"><span>Lembre o Murilo das boas maneiras.</span></label></li>
-<li><label><input type="checkbox" data-k="i39112300e1"><span>Esperar é difícil para o Murilo. Se ele não estiver ocupado, a cabeça viaja e ele começa a ter pensamentos tristes. Converse sobre o que vai ter no almoço.</span></label></li>
-<li><label><input type="checkbox" data-k="i5bc0edecde"><span>Lembre o Murilo de levar o dinheiro do lanche.</span></label></li>
-<li><label><input type="checkbox" data-k="ibed2f4016e"><span>Deixe um amigo ou alguém de confiança ficar ao lado dele na fila.</span></label></li>
-<li><label><input type="checkbox" data-k="id68b742fe2"><span>Confira se o Murilo conhece todas as opções antes de chegar no balcão.</span></label></li>
+<li><label><input type="checkbox" data-k="ie56719ea66"><span>Me lembre das boas maneiras.</span></label></li>
+<li><label><input type="checkbox" data-k="i2f73de956d"><span>Esperar é difícil para mim. Se eu não estiver ocupado, a minha cabeça viaja e eu começo a ter pensamentos tristes. Converse comigo sobre o que vai ter no almoço.</span></label></li>
+<li><label><input type="checkbox" data-k="ic9631e9019"><span>Me lembre de levar o dinheiro do lanche.</span></label></li>
+<li><label><input type="checkbox" data-k="ib4c5577687"><span>Deixe um amigo ou alguém de confiança ficar do meu lado na fila.</span></label></li>
+<li><label><input type="checkbox" data-k="i9c2c0266ef"><span>Confira se eu conheço todas as opções antes de chegar no balcão.</span></label></li>
 <li><label><input type="checkbox" data-k="i5b3317ef97"><span>Diga quanto tempo você acha que vai demorar — e chute para mais!</span></label></li>
-<li><label><input type="checkbox" data-k="i8925847a71"><span>Lembre o Murilo de que todo mundo está esperando igual a ele.</span></label></li>
-<li><label><input type="checkbox" data-k="i625aecf95e"><span>Deixe o Murilo usar algo antiestresse.</span></label></li>
-<li><label><input type="checkbox" data-k="i5e1814b99c"><span>Peça para ele ter paciência e contar quantas pessoas estão na frente, para prever quando será a vez dele.</span></label></li>
-<li><label><input type="checkbox" data-k="ib6ae86d5f6"><span>Ensine o Murilo a pensar em outras coisas para não ficar entediado.</span></label></li>
-<li><label><input type="checkbox" data-k="i0544af22d1"><span>Se possível, organize o horário para o Murilo ir ao refeitório quando a fila estiver menor.</span></label></li>
-<li><label><input type="checkbox" data-k="i7e528ac048"><span>Confirme que o Murilo sabe como e onde esperar.</span></label></li>
+<li><label><input type="checkbox" data-k="i440f9dc596"><span>Me lembre de que todo mundo está esperando igual a mim.</span></label></li>
+<li><label><input type="checkbox" data-k="iec520aa5c2"><span>Me deixe usar algo antiestresse.</span></label></li>
+<li><label><input type="checkbox" data-k="i0f756eb99c"><span>Me peça para ter paciência e contar quantas pessoas estão na minha frente, para eu prever quando será a minha vez.</span></label></li>
+<li><label><input type="checkbox" data-k="i338623171a"><span>Me ensine a pensar em outras coisas para eu não ficar entediado.</span></label></li>
+<li><label><input type="checkbox" data-k="ibce865e915"><span>Se possível, organize o horário para eu ir ao refeitório quando a fila estiver menor.</span></label></li>
+<li><label><input type="checkbox" data-k="i6251d28f3e"><span>Confirme que eu sei como e onde esperar.</span></label></li>
 <li><label><input type="checkbox" data-k="i0b178d0806"><span>Relembre como se espera na fila.</span></label></li>
-<li><label><input type="checkbox" data-k="i9d017798f0"><span>Peça para ele segurar o dinheiro: assim as mãos ficam ocupadas.</span></label></li>
-<li><label><input type="checkbox" data-k="iae362758f7"><span>Deixe o Murilo pegar a comida primeiro, para ele não ficar ansioso na fila.</span></label></li>
-<li><label><input type="checkbox" data-k="id6f19f2285"><span>Deixe o Murilo lavar as mãos antes de entrar na fila.</span></label></li>
-<li><label><input type="checkbox" data-k="ie393776021"><span>Relembre o que se espera dele na fila.</span></label></li>
-<li><label><input type="checkbox" data-k="i4ca7b15010"><span>Pergunte onde ele se sente confortável para ficar (na frente, no meio com os colegas, atrás).</span></label></li>
-<li><label><input type="checkbox" data-k="i865c2f8fd7"><span>Lembre o Murilo do que ele está esperando.</span></label></li>
-<li><label><input type="checkbox" data-k="i15ac3011d7"><span>Ajude o Murilo a decidir o que vai comer.</span></label></li>
-<li><label><input type="checkbox" data-k="i3a24f1f505"><span>Evite deixar o Murilo no meio de muitos alunos sem um adulto por perto.</span></label></li>
-<li><label><input type="checkbox" data-k="ia22ed4adaf"><span>Confira se ninguém está mexendo com ele.</span></label></li>
-<li><label><input type="checkbox" data-k="ia9581d4c77"><span>Peça a atenção do Murilo para a fila se ele estiver distraído.</span></label></li>
-<li><label><input type="checkbox" data-k="i9cf9f864dd"><span>Dê outra coisa em que ele possa pensar ou se concentrar.</span></label></li>
+<li><label><input type="checkbox" data-k="i2981418cfd"><span>Me peça para segurar o dinheiro: assim as minhas mãos ficam ocupadas.</span></label></li>
+<li><label><input type="checkbox" data-k="i4c7c0e0869"><span>Me deixe pegar a comida primeiro, para eu não ficar ansioso na fila.</span></label></li>
+<li><label><input type="checkbox" data-k="i02bc8b3d82"><span>Me deixe lavar as mãos antes de entrar na fila.</span></label></li>
+<li><label><input type="checkbox" data-k="ie9f3303744"><span>Relembre o que se espera de mim na fila.</span></label></li>
+<li><label><input type="checkbox" data-k="idb20ee1970"><span>Me pergunte onde eu me sinto confortável para ficar (na frente, no meio com os colegas, atrás).</span></label></li>
+<li><label><input type="checkbox" data-k="i36212fd323"><span>Me lembre do que eu estou esperando.</span></label></li>
+<li><label><input type="checkbox" data-k="idcda2c0545"><span>Me ajude a decidir o que eu vou comer.</span></label></li>
+<li><label><input type="checkbox" data-k="i04eecb048e"><span>Evite me deixar no meio de muitos alunos sem um adulto por perto.</span></label></li>
+<li><label><input type="checkbox" data-k="ie80c5985cc"><span>Confira se ninguém está mexendo comigo.</span></label></li>
+<li><label><input type="checkbox" data-k="i4ccde9624f"><span>Peça a minha atenção para a fila se eu estiver distraído.</span></label></li>
+<li><label><input type="checkbox" data-k="i73076f71ca"><span>Me dê outra coisa em que eu possa pensar ou me concentrar.</span></label></li>
 </ul></details>
 <details class="grupo">
-<summary><span>Enquanto o Murilo está comendo</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
+<summary><span>Enquanto eu estou comendo</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
-<li><label><input type="checkbox" data-k="if5e480aa46"><span>Confira se o Murilo está sentado com outras pessoas, e não sozinho.</span></label></li>
-<li><label><input type="checkbox" data-k="i8f13e2c27b"><span>Confira se o Murilo comeu um pouco do almoço.</span></label></li>
-<li><label><input type="checkbox" data-k="ib47840c5d3"><span>Diga para ele ir com calma.</span></label></li>
-<li><label><input type="checkbox" data-k="i3c269d5ed3"><span>Se o Murilo precisar tomar algum remédio com comida, isso pode ser constrangedor. Você ou outro adulto pode levá-lo até a sala da saúde?</span></label></li>
-<li><label><input type="checkbox" data-k="i1d9af41fcb"><span>Nessa hora o Murilo costuma sentir mais falta da família. Incentive ele a conversar com os amigos durante o almoço.</span></label></li>
-<li><label><input type="checkbox" data-k="iced4b2c41f"><span>Não obrigue o Murilo a sentar com outras pessoas se ele não estiver pronto.</span></label></li>
-<li><label><input type="checkbox" data-k="iea1868595d"><span>Deixe o Murilo comer na sala em alguns dias, se ele estiver muito ansioso.</span></label></li>
-<li><label><input type="checkbox" data-k="ic79a27f659"><span>Garanta um lugar fixo para o Murilo, que ninguém vá ocupar.</span></label></li>
-<li><label><input type="checkbox" data-k="i3a61c2633f"><span>Dê ideias de assuntos para conversar no almoço sem chatear ninguém.</span></label></li>
-<li><label><input type="checkbox" data-k="i17bd2b6177"><span>Deixe o Murilo sentar perto dos amigos.</span></label></li>
-<li><label><input type="checkbox" data-k="ia59940f0af"><span>Organize os lugares para o Murilo sentar com colegas que o conhecem melhor.</span></label></li>
-<li><label><input type="checkbox" data-k="i5a53e7f4d3"><span>Se o Murilo parecer incomodado, ofereça outra sala para ele comer.</span></label></li>
-<li><label><input type="checkbox" data-k="ibd908fb93e"><span>Diga quanto tempo ele tem para comer.</span></label></li>
-<li><label><input type="checkbox" data-k="ifbaa502338"><span>Dê um aviso dez minutos antes do fim.</span></label></li>
-<li><label><input type="checkbox" data-k="ic487ba1e4d"><span>Lembre o Murilo de ficar no lugar e só sair com permissão.</span></label></li>
-<li><label><input type="checkbox" data-k="ibc859bb7ca"><span>Deixe o Murilo fazer a rotina dele antes do almoço.</span></label></li>
-<li><label><input type="checkbox" data-k="i088e8bac5c"><span>Se perceber que o Murilo não comeu tudo, saiba que pode não ser porque não gostou: pode ser por textura, cheiro ou por alguém ter tocado na comida.</span></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i767a843e86"><strong>O refeitório é barulhento para mim. Se o som aumentar demais, me lembre do abafador de ruídos.</strong></label></li>
+<li><label><input type="checkbox" data-k="icbbed77a4d"><span>Confira se eu estou sentado com outras pessoas, e não sozinho.</span></label></li>
+<li><label><input type="checkbox" data-k="i2d7a002f23"><span>Confira se eu comi um pouco do almoço.</span></label></li>
+<li><label><input type="checkbox" data-k="id582589d4d"><span>Me diga para ir com calma.</span></label></li>
+<li><label><input type="checkbox" data-k="ie5810bd4a4"><span>Se eu precisar tomar algum remédio com comida, isso pode ser constrangedor. Você ou outro adulto pode me levar até a sala da saúde?</span></label></li>
+<li><label><input type="checkbox" data-k="iae557547e4"><span>Nessa hora eu costumo sentir mais falta da minha família. Me incentive a conversar com os amigos durante o almoço.</span></label></li>
+<li><label><input type="checkbox" data-k="i30a67e27db"><span>Não me obrigue a sentar com outras pessoas se eu não estiver pronto.</span></label></li>
+<li><label><input type="checkbox" data-k="ib90e34e3da"><span>Me deixe comer na sala em alguns dias, se eu estiver muito ansioso.</span></label></li>
+<li><label><input type="checkbox" data-k="ic5e20f4ca6"><span>Garanta um lugar fixo para mim, que ninguém vá ocupar.</span></label></li>
+<li><label><input type="checkbox" data-k="ib30df2ed9a"><span>Me dê ideias de assuntos para conversar no almoço sem chatear ninguém.</span></label></li>
+<li><label><input type="checkbox" data-k="i3ac831a768"><span>Me deixe sentar perto dos meus amigos.</span></label></li>
+<li><label><input type="checkbox" data-k="i493adc822e"><span>Organize os lugares para eu sentar com colegas que me conhecem melhor.</span></label></li>
+<li><label><input type="checkbox" data-k="i4905c55a79"><span>Se eu parecer incomodado, me ofereça outra sala para comer.</span></label></li>
+<li><label><input type="checkbox" data-k="i906f09cf95"><span>Diga quanto tempo eu tenho para comer.</span></label></li>
+<li><label><input type="checkbox" data-k="i46615b4473"><span>Me dê um aviso dez minutos antes do fim.</span></label></li>
+<li><label><input type="checkbox" data-k="i28933f78d8"><span>Me lembre de ficar no lugar e só sair com permissão.</span></label></li>
+<li><label><input type="checkbox" data-k="ic1f966f4e2"><span>Me deixe fazer a minha rotina antes do almoço.</span></label></li>
+<li><label><input type="checkbox" data-k="ib9a912df2b"><span>Se perceber que eu não comi tudo, saiba que pode não ser porque eu não gostei: pode ser por textura, cheiro ou por alguém ter tocado na comida.</span></label></li>
 <li><label><input type="checkbox" data-k="i2e1e5e7018"><span>Relembre as boas maneiras à mesa (guardanapo, talheres, pedir para levantar, não falar de boca cheia).</span></label></li>
-<li><label><input type="checkbox" data-k="i968993c35c"><span>Dê lembretes para ele comer, em vez de conversar e brincar.</span></label></li>
-<li><label><input type="checkbox" data-k="i304ffe6723"><span>Sente o Murilo numa mesa com um grupo pequeno de amigos.</span></label></li>
-<li><label><input type="checkbox" data-k="i4d5911b7ea"><span>Incentive o Murilo a conversar com os amigos.</span></label></li>
-<li><label><input type="checkbox" data-k="i81bbe9d5c9"><span>Ajude o Murilo a escolher coisas saudáveis de que ele goste.</span></label></li>
-<li><label><input type="checkbox" data-k="i87a1eb9dc6"><span>Diga ao Murilo que esse é um bom momento para relaxar um pouco e aproveitar.</span></label></li>
-<li><label><input type="checkbox" data-k="i4fa428b741"><span>Veja se ele está comendo. O estresse pode fazer o Murilo não se sentir bem: pode doer a cabeça ou a barriga.</span></label></li>
-<li><label><input type="checkbox" data-k="ice35e76d50"><span>Talvez seja preciso ligar para a família se ele estiver repetidamente sem comer.</span></label></li>
+<li><label><input type="checkbox" data-k="i4ddefd4b62"><span>Me dê lembretes para comer, em vez de conversar e brincar.</span></label></li>
+<li><label><input type="checkbox" data-k="i8205b7e20d"><span>Me sente numa mesa com um grupo pequeno de amigos.</span></label></li>
+<li><label><input type="checkbox" data-k="i2c10cb27ac"><span>Me incentive a conversar com os meus amigos.</span></label></li>
+<li><label><input type="checkbox" data-k="ic35c8827c3"><span>Me ajude a escolher coisas saudáveis de que eu goste.</span></label></li>
+<li><label><input type="checkbox" data-k="i0e4dd85f71"><span>Me diga que esse é um bom momento para relaxar um pouco e aproveitar.</span></label></li>
+<li><label><input type="checkbox" data-k="id33c7e76fd"><span>Veja se eu estou comendo. O estresse pode me fazer não me sentir bem: pode doer a minha cabeça ou a minha barriga.</span></label></li>
+<li><label><input type="checkbox" data-k="ib801663591"><span>Talvez você precise ligar para a minha família se eu ficar repetidamente sem comer.</span></label></li>
 </ul></details>
 <details class="grupo">
 <summary><span>Quando é hora de sair do refeitório</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
-<li><label><input type="checkbox" data-k="ib93c229af6"><span>Caminhe com o Murilo ou encontre alguém com quem ele possa andar nos corredores.</span></label></li>
-<li><label><input type="checkbox" data-k="i832742817a"><span>Lembre o Murilo de organizar o espaço dele.</span></label></li>
-<li><label><input type="checkbox" data-k="i0550f07f66"><span>Confira se o Murilo pegou todos os pertences.</span></label></li>
-<li><label><input type="checkbox" data-k="i4fd010f73c"><span>Transições são difíceis para o Murilo, principalmente quando ele está se divertindo. Avise com antecedência para ele se preparar.</span></label></li>
-<li><label><input type="checkbox" data-k="ia2874b67e5"><span>Diga a que horas o almoço termina, para ele ficar pronto.</span></label></li>
-<li><label><input type="checkbox" data-k="ieecd297f66"><span>Diga para onde ele deve ir em seguida.</span></label></li>
-<li><label><input type="checkbox" data-k="i320d198302"><span>Avise com alguns minutos de antecedência.</span></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="iaccd53f341"><strong>Me avise a transição pela rotina visual. Mudança em cima da hora me deixa ansioso.</strong></label></li>
+<li><label><input type="checkbox" data-k="id498d359fe"><span>Caminhe comigo ou encontre alguém com quem eu possa andar nos corredores.</span></label></li>
+<li><label><input type="checkbox" data-k="ieec68e077c"><span>Me lembre de organizar o meu espaço.</span></label></li>
+<li><label><input type="checkbox" data-k="i9fca6c4de0"><span>Confira se eu peguei todos os meus pertences.</span></label></li>
+<li><label><input type="checkbox" data-k="i35ca5c8851"><span>Transições são difíceis para mim, principalmente quando eu estou me divertindo. Me avise com antecedência para eu me preparar.</span></label></li>
+<li><label><input type="checkbox" data-k="i427ff1ddea"><span>Diga a que horas o almoço termina, para eu ficar pronto.</span></label></li>
+<li><label><input type="checkbox" data-k="i34015674eb"><span>Diga para onde eu devo ir em seguida.</span></label></li>
+<li><label><input type="checkbox" data-k="i4ea8c0259b"><span>Me avise com alguns minutos de antecedência.</span></label></li>
 <li><label><input type="checkbox" data-k="ie32286b5e0"><span>Tente evitar aglomeração na saída.</span></label></li>
-<li><label><input type="checkbox" data-k="i80fdc48fb2"><span>Avise 5 minutos antes de ele precisar sair do refeitório.</span></label></li>
-<li><label><input type="checkbox" data-k="ia13cae10b6"><span>Lembre o Murilo para onde ele deve ir ao sair.</span></label></li>
+<li><label><input type="checkbox" data-k="i5805bb4f9e"><span>Me avise 5 minutos antes de eu precisar sair do refeitório.</span></label></li>
+<li><label><input type="checkbox" data-k="i069b72aa3c"><span>Me lembre para onde eu devo ir ao sair.</span></label></li>
 <li><label><input type="checkbox" data-k="iaeef4da349"><span>Organize a ordem de saída.</span></label></li>
-<li><label><input type="checkbox" data-k="i58a5f754bb"><span>Mostre onde ele deve jogar o lixo.</span></label></li>
-<li><label><input type="checkbox" data-k="iebc16f1418"><span>O Murilo demora um pouco para organizar: cada coisa precisa ficar no lugar certo.</span></label></li>
-<li><label><input type="checkbox" data-k="i6801cedf3a"><span>O Murilo precisa lavar as mãos depois do almoço.</span></label></li>
-<li><label><input type="checkbox" data-k="i36683d800e"><span>Peça para o Murilo ser o primeiro da fila: assim ele não fica prestando atenção em todo mundo.</span></label></li>
+<li><label><input type="checkbox" data-k="i50da595bfa"><span>Me mostre onde eu devo jogar o lixo.</span></label></li>
+<li><label><input type="checkbox" data-k="i27c8cc4848"><span>Eu demoro um pouco para organizar: cada coisa precisa ficar no lugar certo.</span></label></li>
+<li><label><input type="checkbox" data-k="i836d7ede4a"><span>Eu preciso lavar as mãos depois do almoço.</span></label></li>
+<li><label><input type="checkbox" data-k="i1d7de391e9"><span>Me peça para ser o primeiro da fila: assim eu não fico prestando atenção em todo mundo.</span></label></li>
 </ul></details>
 </section>
 <section class="bloco" id="educacao-fisica">
 <h2><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.4"/><path d="M6.1 6.6c3.9 2.2 7.9 2.2 11.8 0M6.1 17.4c3.9-2.2 7.9-2.2 11.8 0"/></svg>Na educação física</h2>
-<p class="bloco-sub">4 momentos · 79 sugestões. Toque em cada momento para abrir.</p>
+<p class="bloco-sub">4 momentos · 84 sugestões. Toque em cada momento para abrir.</p>
 <details class="grupo">
 <summary><span>Antes de começar</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
-<li><label><input type="checkbox" data-k="i8db0ba209c"><span>Diga ao Murilo que, mesmo sem energia, ele precisa pelo menos tentar participar.</span></label></li>
-<li><label><input type="checkbox" data-k="i90a87a7123"><span>Peça para ele experimentar a atividade, mesmo achando que não vai gostar.</span></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="ic7ab304827"><strong>A educação física é ótima para mim: é onde eu canalizo a minha energia e a minha agitação motora.</strong></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="idd4493cdce"><strong>Me mostre as regras num quadro visual antes de começar, para eu antecipar o que vem.</strong></label></li>
+<li><label><input type="checkbox" data-k="icc04a31f2d"><span>Me diga que, mesmo sem energia, eu preciso pelo menos tentar participar.</span></label></li>
+<li><label><input type="checkbox" data-k="i4dafdc8806"><span>Me peça para experimentar a atividade, mesmo que eu ache que não vou gostar.</span></label></li>
 <li><label><input type="checkbox" data-k="i2f5f9f631f"><span>Explique todas as regras do jogo.</span></label></li>
-<li><label><input type="checkbox" data-k="i8d0a173d48"><span>Confirme que o Murilo sabe qual é o papel dele no jogo.</span></label></li>
-<li><label><input type="checkbox" data-k="i8fff0a9e64"><span>Não force o Murilo a usar shorts nem a trocar de roupa na frente das outras pessoas.</span></label></li>
-<li><label><input type="checkbox" data-k="i89cf5bc41f"><span>Dê um tempo a mais e privacidade para ele se trocar.</span></label></li>
-<li><label><input type="checkbox" data-k="i23e3bd6716"><span>Diga o que vocês vão fazer na aula.</span></label></li>
-<li><label><input type="checkbox" data-k="i6740166eee"><span>Use as pistas visuais dele para mostrar quais serão as atividades.</span></label></li>
+<li><label><input type="checkbox" data-k="i3bb4d871d0"><span>Confirme que eu sei qual é o meu papel no jogo.</span></label></li>
+<li><label><input type="checkbox" data-k="id6fea60070"><span>Não me force a usar shorts nem a trocar de roupa na frente das outras pessoas.</span></label></li>
+<li><label><input type="checkbox" data-k="i6288adfd78"><span>Me dê um tempo a mais e privacidade para eu me trocar.</span></label></li>
+<li><label><input type="checkbox" data-k="i35cf68a4bf"><span>Diga o que a gente vai fazer na aula.</span></label></li>
+<li><label><input type="checkbox" data-k="ia577be30f4"><span>Use as minhas pistas visuais para me mostrar quais serão as atividades.</span></label></li>
 <li><label><input type="checkbox" data-k="i05cbe02264"><span>Relembre as regras de cuidado com o corpo durante a educação física e as consequências combinadas.</span></label></li>
-<li><label><input type="checkbox" data-k="i7b1a01bc37"><span>Deixe o Murilo correr antes, se ele estiver com dificuldade de controlar as emoções.</span></label></li>
-<li><label><input type="checkbox" data-k="i2d1f8000c3"><span>Use estratégias para chamar a atenção (ex.: bater palmas ou apitar).</span></label></li>
+<li><label><input type="checkbox" data-k="icdfb37a1b9"><span>Me deixe correr antes, se eu estiver com dificuldade de controlar as minhas emoções.</span></label></li>
+<li><label><input type="checkbox" data-k="i8d74565314"><span>Use estratégias para chamar a minha atenção (ex.: bater palmas ou apitar).</span></label></li>
 <li><label><input type="checkbox" data-k="i25fad063f9"><span>Deixe todo mundo sentado e em silêncio na hora da explicação.</span></label></li>
 <li><label><input type="checkbox" data-k="i4981b0041a"><span>Diga como ficar em segurança durante a atividade de hoje.</span></label></li>
-<li><label><input type="checkbox" data-k="ifc6bbbc4ac"><span>Relembre o que vocês fizeram na última aula.</span></label></li>
-<li><label><input type="checkbox" data-k="i12a3e17021"><span>Se o Murilo não conseguir fazer a atividade, dê outra coisa para ele fazer.</span></label></li>
-<li><label><input type="checkbox" data-k="i5a45c938c2"><span>Avise o que vocês vão fazer no dia, principalmente se for algo novo.</span></label></li>
-<li><label><input type="checkbox" data-k="i81643d8bc7"><span>Se a atividade for em dupla ou em grupo, o Murilo pode precisar lavar as mãos antes e depois.</span></label></li>
-<li><label><input type="checkbox" data-k="iad501cc544"><span>Diga o que se espera, as regras e as consequências, para ele estar preparado.</span></label></li>
-<li><label><input type="checkbox" data-k="icc2b23cc1a"><span>Às vezes um amigo precisa ajudar o Murilo a se arrumar; confira se ele está com tudo o que precisa.</span></label></li>
-<li><label><input type="checkbox" data-k="if4decd07f1"><span>Dê ao Murilo uma escolha de atividade, para ele ficar mais confortável.</span></label></li>
+<li><label><input type="checkbox" data-k="i5362fedbfd"><span>Relembre o que a gente fez na última aula.</span></label></li>
+<li><label><input type="checkbox" data-k="icaf77e09df"><span>Se eu não conseguir fazer a atividade, me dê outra coisa para fazer.</span></label></li>
+<li><label><input type="checkbox" data-k="i8bfa02b2f6"><span>Me avise o que a gente vai fazer no dia, principalmente se for algo novo.</span></label></li>
+<li><label><input type="checkbox" data-k="i36ebae6b11"><span>Se a atividade for em dupla ou em grupo, eu posso precisar lavar as mãos antes e depois.</span></label></li>
+<li><label><input type="checkbox" data-k="i04aeff6191"><span>Diga o que se espera, as regras e as consequências, para eu estar preparado.</span></label></li>
+<li><label><input type="checkbox" data-k="i8687ac37d0"><span>Às vezes um amigo precisa me ajudar a me arrumar; confira se eu estou com tudo o que eu preciso.</span></label></li>
+<li><label><input type="checkbox" data-k="i16b952b54a"><span>Me dê uma escolha de atividade, para eu ficar mais confortável.</span></label></li>
 <li><label><input type="checkbox" data-k="ic89956aabe"><span>Faça uma revisão da aula anterior.</span></label></li>
-<li><label><input type="checkbox" data-k="iebf1d6ab17"><span>Se for ter times, deixe-os montados antes — sem capitães escolhendo.</span></label></li>
+<li><label><input type="checkbox" data-k="i55e736e87e"><span>Se for ter times, deixe eles montados antes — sem capitães escolhendo.</span></label></li>
 </ul></details>
 <details class="grupo">
-<summary><span>Quando o Murilo precisa esperar na fila</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
+<summary><span>Quando eu preciso esperar na fila</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
-<li><label><input type="checkbox" data-k="i3dfab09599"><span>Converse com o Murilo enquanto ele espera na fila.</span></label></li>
-<li><label><input type="checkbox" data-k="i674ee02dcc"><span>Lembre o Murilo de ter paciência: a vez dele vai chegar.</span></label></li>
-<li><label><input type="checkbox" data-k="ia84f399e65"><span>Lembre que o Murilo fica ansioso e se sente sozinho. Puxar conversa é ótimo para mantê-lo ocupado.</span></label></li>
-<li><label><input type="checkbox" data-k="i7549e543f0"><span>Deixe um amigo ou alguém de confiança ficar perto dele.</span></label></li>
-<li><label><input type="checkbox" data-k="ie5450612d7"><span>Garanta um espaço em que ele possa ficar sem ser tocado e sem tocar nos outros.</span></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i923f659cd3"><strong>Fila cheia e barulhenta me desregula. Me deixe usar o abafador de ruídos enquanto eu espero.</strong></label></li>
+<li><label><input type="checkbox" data-k="i2177b9fa32"><span>Converse comigo enquanto eu espero na fila.</span></label></li>
+<li><label><input type="checkbox" data-k="ie7dd04e118"><span>Me lembre de ter paciência: a minha vez vai chegar.</span></label></li>
+<li><label><input type="checkbox" data-k="i5294ffea9d"><span>Lembre que eu fico ansioso e me sinto sozinho. Puxar conversa é ótimo para me manter ocupado.</span></label></li>
+<li><label><input type="checkbox" data-k="i36ca63fb82"><span>Deixe um amigo ou alguém de confiança ficar perto de mim.</span></label></li>
+<li><label><input type="checkbox" data-k="i4a5bbd023e"><span>Garanta um espaço em que eu possa ficar sem ser tocado e sem tocar nos outros.</span></label></li>
 <li><label><input type="checkbox" data-k="i37f812ab0a"><span>Diga para onde a fila está indo.</span></label></li>
-<li><label><input type="checkbox" data-k="i8754b84dd4"><span>Lembre que não vai demorar muito.</span></label></li>
+<li><label><input type="checkbox" data-k="i492e1fd25e"><span>Me lembre que não vai demorar muito.</span></label></li>
 <li><label><input type="checkbox" data-k="i93af8c129f"><span>Deixe claro e visível o caminho da espera.</span></label></li>
-<li><label><input type="checkbox" data-k="ia55d7e9403"><span>Peça para ele contar quantas pessoas estão na frente e prever quando será a vez dele.</span></label></li>
+<li><label><input type="checkbox" data-k="i1866ba4ae4"><span>Me peça para contar quantas pessoas estão na minha frente e prever quando será a minha vez.</span></label></li>
 <li><label><input type="checkbox" data-k="i0b178d0806"><span>Relembre como se espera na fila.</span></label></li>
-<li><label><input type="checkbox" data-k="if5989b44f4"><span>Dê a ele uma tarefa especial.</span></label></li>
-<li><label><input type="checkbox" data-k="i276cebdd8c"><span>Se ficar demais para ele, deixe que saia.</span></label></li>
-<li><label><input type="checkbox" data-k="ia8ca6532d1"><span>Se perceber o Murilo repetindo alguma ação, use o nosso sinal combinado para lembrá-lo.</span></label></li>
-<li><label><input type="checkbox" data-k="ia293c863c5"><span>Evite deixar o Murilo mais de 5 minutos em pé na fila, ou dê algo para ele apertar na mão, como uma bolinha antiestresse.</span></label></li>
-<li><label><input type="checkbox" data-k="i83d79c00f8"><span>Pergunte onde ele consegue ficar (na frente, no meio com os colegas, atrás).</span></label></li>
-<li><label><input type="checkbox" data-k="i865c2f8fd7"><span>Lembre o Murilo do que ele está esperando.</span></label></li>
-<li><label><input type="checkbox" data-k="i3a24f1f505"><span>Evite deixar o Murilo no meio de muitos alunos sem um adulto por perto.</span></label></li>
-<li><label><input type="checkbox" data-k="ic9465fe524"><span>Dê outra coisa para ele focar, para tirar a cabeça da espera.</span></label></li>
+<li><label><input type="checkbox" data-k="i6dd53450c8"><span>Me dê uma tarefa especial.</span></label></li>
+<li><label><input type="checkbox" data-k="i8669090eb2"><span>Se ficar demais para mim, me deixe sair.</span></label></li>
+<li><label><input type="checkbox" data-k="i578b3e9988"><span>Se perceber que eu estou repetindo alguma ação, use o nosso sinal combinado para me lembrar.</span></label></li>
+<li><label><input type="checkbox" data-k="i983169a745"><span>Evite me deixar mais de 5 minutos em pé na fila, ou me dê algo para apertar na mão, como uma bolinha antiestresse.</span></label></li>
+<li><label><input type="checkbox" data-k="id8a17b2365"><span>Me pergunte onde eu consigo ficar (na frente, no meio com os colegas, atrás).</span></label></li>
+<li><label><input type="checkbox" data-k="i36212fd323"><span>Me lembre do que eu estou esperando.</span></label></li>
+<li><label><input type="checkbox" data-k="i04eecb048e"><span>Evite me deixar no meio de muitos alunos sem um adulto por perto.</span></label></li>
+<li><label><input type="checkbox" data-k="ib85dd8bd69"><span>Me dê outra coisa para focar, para tirar a minha cabeça da espera.</span></label></li>
 </ul></details>
 <details class="grupo">
 <summary><span>Quando você está explicando as regras</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
+<li class="destaque"><label><input type="checkbox" data-k="ie6dd01622e"><strong>Use comandos curtos, diretos e objetivos, apoiados no quadro de regras visual.</strong></label></li>
 <li><label><input type="checkbox" data-k="i14436053d9"><span>Repita as regras várias vezes.</span></label></li>
-<li><label><input type="checkbox" data-k="i10295bac81"><span>O Murilo precisa olhar para você para escutar com atenção.</span></label></li>
-<li><label><input type="checkbox" data-k="if76964665a"><span>Talvez você precise reforçar que as regras são iguais para todo mundo. O Murilo pode achar que está sendo apontado ou excluído.</span></label></li>
-<li><label><input type="checkbox" data-k="i7b1f17665a"><span>Não presuma que o Murilo não tem dúvidas só porque não levantou a mão.</span></label></li>
-<li><label><input type="checkbox" data-k="ieca423f404"><span>Use as pistas visuais dele para relembrar as regras e as consequências combinadas.</span></label></li>
-<li><label><input type="checkbox" data-k="i09ca2cfdb1"><span>Explique o porquê das regras; o Murilo entende que segurança é importante.</span></label></li>
-<li><label><input type="checkbox" data-k="i53d7f7810c"><span>Deixe o Murilo repetir uma das regras para você.</span></label></li>
-<li><label><input type="checkbox" data-k="icb6a27c673"><span>Combine um sinal discreto para o Murilo mostrar que entendeu as regras, em vez de apontá-lo na frente de todo mundo.</span></label></li>
+<li><label><input type="checkbox" data-k="i73e1b6a941"><span>Eu preciso olhar para você para escutar com atenção.</span></label></li>
+<li><label><input type="checkbox" data-k="i1ada17e907"><span>Talvez você precise reforçar que as regras são iguais para todo mundo. Eu posso achar que estou sendo apontado ou excluído.</span></label></li>
+<li><label><input type="checkbox" data-k="i9fe9af6d20"><span>Não presuma que eu não tenho dúvidas só porque eu não levantei a mão.</span></label></li>
+<li><label><input type="checkbox" data-k="i8c09d9ab38"><span>Use as minhas pistas visuais para relembrar as regras e as consequências combinadas.</span></label></li>
+<li><label><input type="checkbox" data-k="ia059dcd388"><span>Explique o porquê das regras; eu entendo que segurança é importante.</span></label></li>
+<li><label><input type="checkbox" data-k="i26f611b91e"><span>Me deixe repetir uma das regras para você.</span></label></li>
+<li><label><input type="checkbox" data-k="if39941380e"><span>Combine um sinal discreto para eu mostrar que entendi as regras, em vez de me apontar na frente de todo mundo.</span></label></li>
 <li><label><input type="checkbox" data-k="i933e4ece6f"><span>Use palavras simples para explicar as regras.</span></label></li>
-<li><label><input type="checkbox" data-k="i10376c6f31"><span>Você pode pedir ao Murilo para demonstrar as regras.</span></label></li>
+<li><label><input type="checkbox" data-k="ifc980d4e6a"><span>Você pode me pedir para demonstrar as regras.</span></label></li>
 <li><label><input type="checkbox" data-k="ifb7a37773c"><span>Diga o que fazer e o que não fazer nos jogos de hoje.</span></label></li>
-<li><label><input type="checkbox" data-k="i9756c8cbf8"><span>Combine um sinal para ele saber quando ficar em silêncio (como levantar a mão).</span></label></li>
+<li><label><input type="checkbox" data-k="i2e4764fcdd"><span>Combine um sinal para eu saber quando ficar em silêncio (como levantar a mão).</span></label></li>
 <li><label><input type="checkbox" data-k="i6ef3edb090"><span>Fale devagar e com clareza.</span></label></li>
-<li><label><input type="checkbox" data-k="i5cb4dce95d"><span>Escreva as regras num papel, para o Murilo ler enquanto você fala.</span></label></li>
-<li><label><input type="checkbox" data-k="i5952e11f71"><span>Se o Murilo tiver uma crise enquanto você fala, mostre o nosso sinal combinado; ele vai tentar parar.</span></label></li>
-<li><label><input type="checkbox" data-k="i5114d80283"><span>Deixe o Murilo bem na sua frente e olhe para ele com frequência.</span></label></li>
-<li><label><input type="checkbox" data-k="ibab91871d5"><span>Mantenha as mesmas regras em todos os jogos, para o Murilo saber o que esperar.</span></label></li>
-<li><label><input type="checkbox" data-k="ic1af44bbf9"><span>Deixe claras as consequências e as recompensas antes, para ele saber o que esperar.</span></label></li>
-<li><label><input type="checkbox" data-k="ic8165d0f33"><span>Lembre o Murilo de olhar nos seus olhos.</span></label></li>
+<li><label><input type="checkbox" data-k="i77678f9bf6"><span>Escreva as regras num papel, para eu ler enquanto você fala.</span></label></li>
+<li><label><input type="checkbox" data-k="i8601b53322"><span>Se eu tiver uma crise enquanto você fala, me mostre o nosso sinal combinado; eu vou tentar parar.</span></label></li>
+<li><label><input type="checkbox" data-k="if36bfae005"><span>Me deixe bem na sua frente e olhe para mim com frequência.</span></label></li>
+<li><label><input type="checkbox" data-k="i2e0cd3bf57"><span>Mantenha as mesmas regras em todos os jogos, para eu saber o que esperar.</span></label></li>
+<li><label><input type="checkbox" data-k="i79063684d8"><span>Deixe claras as consequências e as recompensas antes, para eu saber o que esperar.</span></label></li>
+<li><label><input type="checkbox" data-k="ia929b9da8c"><span>Me lembre de olhar nos seus olhos.</span></label></li>
 <li><label><input type="checkbox" data-k="i53243f492f"><span>Seja um pouco flexível com as regras e valorize mais a participação do que a vitória.</span></label></li>
 </ul></details>
 <details class="grupo">
-<summary><span>Quando o Murilo perde ou não joga bem</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
+<summary><span>Quando eu perco ou não jogo bem</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
-<li><label><input type="checkbox" data-k="ie6e83ca6db"><span>Diga que ele jogou o melhor que conseguia e que isso é o suficiente.</span></label></li>
-<li><label><input type="checkbox" data-k="ia03892a22c"><span>Elogie as coisas que ele fez bem durante a atividade.</span></label></li>
-<li><label><input type="checkbox" data-k="ie759cf2277"><span>Lembre o Murilo de ser um bom perdedor.</span></label></li>
-<li><label><input type="checkbox" data-k="i818ed3e9d9"><span>Lembre o Murilo de jogar por diversão.</span></label></li>
-<li><label><input type="checkbox" data-k="i5cb0f6f6fa"><span>Reforce que essa não é a última vez que ele vai jogar. Diga que vai ter outra chance de fazer melhor — mas não descarte o sentimento dele: entenda que ele está chateado e ajude a atravessar isso.</span></label></li>
-<li><label><input type="checkbox" data-k="i34b700727b"><span>Diga que ele fez um bom trabalho por ter tentado.</span></label></li>
-<li><label><input type="checkbox" data-k="id12f4067de"><span>Diga que ele pode tentar de novo na próxima vez.</span></label></li>
-<li><label><input type="checkbox" data-k="i7639f9948f"><span>Lembre das vezes em que o time dele ganhou — ele nem sempre perde.</span></label></li>
-<li><label><input type="checkbox" data-k="i502b06795a"><span>Confirme que o Murilo lembra das consequências para comportamentos de raiva.</span></label></li>
-<li><label><input type="checkbox" data-k="id06c20d295"><span>Incentive o Murilo e deixe que ele tente de novo.</span></label></li>
-<li><label><input type="checkbox" data-k="ice2c34b8c3"><span>Lembre que tudo bem perder.</span></label></li>
-<li><label><input type="checkbox" data-k="i4a68ed7350"><span>Diga que ele pode melhorar e vai melhorar.</span></label></li>
-<li><label><input type="checkbox" data-k="ie8941c1c36"><span>Diga as coisas em que ele é bom.</span></label></li>
-<li><label><input type="checkbox" data-k="i85da903009"><span>Deixe o Murilo sentar e se acalmar.</span></label></li>
-<li><label><input type="checkbox" data-k="iab22de9830"><span>Encene com ele uma situação em que não jogou bem ou reagiu de forma inadequada (isso ajuda o Murilo a aprender melhor).</span></label></li>
-<li><label><input type="checkbox" data-k="i3580569dd5"><span>Deixe o Murilo saber as consequências antes, para ele saber o que esperar.</span></label></li>
-<li><label><input type="checkbox" data-k="ie69d5d3586"><span>Reforce que não é sobre ganhar ou perder e apoie a participação dele.</span></label></li>
-<li><label><input type="checkbox" data-k="i09e29ca2a6"><span>Lembre que todo mundo erra.</span></label></li>
-<li><label><input type="checkbox" data-k="i4d84e2f740"><span>Lembre que tudo o que você quer é que ele se divirta e se movimente.</span></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i4987ef323a"><strong>Eu me frustro rápido. As Estrelas Feliz e Triste me ajudam a retomar o controle e a lembrar do combinado.</strong></label></li>
+<li><label><input type="checkbox" data-k="i912186ed65"><span>Me diga que eu joguei o melhor que eu conseguia e que isso é o suficiente.</span></label></li>
+<li><label><input type="checkbox" data-k="i56e7b43f18"><span>Elogie as coisas que eu fiz bem durante a atividade.</span></label></li>
+<li><label><input type="checkbox" data-k="i1db99d7ef8"><span>Me lembre de ser um bom perdedor.</span></label></li>
+<li><label><input type="checkbox" data-k="i9c5de42feb"><span>Me lembre de jogar por diversão.</span></label></li>
+<li><label><input type="checkbox" data-k="i470fbf89b3"><span>Reforce que essa não é a última vez que eu vou jogar. Diga que eu vou ter outra chance de fazer melhor — mas não descarte o que eu estou sentindo: entenda que eu estou chateado e me ajude a atravessar isso.</span></label></li>
+<li><label><input type="checkbox" data-k="i954d6414ae"><span>Me diga que eu fiz um bom trabalho por ter tentado.</span></label></li>
+<li><label><input type="checkbox" data-k="ieb5db313e5"><span>Me diga que eu posso tentar de novo na próxima vez.</span></label></li>
+<li><label><input type="checkbox" data-k="idbde57f012"><span>Me lembre das vezes em que o meu time ganhou — eu nem sempre perco.</span></label></li>
+<li><label><input type="checkbox" data-k="i91646532d1"><span>Confirme que eu lembro das consequências para comportamentos de raiva.</span></label></li>
+<li><label><input type="checkbox" data-k="i6683967643"><span>Me incentive e me deixe tentar de novo.</span></label></li>
+<li><label><input type="checkbox" data-k="i55ff9fb2ca"><span>Me lembre que tudo bem perder.</span></label></li>
+<li><label><input type="checkbox" data-k="if327acd603"><span>Me diga que eu posso melhorar e vou melhorar.</span></label></li>
+<li><label><input type="checkbox" data-k="i85a9fafe8e"><span>Me diga as coisas em que eu sou bom.</span></label></li>
+<li><label><input type="checkbox" data-k="ice107adf74"><span>Me deixe sentar e me acalmar.</span></label></li>
+<li><label><input type="checkbox" data-k="i28b92d1811"><span>Encene comigo uma situação em que eu não joguei bem ou reagi de forma inadequada (isso me ajuda a aprender melhor).</span></label></li>
+<li><label><input type="checkbox" data-k="ib8a29ac2ac"><span>Me deixe saber as consequências antes, para eu saber o que esperar.</span></label></li>
+<li><label><input type="checkbox" data-k="id8b41c4479"><span>Reforce que não é sobre ganhar ou perder e apoie a minha participação.</span></label></li>
+<li><label><input type="checkbox" data-k="i475e693cc3"><span>Me lembre que todo mundo erra.</span></label></li>
+<li><label><input type="checkbox" data-k="i4d75704cb2"><span>Me lembre que tudo o que você quer é que eu me divirta e me movimente.</span></label></li>
 </ul></details>
 </section>
 <section class="bloco" id="biblioteca">
 <h2><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.2h4v13.6H4zM9.6 5.2h4v13.6h-4z"/><path d="M15.6 6l3.7 1-2.9 12.7-3.7-1z"/></svg>Na biblioteca</h2>
-<p class="bloco-sub">27 sugestões.</p>
+<p class="bloco-sub">29 sugestões.</p>
 <details class="grupo" open>
 <summary><span>Na biblioteca</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
-<li><label><input type="checkbox" data-k="i4c989da2cb"><span>Confira se o Murilo está envolvido em alguma atividade (lendo com um amigo ou sozinho).</span></label></li>
-<li><label><input type="checkbox" data-k="ieae005d1de"><span>Pergunte o que o Murilo gosta de ler e ajude a achar um bom livro.</span></label></li>
-<li><label><input type="checkbox" data-k="i6857085f0d"><span>Lembre o Murilo de usar a voz de biblioteca.</span></label></li>
-<li><label><input type="checkbox" data-k="ifa24b7224a"><span>Ajude o Murilo a escolher um livro adequado e que interesse a ele.</span></label></li>
-<li><label><input type="checkbox" data-k="i8ab1561f40"><span>Lembre que o Murilo pode ter dificuldade em entender o tempo de silêncio e pode sentir que está sendo ignorado ou que falam dele. Tudo bem checar de vez em quando como ele está.</span></label></li>
-<li><label><input type="checkbox" data-k="ieca423f404"><span>Use as pistas visuais dele para relembrar as regras e as consequências combinadas.</span></label></li>
-<li><label><input type="checkbox" data-k="ia4f9a9b0e0"><span>Avise antes quais são as áreas ou os livros que estão fora do alcance dele.</span></label></li>
-<li><label><input type="checkbox" data-k="ia84cdad4aa"><span>Dê um aviso quando estiver quase na hora de sair.</span></label></li>
-<li><label><input type="checkbox" data-k="id60dc0b2fe"><span>Deixe o Murilo sair se ele precisar dar uma caminhada.</span></label></li>
-<li><label><input type="checkbox" data-k="i06a3517887"><span>Diga ao Murilo quando ele estiver se comportando do jeito certo na biblioteca.</span></label></li>
-<li><label><input type="checkbox" data-k="i8c19e42f2b"><span>Deixe o Murilo usar algo antiestresse para se acalmar quando estiver com dificuldade de controlar as emoções.</span></label></li>
-<li><label><input type="checkbox" data-k="i25edee5770"><span>Deixe as regras da biblioteca na parede, para lembrá-lo.</span></label></li>
-<li><label><input type="checkbox" data-k="i363069995e"><span>Ajude o Murilo a achar livros interessantes e adequados ao nível de leitura dele.</span></label></li>
-<li><label><input type="checkbox" data-k="i191fa676af"><span>Não obrigue o Murilo a ficar tempo demais na biblioteca. Se precisar, deixe que ele saia.</span></label></li>
-<li><label><input type="checkbox" data-k="ia2984bd043"><span>Você pode designar um parceiro de leitura para ele.</span></label></li>
-<li><label><input type="checkbox" data-k="if9a3e99052"><span>Mostre qual deve ser o volume da voz dele.</span></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i85b98d74f5"><strong>Letras e números são o meu hiperfoco: me leve para os livros e jogos de letras e números, que é onde eu me engajo de verdade.</strong></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i26248bda01"><strong>Me deixe usar o abafador de ruídos se a biblioteca estiver agitada.</strong></label></li>
+<li><label><input type="checkbox" data-k="i2c8db89d17"><span>Confira se eu estou envolvido em alguma atividade (lendo com um amigo ou sozinho).</span></label></li>
+<li><label><input type="checkbox" data-k="i9093228550"><span>Me pergunte o que eu gosto de ler e me ajude a achar um bom livro.</span></label></li>
+<li><label><input type="checkbox" data-k="ic025af60c7"><span>Me lembre de usar a voz de biblioteca.</span></label></li>
+<li><label><input type="checkbox" data-k="i7a80a5a2c1"><span>Me ajude a escolher um livro adequado e que me interesse.</span></label></li>
+<li><label><input type="checkbox" data-k="i8bd2b4ad7d"><span>Lembre que eu posso ter dificuldade em entender o tempo de silêncio e posso sentir que estou sendo ignorado ou que falam de mim. Tudo bem checar de vez em quando como eu estou.</span></label></li>
+<li><label><input type="checkbox" data-k="i8c09d9ab38"><span>Use as minhas pistas visuais para relembrar as regras e as consequências combinadas.</span></label></li>
+<li><label><input type="checkbox" data-k="id462a7abd0"><span>Me avise antes quais são as áreas ou os livros que estão fora do meu alcance.</span></label></li>
+<li><label><input type="checkbox" data-k="i40dcfdd26d"><span>Me dê um aviso quando estiver quase na hora de sair.</span></label></li>
+<li><label><input type="checkbox" data-k="ib9b15c4269"><span>Me deixe sair se eu precisar dar uma caminhada.</span></label></li>
+<li><label><input type="checkbox" data-k="ib94c13040e"><span>Me diga quando eu estiver me comportando do jeito certo na biblioteca.</span></label></li>
+<li><label><input type="checkbox" data-k="i9923251a8a"><span>Me deixe usar algo antiestresse para me acalmar quando eu estiver com dificuldade de controlar as minhas emoções.</span></label></li>
+<li><label><input type="checkbox" data-k="i6ff2c2a61a"><span>Deixe as regras da biblioteca na parede, para me lembrar.</span></label></li>
+<li><label><input type="checkbox" data-k="ib8cacfe7df"><span>Me ajude a achar livros interessantes e adequados ao meu nível de leitura.</span></label></li>
+<li><label><input type="checkbox" data-k="ie09dbc9eee"><span>Não me obrigue a ficar tempo demais na biblioteca. Se precisar, me deixe sair.</span></label></li>
+<li><label><input type="checkbox" data-k="i964bcf5226"><span>Você pode designar um parceiro de leitura para mim.</span></label></li>
+<li><label><input type="checkbox" data-k="icde38baaf5"><span>Me mostre qual deve ser o volume da minha voz.</span></label></li>
 <li><label><input type="checkbox" data-k="i6db20372b4"><span>Deixe as regras da biblioteca visíveis no quadro.</span></label></li>
-<li><label><input type="checkbox" data-k="i44a61be67d"><span>Ficar quieto pode ser difícil para o Murilo. Se perceber que ele está repetindo alguma ação, mostre o nosso sinal combinado.</span></label></li>
-<li><label><input type="checkbox" data-k="i40e2a45bde"><span>Dê tempo extra para o Murilo escolher um livro.</span></label></li>
-<li><label><input type="checkbox" data-k="i4dd1c8a86d"><span>Deixe o Murilo lavar as mãos depois de escolher o livro, se ele pedir.</span></label></li>
-<li><label><input type="checkbox" data-k="i614365dd34"><span>Deixe o Murilo em um grupo pequeno, com colegas tranquilos.</span></label></li>
-<li><label><input type="checkbox" data-k="i5c7cfee1cf"><span>Não coloque nada na frente dele antes da hora de usar (lápis, papel, livros).</span></label></li>
-<li><label><input type="checkbox" data-k="iad501cc544"><span>Diga o que se espera, as regras e as consequências, para ele estar preparado.</span></label></li>
-<li><label><input type="checkbox" data-k="i3a24f1f505"><span>Evite deixar o Murilo no meio de muitos alunos sem um adulto por perto.</span></label></li>
-<li><label><input type="checkbox" data-k="i69e5e818c6"><span>Mantenha as mesmas regras em todas as idas à biblioteca, para o Murilo saber o que esperar.</span></label></li>
-<li><label><input type="checkbox" data-k="id4eca55581"><span>Ajude o Murilo a manter o foco.</span></label></li>
-<li><label><input type="checkbox" data-k="ie8e3649dea"><span>Ajude o Murilo a achar formas de relaxar com a leitura.</span></label></li>
+<li><label><input type="checkbox" data-k="ib699818a93"><span>Ficar quieto pode ser difícil para mim. Se perceber que eu estou repetindo alguma ação, me mostre o nosso sinal combinado.</span></label></li>
+<li><label><input type="checkbox" data-k="i0420b44b76"><span>Me dê tempo extra para escolher um livro.</span></label></li>
+<li><label><input type="checkbox" data-k="iec7fbd2894"><span>Me deixe lavar as mãos depois de escolher o livro, se eu pedir.</span></label></li>
+<li><label><input type="checkbox" data-k="iedde6bb3fb"><span>Me deixe em um grupo pequeno, com colegas tranquilos.</span></label></li>
+<li><label><input type="checkbox" data-k="i19fe7bd03d"><span>Não coloque nada na minha frente antes da hora de usar (lápis, papel, livros).</span></label></li>
+<li><label><input type="checkbox" data-k="i04aeff6191"><span>Diga o que se espera, as regras e as consequências, para eu estar preparado.</span></label></li>
+<li><label><input type="checkbox" data-k="i04eecb048e"><span>Evite me deixar no meio de muitos alunos sem um adulto por perto.</span></label></li>
+<li><label><input type="checkbox" data-k="if0c7759c5d"><span>Mantenha as mesmas regras em todas as idas à biblioteca, para eu saber o que esperar.</span></label></li>
+<li><label><input type="checkbox" data-k="i7d1e5461cb"><span>Me ajude a manter o foco.</span></label></li>
+<li><label><input type="checkbox" data-k="i8e5bc110e9"><span>Me ajude a achar formas de relaxar com a leitura.</span></label></li>
 </ul></details>
 </section>
 <section class="bloco" id="musica">
 <h2><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.4 17.6V5.9l9.4-1.9v11.7"/><circle cx="6.9" cy="17.9" r="2.5"/><circle cx="16.3" cy="15.9" r="2.5"/></svg>Na aula de música</h2>
-<p class="bloco-sub">39 sugestões.</p>
+<p class="bloco-sub">41 sugestões.</p>
 <details class="grupo" open>
 <summary><span>Na aula de música</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
-<li><label><input type="checkbox" data-k="i1461b6299d"><span>Elogie o Murilo quando ele participar da aula.</span></label></li>
-<li><label><input type="checkbox" data-k="i27dbfd3c08"><span>Lembre o Murilo de não fazer muito barulho.</span></label></li>
-<li><label><input type="checkbox" data-k="i3cb6eb7c45"><span>Lembre o Murilo de usar as boas maneiras.</span></label></li>
-<li><label><input type="checkbox" data-k="iaa11c0bc7f"><span>Dê a ele uma parte que permita se movimentar.</span></label></li>
-<li><label><input type="checkbox" data-k="i9f348c51f3"><span>Não force o Murilo a participar se ele não quiser. No começo ele pode preferir ficar observando — diga que tudo bem.</span></label></li>
-<li><label><input type="checkbox" data-k="i4d47b533a6"><span>O Murilo pode se expressar de um jeito diferente das outras crianças. Deixe que ele tenha os próprios pensamentos, mas fique atento ao que você achar que merece conversa. Pergunte a ele se tudo bem falar sobre isso.</span></label></li>
-<li><label><input type="checkbox" data-k="i9f6956527c"><span>Não chame o Murilo se ele não tiver levantado a mão e não estiver pronto.</span></label></li>
-<li><label><input type="checkbox" data-k="i9594079413"><span>Avise com bastante antecedência se a turma for se apresentar para outras pessoas.</span></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i399a26d49a"><strong>Som alto me incomoda muito. Me deixe usar o abafador de ruídos na aula de música sempre que eu precisar.</strong></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i50b84fa878"><strong>Me mostre a sequência da aula com apoio visual, para eu saber o que vem em cada momento.</strong></label></li>
+<li><label><input type="checkbox" data-k="i0f912d5906"><span>Me elogie quando eu participar da aula.</span></label></li>
+<li><label><input type="checkbox" data-k="i1603e7c47a"><span>Me lembre de não fazer muito barulho.</span></label></li>
+<li><label><input type="checkbox" data-k="i044a159c1c"><span>Me lembre de usar as boas maneiras.</span></label></li>
+<li><label><input type="checkbox" data-k="i4b70ea60d1"><span>Me dê uma parte que me permita me movimentar.</span></label></li>
+<li><label><input type="checkbox" data-k="i96c2224e9d"><span>Não me force a participar se eu não quiser. No começo eu posso preferir ficar observando — me diga que tudo bem.</span></label></li>
+<li><label><input type="checkbox" data-k="idb85621915"><span>Eu posso me expressar de um jeito diferente das outras crianças. Me deixe ter os meus próprios pensamentos, mas fique atento ao que você achar que merece conversa. Me pergunte se tudo bem falar sobre isso.</span></label></li>
+<li><label><input type="checkbox" data-k="icaed9dea97"><span>Não me chame se eu não tiver levantado a mão e não estiver pronto.</span></label></li>
+<li><label><input type="checkbox" data-k="i5825f0472f"><span>Me avise com bastante antecedência se a turma for se apresentar para outras pessoas.</span></label></li>
 <li><label><input type="checkbox" data-k="i5566eb85b3"><span>Relembre a cada vez como usar os instrumentos corretamente.</span></label></li>
-<li><label><input type="checkbox" data-k="i022c80c9f8"><span>Deixe o Murilo sentar perto de você quando forem usar instrumentos, para ele ser lembrado do combinado.</span></label></li>
-<li><label><input type="checkbox" data-k="ia84cdad4aa"><span>Dê um aviso quando estiver quase na hora de sair.</span></label></li>
-<li><label><input type="checkbox" data-k="ieca423f404"><span>Use as pistas visuais dele para relembrar as regras e as consequências combinadas.</span></label></li>
-<li><label><input type="checkbox" data-k="ia946b586a3"><span>Deixe o Murilo ficar de pé quando estiver tocando um instrumento.</span></label></li>
-<li><label><input type="checkbox" data-k="ia280a79a5c"><span>Coloque o Murilo perto da porta, para ele poder sair se sentir que vai perder o controle.</span></label></li>
-<li><label><input type="checkbox" data-k="i0b2e490688"><span>Deixe a programação no quadro, para a turma e para o Murilo saberem o que vem.</span></label></li>
+<li><label><input type="checkbox" data-k="i2355cc082c"><span>Me deixe sentar perto de você quando a gente for usar instrumentos, para eu ser lembrado do combinado.</span></label></li>
+<li><label><input type="checkbox" data-k="i40dcfdd26d"><span>Me dê um aviso quando estiver quase na hora de sair.</span></label></li>
+<li><label><input type="checkbox" data-k="i8c09d9ab38"><span>Use as minhas pistas visuais para relembrar as regras e as consequências combinadas.</span></label></li>
+<li><label><input type="checkbox" data-k="i4844100008"><span>Me deixe ficar de pé quando eu estiver tocando um instrumento.</span></label></li>
+<li><label><input type="checkbox" data-k="i4c394286b4"><span>Me coloque perto da porta, para eu poder sair se sentir que vou perder o controle.</span></label></li>
+<li><label><input type="checkbox" data-k="i60ebc397a0"><span>Deixe a programação no quadro, para a turma e para mim sabermos o que vem.</span></label></li>
 <li><label><input type="checkbox" data-k="i177811b7e4"><span>Diga que todo mundo vai ter a chance de usar todos os instrumentos.</span></label></li>
 <li><label><input type="checkbox" data-k="i7e67431789"><span>Em vez de só cantar, use outros recursos para deixar a aula mais divertida (vídeo, teatro).</span></label></li>
-<li><label><input type="checkbox" data-k="ic0689eca7f"><span>A música pode ajudar o Murilo a extravasar uma crise ou emoções intensas.</span></label></li>
-<li><label><input type="checkbox" data-k="i9aca8438d5"><span>Diga o que vocês vão fazer hoje.</span></label></li>
-<li><label><input type="checkbox" data-k="ief4c69cb41"><span>Relembre o que vocês fizeram da última vez.</span></label></li>
-<li><label><input type="checkbox" data-k="if9edb391e6"><span>Diga o que ele deve fazer enquanto espera a vez (com os instrumentos, por exemplo).</span></label></li>
-<li><label><input type="checkbox" data-k="ia0c3343407"><span>Mostre como usar os instrumentos do jeito certo.</span></label></li>
-<li><label><input type="checkbox" data-k="ia5a161d0df"><span>Confira se ele está fazendo o que deveria.</span></label></li>
-<li><label><input type="checkbox" data-k="i5c74aaddf1"><span>Deixe o Murilo sair se a aula ficar sobrecarregante demais para ele.</span></label></li>
-<li><label><input type="checkbox" data-k="i8a3b764807"><span>Se forem usar instrumentos, deixe o Murilo limpar o dele com os lencinhos antes de tocar, se ele precisar.</span></label></li>
-<li><label><input type="checkbox" data-k="i217e7be658"><span>O Murilo pode demorar mais para começar a tocar; se perceber ações repetitivas, mostre o nosso sinal combinado.</span></label></li>
-<li><label><input type="checkbox" data-k="i7b955c2b7b"><span>Quando a aula acabar, deixe o Murilo lavar as mãos.</span></label></li>
-<li><label><input type="checkbox" data-k="i68b0325df8"><span>Sente o Murilo na primeira fila, no meio, na frente do professor.</span></label></li>
-<li><label><input type="checkbox" data-k="i11bef6bc87"><span>Se ele estiver se comportando bem, deixe acompanhar a música com um instrumento.</span></label></li>
-<li><label><input type="checkbox" data-k="i3582c85569"><span>Deixe o Murilo ajudar a distribuir materiais (partituras, instrumentos).</span></label></li>
-<li><label><input type="checkbox" data-k="ia154ed4730"><span>Se ficar sobrecarregado de estímulos, ofereça um tempo no corredor, longe da turma.</span></label></li>
-<li><label><input type="checkbox" data-k="iad501cc544"><span>Diga o que se espera, as regras e as consequências, para ele estar preparado.</span></label></li>
-<li><label><input type="checkbox" data-k="i958d23f394"><span>Mantenha as mesmas regras em todas as aulas de música, para o Murilo saber o que esperar.</span></label></li>
-<li><label><input type="checkbox" data-k="i47edffb07e"><span>Tenha paciência se o Murilo achar que a música está alta demais.</span></label></li>
-<li><label><input type="checkbox" data-k="i3fae60db91"><span>Peça a um amigo para ajudar o Murilo a acompanhar a música.</span></label></li>
-<li><label><input type="checkbox" data-k="i6048d039b3"><span>Incentive o Murilo a participar, mas deixe que ele faça uma pausa se precisar.</span></label></li>
-<li><label><input type="checkbox" data-k="i6f8327d55a"><span>Dê a ele alguma escolha sobre o que fazer na música.</span></label></li>
-<li><label><input type="checkbox" data-k="i91a07d79a4"><span>Não chame o Murilo para cantar sozinho.</span></label></li>
-<li><label><input type="checkbox" data-k="i33d525574e"><span>O Murilo pode cantar mais baixo do que a maioria.</span></label></li>
+<li><label><input type="checkbox" data-k="i0f13a09d7b"><span>A música pode me ajudar a extravasar uma crise ou emoções intensas.</span></label></li>
+<li><label><input type="checkbox" data-k="i08a5ae3383"><span>Diga o que a gente vai fazer hoje.</span></label></li>
+<li><label><input type="checkbox" data-k="i21ab8f5d5d"><span>Relembre o que a gente fez da última vez.</span></label></li>
+<li><label><input type="checkbox" data-k="i2a4e597013"><span>Diga o que eu devo fazer enquanto espero a minha vez (com os instrumentos, por exemplo).</span></label></li>
+<li><label><input type="checkbox" data-k="iae8cb09208"><span>Me mostre como usar os instrumentos do jeito certo.</span></label></li>
+<li><label><input type="checkbox" data-k="i82aa3c888c"><span>Confira se eu estou fazendo o que eu deveria.</span></label></li>
+<li><label><input type="checkbox" data-k="i77a68a4a09"><span>Me deixe sair se a aula ficar sobrecarregante demais para mim.</span></label></li>
+<li><label><input type="checkbox" data-k="i79cdf584fe"><span>Se a gente for usar instrumentos, me deixe limpar o meu com os lencinhos antes de tocar, se eu precisar.</span></label></li>
+<li><label><input type="checkbox" data-k="i043c4d96ff"><span>Eu posso demorar mais para começar a tocar; se perceber ações repetitivas, me mostre o nosso sinal combinado.</span></label></li>
+<li><label><input type="checkbox" data-k="i4d3a2b4449"><span>Quando a aula acabar, me deixe lavar as mãos.</span></label></li>
+<li><label><input type="checkbox" data-k="i86a141f3f4"><span>Me sente na primeira fila, no meio, na frente do professor.</span></label></li>
+<li><label><input type="checkbox" data-k="i4acd5f3da5"><span>Se eu estiver me comportando bem, me deixe acompanhar a música com um instrumento.</span></label></li>
+<li><label><input type="checkbox" data-k="i4edc888f72"><span>Me deixe ajudar a distribuir materiais (partituras, instrumentos).</span></label></li>
+<li><label><input type="checkbox" data-k="i9018ad4b10"><span>Se eu ficar sobrecarregado de estímulos, me ofereça um tempo no corredor, longe da turma.</span></label></li>
+<li><label><input type="checkbox" data-k="i04aeff6191"><span>Diga o que se espera, as regras e as consequências, para eu estar preparado.</span></label></li>
+<li><label><input type="checkbox" data-k="i2e8d32b26e"><span>Mantenha as mesmas regras em todas as aulas de música, para eu saber o que esperar.</span></label></li>
+<li><label><input type="checkbox" data-k="iea208d1f5b"><span>Tenha paciência se eu achar que a música está alta demais.</span></label></li>
+<li><label><input type="checkbox" data-k="i5e268b3169"><span>Peça a um amigo para me ajudar a acompanhar a música.</span></label></li>
+<li><label><input type="checkbox" data-k="i81df6a20bc"><span>Me incentive a participar, mas me deixe fazer uma pausa se eu precisar.</span></label></li>
+<li><label><input type="checkbox" data-k="ic23ec525af"><span>Me dê alguma escolha sobre o que fazer na música.</span></label></li>
+<li><label><input type="checkbox" data-k="i3ec3dff163"><span>Não me chame para cantar sozinho.</span></label></li>
+<li><label><input type="checkbox" data-k="i1e21264c98"><span>Eu posso cantar mais baixo do que a maioria.</span></label></li>
 </ul></details>
 </section>
 <section class="bloco" id="artes">
 <h2><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.4c-4.8 0-8.6 3.9-8.6 8.6s3.9 8.6 8.6 8.6c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1.1.9-2 2-2h1.4c2.6 0 4.7-2.1 4.7-4.7 0-3.7-3.8-5.9-9.1-5.9z"/><circle cx="7.6" cy="11" r="1.1"/><circle cx="10.4" cy="7.4" r="1.1"/><circle cx="15" cy="8" r="1.1"/></svg>Na aula de artes</h2>
-<p class="bloco-sub">32 sugestões.</p>
+<p class="bloco-sub">34 sugestões.</p>
 <details class="grupo" open>
 <summary><span>Na aula de artes</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
-<li><label><input type="checkbox" data-k="ief1c975930"><span>Elogie o trabalho do Murilo enquanto ele está fazendo.</span></label></li>
-<li><label><input type="checkbox" data-k="i56ffe3e2de"><span>Confira se o Murilo sabe usar os materiais corretamente.</span></label></li>
-<li><label><input type="checkbox" data-k="i39b7bd40c4"><span>Proponha um projeto que você sabe que ele consegue fazer.</span></label></li>
-<li><label><input type="checkbox" data-k="i1e684e1d23"><span>Não peça para o Murilo mostrar o trabalho na frente de todo mundo, a não ser que ele se ofereça.</span></label></li>
-<li><label><input type="checkbox" data-k="i54b15d20b9"><span>Diga quando ele fizer um bom trabalho e incentive ele a mostrar para os outros.</span></label></li>
-<li><label><input type="checkbox" data-k="i46e5ae3838"><span>Deixe claro onde o trabalho dele deve ficar quando terminar.</span></label></li>
-<li><label><input type="checkbox" data-k="i62e9e0e0a0"><span>Ajude o Murilo a entender como dividir os materiais de arte.</span></label></li>
-<li><label><input type="checkbox" data-k="i9258722326"><span>Dê um aviso quando estiver quase na hora de guardar tudo.</span></label></li>
-<li><label><input type="checkbox" data-k="ieca423f404"><span>Use as pistas visuais dele para relembrar as regras e as consequências combinadas.</span></label></li>
-<li><label><input type="checkbox" data-k="i7b6cb2af95"><span>Deixe o Murilo escolher o que quer fazer, às vezes.</span></label></li>
-<li><label><input type="checkbox" data-k="i493816daa5"><span>Deixe as regras onde ele possa ver.</span></label></li>
-<li><label><input type="checkbox" data-k="i1be3169047"><span>Coloque na mesa dele colegas que o ajudem a ficar calmo quando o trabalho for individual.</span></label></li>
-<li><label><input type="checkbox" data-k="i6c39ea8d88"><span>Deixe o Murilo usar a arte para expressar o que ele sente.</span></label></li>
-<li><label><input type="checkbox" data-k="i9f1cfea759"><span>Evite ferramentas perigosas sempre que possível; se não der, fique ao lado supervisionando enquanto ele usa.</span></label></li>
-<li><label><input type="checkbox" data-k="i9aca8438d5"><span>Diga o que vocês vão fazer hoje.</span></label></li>
-<li><label><input type="checkbox" data-k="i286ea40a5d"><span>Diga quais materiais ele pode usar.</span></label></li>
-<li><label><input type="checkbox" data-k="i5948c25b99"><span>Avise antes da hora de guardar tudo.</span></label></li>
-<li><label><input type="checkbox" data-k="i09188e3d07"><span>Deixe os lugares etiquetados, para lembrar onde cada coisa vai.</span></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i4edf8031ca"><strong>Eu uso pautas adaptadas e guias visuais para regular o tamanho das letras, respeitar as margens e reduzir rabiscos. Vale o mesmo no desenho.</strong></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="i696b5e80ed"><strong>Materiais concretos — cartões, jogos, letras e números — são o que mais me motiva.</strong></label></li>
+<li><label><input type="checkbox" data-k="if190a0789d"><span>Elogie o meu trabalho enquanto eu estou fazendo.</span></label></li>
+<li><label><input type="checkbox" data-k="i596b028ff7"><span>Confira se eu sei usar os materiais corretamente.</span></label></li>
+<li><label><input type="checkbox" data-k="id936fc99a9"><span>Me proponha um projeto que você sabe que eu consigo fazer.</span></label></li>
+<li><label><input type="checkbox" data-k="i540c596387"><span>Não me peça para mostrar o trabalho na frente de todo mundo, a não ser que eu me ofereça.</span></label></li>
+<li><label><input type="checkbox" data-k="i2f4578bf10"><span>Me diga quando eu fizer um bom trabalho e me incentive a mostrar para os outros.</span></label></li>
+<li><label><input type="checkbox" data-k="if9141c56ab"><span>Deixe claro onde o meu trabalho deve ficar quando eu terminar.</span></label></li>
+<li><label><input type="checkbox" data-k="i431d0fcfdf"><span>Me ajude a entender como dividir os materiais de arte.</span></label></li>
+<li><label><input type="checkbox" data-k="iabbf270f84"><span>Me dê um aviso quando estiver quase na hora de guardar tudo.</span></label></li>
+<li><label><input type="checkbox" data-k="i8c09d9ab38"><span>Use as minhas pistas visuais para relembrar as regras e as consequências combinadas.</span></label></li>
+<li><label><input type="checkbox" data-k="i751f742279"><span>Me deixe escolher o que eu quero fazer, às vezes.</span></label></li>
+<li><label><input type="checkbox" data-k="i268daf8366"><span>Deixe as regras onde eu possa ver.</span></label></li>
+<li><label><input type="checkbox" data-k="ibffdfc13e6"><span>Coloque na minha mesa colegas que me ajudem a ficar calmo quando o trabalho for individual.</span></label></li>
+<li><label><input type="checkbox" data-k="i01811524e5"><span>Me deixe usar a arte para expressar o que eu sinto.</span></label></li>
+<li><label><input type="checkbox" data-k="i84b4314abf"><span>Evite ferramentas perigosas sempre que possível; se não der, fique ao lado supervisionando enquanto eu uso.</span></label></li>
+<li><label><input type="checkbox" data-k="i08a5ae3383"><span>Diga o que a gente vai fazer hoje.</span></label></li>
+<li><label><input type="checkbox" data-k="i71bc2d1fa1"><span>Diga quais materiais eu posso usar.</span></label></li>
+<li><label><input type="checkbox" data-k="i0c7a3edc8f"><span>Me avise antes da hora de guardar tudo.</span></label></li>
+<li><label><input type="checkbox" data-k="iac073b0e37"><span>Deixe os lugares etiquetados, para me lembrar onde cada coisa vai.</span></label></li>
 <li><label><input type="checkbox" data-k="i1dc650d6fd"><span>Use produtos de arte laváveis e não tóxicos.</span></label></li>
-<li><label><input type="checkbox" data-k="if9bfa19abd"><span>O Murilo tem dificuldade com certas texturas nas mãos. Se a aula usar esses materiais, avise antes para ele se preparar. Se a textura incomodar muito, não force ele a terminar o trabalho.</span></label></li>
-<li><label><input type="checkbox" data-k="if40942b31a"><span>O Murilo pode precisar lavar as mãos entre uma etapa e outra.</span></label></li>
-<li><label><input type="checkbox" data-k="if6f2f09406"><span>Deixe o Murilo lavar as mãos depois da aula de artes.</span></label></li>
-<li><label><input type="checkbox" data-k="ie41223d6cc"><span>Não coloque nada na frente dele antes da hora de usar.</span></label></li>
-<li><label><input type="checkbox" data-k="i8dc105f7eb"><span>Dê um material de cada vez (tinta e pincel), para ele não pular para a etapa seguinte.</span></label></li>
-<li><label><input type="checkbox" data-k="i56f0bd0fe8"><span>Sente o Murilo numa mesa pequena, com poucos colegas, para ele conseguir prestar atenção.</span></label></li>
-<li><label><input type="checkbox" data-k="i13dac82a51"><span>Diga o que esperar e quais são as regras, para ele ficar preparado.</span></label></li>
-<li><label><input type="checkbox" data-k="idd5a4ea7ed"><span>Mantenha as mesmas regras em todas as aulas de artes, para o Murilo saber o que esperar.</span></label></li>
-<li><label><input type="checkbox" data-k="i4867d35ca5"><span>Deixe o Murilo se expressar pelo desenho, se perceber que o dia dele está difícil.</span></label></li>
-<li><label><input type="checkbox" data-k="i71ae61b677"><span>Dê a ele escolha sobre o que fazer ou como fazer.</span></label></li>
-<li><label><input type="checkbox" data-k="i3897b2f0e8"><span>Deixe o Murilo escolher se quer trabalhar com um amigo; às vezes ele vai gostar, às vezes não.</span></label></li>
-<li><label><input type="checkbox" data-k="i2f1e6b2a82"><span>Ajude o Murilo a descobrir uma arte que o ajude a relaxar.</span></label></li>
-<li><label><input type="checkbox" data-k="i16fbee5147"><span>Lembre o Murilo de focar no que ele faz bem, e não no que ele faz mal.</span></label></li>
+<li><label><input type="checkbox" data-k="i89b2ffe7d5"><span>Eu tenho dificuldade com certas texturas nas mãos. Se a aula usar esses materiais, me avise antes para eu me preparar. Se a textura me incomodar muito, não me force a terminar o trabalho.</span></label></li>
+<li><label><input type="checkbox" data-k="iec150172aa"><span>Eu posso precisar lavar as mãos entre uma etapa e outra.</span></label></li>
+<li><label><input type="checkbox" data-k="ie7ae74ecb6"><span>Me deixe lavar as mãos depois da aula de artes.</span></label></li>
+<li><label><input type="checkbox" data-k="if1ba3e614c"><span>Não coloque nada na minha frente antes da hora de usar.</span></label></li>
+<li><label><input type="checkbox" data-k="i8d69fea657"><span>Me dê um material de cada vez (tinta e pincel), para eu não pular para a etapa seguinte.</span></label></li>
+<li><label><input type="checkbox" data-k="i597eef879d"><span>Me sente numa mesa pequena, com poucos colegas, para eu conseguir prestar atenção.</span></label></li>
+<li><label><input type="checkbox" data-k="id136ec296b"><span>Diga o que esperar e quais são as regras, para eu ficar preparado.</span></label></li>
+<li><label><input type="checkbox" data-k="i96d9970752"><span>Mantenha as mesmas regras em todas as aulas de artes, para eu saber o que esperar.</span></label></li>
+<li><label><input type="checkbox" data-k="i0a15288f53"><span>Me deixe me expressar pelo desenho, se perceber que o meu dia está difícil.</span></label></li>
+<li><label><input type="checkbox" data-k="id492c5c4c8"><span>Me dê escolha sobre o que fazer ou como fazer.</span></label></li>
+<li><label><input type="checkbox" data-k="if562dcef63"><span>Me deixe escolher se eu quero trabalhar com um amigo; às vezes eu vou gostar, às vezes não.</span></label></li>
+<li><label><input type="checkbox" data-k="i20323d7c51"><span>Me ajude a descobrir uma arte que me ajude a relaxar.</span></label></li>
+<li><label><input type="checkbox" data-k="i90050c01ae"><span>Me lembre de focar no que eu faço bem, e não no que eu faço mal.</span></label></li>
 </ul></details>
 </section>
 <section class="bloco" id="sobre">
-<h2><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.3s-7.3-4.6-7.3-9.5c0-2.3 1.9-4.1 4.2-4.1 1.4 0 2.6.7 3.1 1.7.5-1 1.7-1.7 3.1-1.7 2.3 0 4.2 1.8 4.2 4.1 0 4.9-7.3 9.5-7.3 9.5z"/></svg>Outras coisas sobre o Murilo</h2>
-<p class="bloco-sub">19 sugestões.</p>
+<h2><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.3s-7.3-4.6-7.3-9.5c0-2.3 1.9-4.1 4.2-4.1 1.4 0 2.6.7 3.1 1.7.5-1 1.7-1.7 3.1-1.7 2.3 0 4.2 1.8 4.2 4.1 0 4.9-7.3 9.5-7.3 9.5z"/></svg>Outras coisas sobre mim</h2>
+<p class="bloco-sub">23 sugestões.</p>
 <details class="grupo" open>
-<summary><span>Outras coisas sobre o Murilo</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
+<summary><span>Outras coisas sobre mim</span><span class="tag" data-count>0</span><span class="arrow" aria-hidden="true">▶</span></summary>
 <ul class="itens">
-<li><label><input type="checkbox" data-k="i7be8a6588c"><span>O Murilo pode ficar cansado, ou ansioso demais, ao longo do dia e precisar de uma pausa.</span></label></li>
-<li><label><input type="checkbox" data-k="i2fba128852"><span>Em alguns dias, o Murilo pode chegar desanimado com a escola e com as tarefas dele.</span></label></li>
-<li><label><input type="checkbox" data-k="ib815411519"><span>Às vezes o Murilo precisa de ajuda para escutar, focar e se concentrar na escola.</span></label></li>
-<li><label><input type="checkbox" data-k="i80e2c177e7"><span>O Murilo precisa de elogios com frequência para se sentir bem com o que está fazendo.</span></label></li>
-<li><label><input type="checkbox" data-k="i064a6add34"><span>Pode parecer que o Murilo está sempre buscando atenção. Ele às vezes fica com muito medo e muito triste, e não gosta de ficar sozinho. Ele pode dizer que você falou mal dele ou que não se importa com ele — mas, no fundo, ele sabe que você está tentando ajudar. Pode não parecer, mas ele se dá bem com limites firmes e claros.</span></label></li>
-<li><label><input type="checkbox" data-k="ib5eb68ccc7"><span>O Murilo tem medo de ser julgado ou de virar motivo de piada; evite chamar a atenção da turma para ele. Avisar com antecedência sobre rodas de conversa dá tempo para ele se preparar — mas também pode dar tempo para ficar ansioso. Deixe ele levar algo que o acalme, ou sair da sala (ir ao banheiro, à sala da saúde) se estiver ansioso demais.</span></label></li>
-<li><label><input type="checkbox" data-k="ida39ebad5d"><span>Às vezes o Murilo não consegue evitar ficar bravo e discutir. Ele tenta muito se controlar.</span></label></li>
-<li><label><input type="checkbox" data-k="ib854c21fa3"><span>O Murilo se importa com a escola e se esforça de verdade para ir bem.</span></label></li>
-<li><label><input type="checkbox" data-k="i4d54e5f623"><span>Reduza a ansiedade do Murilo indo devagar quando começar algo novo.</span></label></li>
-<li><label><input type="checkbox" data-k="ic732555363"><span>Encontros regulares com a família são importantes para saber se ele está se adaptando bem.</span></label></li>
-<li><label><input type="checkbox" data-k="i1cd881dea7"><span>Se o Murilo tiver alguma medicação no horário da escola, confirme que ele tomou.</span></label></li>
-<li><label><input type="checkbox" data-k="i0b9e5e5494"><span>A ansiedade pode intensificar as reações do Murilo.</span></label></li>
-<li><label><input type="checkbox" data-k="i97dfb81bc8"><span>O Murilo precisa lavar as mãos com frequência. Se der, ele gostaria de lavar depois de cada aula.</span></label></li>
-<li><label><input type="checkbox" data-k="i3bf1c8d1a0"><span>O Murilo gostaria de combinar um sinal especial com cada professor, para ajudar a lembrá-lo de focar.</span></label></li>
-<li><label><input type="checkbox" data-k="i26c9f282db"><span>Tenha paciência com o Murilo e com o jeito dele. Ele se esforça todo dia. Obrigado por ajudar e por entender o Murilo.</span></label></li>
-<li><label><input type="checkbox" data-k="i8abe4a5ebc"><span>O Murilo tem dificuldade para seguir instruções, às vezes.</span></label></li>
-<li><label><input type="checkbox" data-k="i3c53ac4a78"><span>O Murilo precisa de lembretes constantes do que se espera dele.</span></label></li>
-<li><label><input type="checkbox" data-k="ice72f5ce1d"><span>O Murilo gosta de ouvir que está fazendo um bom trabalho.</span></label></li>
-<li><label><input type="checkbox" data-k="ic609116fd3"><span>O Murilo gosta de construir coisas e de colorir.</span></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="icd435acff5"><strong>Eu uso abafador de ruídos todos os dias. Ele não é um acessório: é o que preserva a minha concentração e a minha interação social.</strong></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="ice439e5263"><strong>Comigo funciona: rotina visual, comando curto, uma etapa de cada vez, pausa para movimento e reforço positivo com as minhas Estrelas.</strong></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="ibd3b9ecf8a"><strong>Tem dias em que eu recuso contato visual ou toque físico. Me respeite nesses momentos e fale comigo com palavras claras.</strong></label></li>
+<li class="destaque"><label><input type="checkbox" data-k="iecd7254a62"><strong>Eu faço psicopedagogia, terapia ocupacional e fonoaudiologia. A agenda escolar diária e reuniões periódicas entre escola, terapias e família são o que mantém todo mundo alinhado.</strong></label></li>
+<li><label><input type="checkbox" data-k="icf6932d385"><span>Eu posso ficar cansado, ou ansioso demais, ao longo do dia e precisar de uma pausa.</span></label></li>
+<li><label><input type="checkbox" data-k="iaa5f640e4d"><span>Em alguns dias, eu posso chegar desanimado com a escola e com as minhas tarefas.</span></label></li>
+<li><label><input type="checkbox" data-k="i4dcba519b2"><span>Às vezes eu preciso de ajuda para escutar, focar e me concentrar na escola.</span></label></li>
+<li><label><input type="checkbox" data-k="i39b1c3c43e"><span>Eu preciso de elogios com frequência para me sentir bem com o que eu estou fazendo.</span></label></li>
+<li><label><input type="checkbox" data-k="ie496ac7d1e"><span>Pode parecer que eu estou sempre buscando atenção. Às vezes eu fico com muito medo e muito triste, e não gosto de ficar sozinho. Eu posso dizer que você falou mal de mim ou que não se importa comigo — mas, no fundo, eu sei que você está tentando ajudar. Pode não parecer, mas eu me dou bem com limites firmes e claros.</span></label></li>
+<li><label><input type="checkbox" data-k="i7bbfe64121"><span>Eu tenho medo de ser julgado ou de virar motivo de piada; evite chamar a atenção da turma para mim. Me avisar com antecedência sobre rodas de conversa me dá tempo para me preparar — mas também pode me dar tempo para ficar ansioso. Me deixe levar algo que me acalme, ou sair da sala (ir ao banheiro, à sala da saúde) se eu estiver ansioso demais.</span></label></li>
+<li><label><input type="checkbox" data-k="i3d30cef3a2"><span>Às vezes eu não consigo evitar ficar bravo e discutir. Eu tento muito me controlar.</span></label></li>
+<li><label><input type="checkbox" data-k="ia024360e28"><span>Eu me importo com a escola e me esforço de verdade para ir bem.</span></label></li>
+<li><label><input type="checkbox" data-k="i328e832241"><span>Reduza a minha ansiedade indo devagar quando começar algo novo.</span></label></li>
+<li><label><input type="checkbox" data-k="i1e6b91b3ea"><span>Encontros regulares com a minha família são importantes para saber se eu estou me adaptando bem.</span></label></li>
+<li><label><input type="checkbox" data-k="ibe1797e25a"><span>Se eu tiver alguma medicação no horário da escola, confirme que eu tomei.</span></label></li>
+<li><label><input type="checkbox" data-k="i3e08113964"><span>A ansiedade pode intensificar as minhas reações.</span></label></li>
+<li><label><input type="checkbox" data-k="i2d81bf7cb1"><span>Eu preciso lavar as mãos com frequência. Se der, eu gostaria de lavar depois de cada aula.</span></label></li>
+<li><label><input type="checkbox" data-k="iae95554323"><span>Eu gostaria de combinar um sinal especial com cada professor, para me ajudar a lembrar de focar.</span></label></li>
+<li><label><input type="checkbox" data-k="idfc2a4f265"><span>Tenha paciência comigo e com o meu jeito. Eu me esforço todo dia. Obrigado por me ajudar e por me entender.</span></label></li>
+<li><label><input type="checkbox" data-k="i614901d3bf"><span>Eu tenho dificuldade para seguir instruções, às vezes.</span></label></li>
+<li><label><input type="checkbox" data-k="idfa5694a89"><span>Eu preciso de lembretes constantes do que se espera de mim.</span></label></li>
+<li><label><input type="checkbox" data-k="idb3c1da437"><span>Eu gosto de ouvir que estou fazendo um bom trabalho.</span></label></li>
+<li><label><input type="checkbox" data-k="id64d4b16a6"><span>Eu gosto de construir coisas e de colorir.</span></label></li>
 </ul></details>
 </section>
 <footer>
-<p>Adaptado para o Murilo a partir de <em>“How Teachers Can Help Me — A Student Advocacy Booklet”</em>, School-based Behavioral Health Program, Department of Psychology in Education, University of Pittsburgh. Tradução livre para o português e adaptação de linguagem para o contexto do Murilo. O material original permite reprodução para fins educacionais e não comerciais.</p>
+<p>Adaptado para mim a partir de <em>“How Teachers Can Help Me — A Student Advocacy Booklet”</em>, School-based Behavioral Health Program, Department of Psychology in Education, University of Pittsburgh. Tradução livre para o português e adaptação de linguagem para o contexto do Murilo. O material original permite reprodução para fins educacionais e não comerciais.</p>
 <p>As marcações desta página ficam salvas apenas no aparelho de quem está lendo.</p>
 </footer>
 </main>
